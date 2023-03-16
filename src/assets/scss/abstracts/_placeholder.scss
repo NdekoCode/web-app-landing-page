@@ -1,0 +1,117 @@
+// Grace à l'heritage, les mixins nous permet de ne pas repeter les block de code meme lors de la compilation
+
+%wFull {
+    width: 100%;
+}
+
+%hFull {
+    height: 100%;
+}
+
+
+// Pour un element qui prend 100% de son parent
+%fullRation {
+    @extend %wFull;
+    @extend %hFull;
+}
+
+// Pour que la hauteur et la largeur aie la meme valeur
+%sameAsWidth {
+    aspect-ratio: 1/1;
+}
+
+%d-none {
+    display: none;
+}
+
+%posAbsolute {
+    position: absolute;
+}
+
+%posFixed {
+    position: fixed;
+}
+
+%posRelative {
+    position: relative;
+}
+
+%posFullFixed {
+    @extend %posFixed;
+    height: 100vh;
+}
+
+%posFullAbsolute {
+
+    @extend %posAbsolute;
+    @extend %fullRation;
+}
+
+// Placer un element en haut à gauche
+%topLeft {
+
+    top : 0;
+    left: 0;
+}
+
+
+// === FLEX
+
+%flex {
+    display: flex;
+}
+
+%flexCol {
+    @extend %flex;
+    flex-direction: column;
+}
+
+
+// Pour center HORIZONTALEMENT un element en FLEX ligne 
+%flexRowXCenter {
+    @extend %flex;
+    justify-content: center;
+}
+
+// Pour center VERTICALEMENT un element en FLEX ligne 
+%flexRowYCenter {
+
+    @extend %flex;
+    align-items: center;
+}
+
+// Pour center HORIZONTALEMENT un element en FLEX colonne 
+%flexColXCenter {
+    @extend %flexCol;
+    align-items: center;
+}
+
+// Pour center VERTICALEMENT un element en FLEX colonne 
+%flexColYCenter {
+    @extend %flexCol;
+    justify-content: center;
+}
+
+// Pour center un element en FLEX verticalement et horizontalement
+%flexRowCenter,
+%flexMiddle {
+    @extend %flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+// Pour center un element en FLEX en colonne verticalement et horizontalement
+%flexColCenter {
+    @extend %flexCol;
+    justify-content: center;
+    align-items    : center;
+}
+
+%pointer {
+    cursor: pointer;
+}
+
+%paddingSection {
+
+    padding-block: var(--section-padding);
+}
