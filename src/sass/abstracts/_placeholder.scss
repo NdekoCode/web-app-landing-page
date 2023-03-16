@@ -8,6 +8,14 @@
     height: 100%;
 }
 
+%hAuto {
+    height: auto;
+}
+
+%wAuto {
+    width: auto;
+}
+
 
 // Pour un element qui prend 100% de son parent
 %fullRation {
@@ -114,4 +122,31 @@
 %paddingSection {
 
     padding-block: var(--section-padding);
+}
+
+%block {
+    display: block;
+}
+
+%btn {
+    @extend %block;
+    padding      : rem(12) rem(20);
+    border-radius: rem(5);
+}
+
+%decorationNone {
+
+    text-decoration: none;
+}
+
+%bgRedGradient {
+    background-image: var(--primary-color-gradient);
+}
+
+%roundedXFull {
+    border-radius: 99px;
+}
+
+%roundedFull {
+    border-radius: 100%;
 }

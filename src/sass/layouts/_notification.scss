@@ -1,0 +1,21 @@
+@use "../abstracts/placeholder";
+@use "../abstracts/functions";
+
+.notification {
+    font-weight     : 600;
+    background-color: var(--color-dark-2);
+    padding-block   : rem(8);
+    color           : var(--color-little-white);
+
+    .container {
+
+        gap: rem(25);
+        @extend %flexMiddle;
+    }
+
+    .notification__btn {
+        @extend %bgRedGradient;
+        @extend %roundedXFull;
+        padding-block: rem(8);
+    }
+}
