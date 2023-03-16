@@ -5,13 +5,20 @@
     background-color: var(--color-dark-2);
     padding-block   : rem(15);
     color           : var(--color-little-white);
-
-    font-size: rem(15);
+    font-size       : rem(15);
 
     .container {
-
-        gap: rem(25);
+        gap      : rem(10);
+        flex-wrap: wrap;
         @extend %flexMiddle;
+
+        @media #{$x-sm-screen} {
+            flex-wrap: nowrap;
+        }
+
+        @media #{$sm-screen} {
+            gap: rem(25);
+        }
 
         @media #{$md-screen} {
             gap: rem(50);
@@ -20,29 +27,30 @@
 
     .notification__btn {
 
-        font-weight: 600;
-        @extend %bgRedGradient;
-        @extend %roundedXFull;
+        font-weight   : 600;
         padding-block : rem(5);
         padding-inline: rem(25);
+        @extend %bgRedGradient;
+        @extend %roundedXFull;
 
         @media #{$md-screen} {
-
             padding-inline: rem(45);
         }
     }
 
     .notification__link,
     .notification__btn {
-
         font-size: rem(14);
+
+        @media #{$x-sm-screen} {
+            flex: none;
+        }
     }
 
     .notification__link {
         font-weight: 700;
         position   : relative;
-        @extend %hoverLink;
+        @include hoverLink(true);
     }
-
 
 }

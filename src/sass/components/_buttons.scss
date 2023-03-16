@@ -1,0 +1,44 @@
+.btn {
+    @extend %btn;
+}
+
+.nav-toggle-btn {
+    position  : relative;
+    transform : rotate(-55deg);
+    transition: var(--transition-1);
+    z-index   : 2;
+
+
+    span {
+        width           : 20px;
+        height          : 2px;
+        background-color: var(--primary-color);
+        margin          : 5px;
+        transition      : var(--transition-1);
+    }
+
+    :is(.one, .three) {
+        width: 10px;
+    }
+
+    .one {
+        margin-left     : auto;
+        transform-origin: left;
+    }
+
+    .three {
+        transform-origin: right;
+    }
+
+    &.active {
+        transform: rotate(-45deg);
+
+        .one {
+            transform: rotate(90deg) translate(-3px);
+        }
+
+        .three {
+            transform: rotate(90deg) translate(3px);
+        }
+    }
+}
