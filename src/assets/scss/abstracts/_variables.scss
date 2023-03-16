@@ -1,3 +1,5 @@
+@import "./functions";
+
 :root {
     // COLORS
     --primary-color         : #E0457A;
@@ -11,13 +13,13 @@
     // TYPOGRAPHY
 
     // TITLES
-    --text-bigger: 75px;
-    --title-1    : 50px;
-    --title-2    : 40px;
-    --title-3    : 30px;
-    --tile-4     : 22px;
-    --title-5    : 20px;
-    --title-6    : 18px;
+    --text-bigger: rem(75);
+    --title-1    : rem(50);
+    --title-2    : rem(40);
+    --title-3    : rem(30);
+    --tile-4     : rem(22);
+    --title-5    : rem(20);
+    --title-6    : rem(18);
 
     // paragraphe
     --large-parag  : 18px;
