@@ -1,0 +1,12 @@
+@mixin positionner($x, $y) {
+    position : absolute;
+    left     : $x;
+    top      : $y;
+    transform: translate(-$x, -$y);
+}
+
+@mixin pseudoEl($d:"block", $pos:"absolute", $content:"") {
+    content : $content;
+    display : $d;
+    position: $pos;
+}
