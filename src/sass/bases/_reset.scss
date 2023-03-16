@@ -38,7 +38,6 @@ ion-icon {
 
 a {
     color: inherit;
-    @extend %decorationNone;
 }
 
 img {
@@ -79,8 +78,4 @@ a {
     @media #{$md-screen} {
         padding-inline: 0;
     }
-}
-
-.btn {
-    @extend %btn;
 }

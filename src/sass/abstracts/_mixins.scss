@@ -10,3 +10,34 @@
     display : $d;
     position: $pos;
 }
+
+@mixin hoverLink($visible:true) {
+
+    &::after {
+        content : '';
+        position: absolute;
+        display : block;
+        width   : 100%;
+        height  : rem(2);
+
+        @if($visible==false) {
+            transition: var(--transition-1);
+        }
+
+        @else {
+
+            transform       : scale(1);
+            background-color: currentColor;
+        }
+
+    }
+
+    @if(visible==false) {
+
+
+        &:hover::after {
+            transform       : scale(1);
+            background-color: var(--color-little-white);
+        }
+    }
+}
