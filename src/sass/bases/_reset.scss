@@ -72,6 +72,14 @@ a {
     color: inherit;
 }
 
+main {
+
+    p {
+        color: var(--color-gray);
+    }
+
+}
+
 .container {
     width        : 100%;
     padding-right: .75rem;
@@ -136,4 +144,16 @@ button.red-border {
 
 .x-rounded {
     @extend %roundedXFull;
+}
+
+.badge {
+    font-weight   : 500;
+    color         : var(--primary-color);
+    text-transform: uppercase;
+    font-size     : rem(16);
+}
+
+.bigger-text {
+    font-size: var(--text-bigger);
+    margin   : rem(45) 0;
 }

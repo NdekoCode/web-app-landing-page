@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { NotificationBarComponent } from './header/notification-bar/notification-bar.component';
 import { TopbarComponent } from './header/topbar/topbar.component';
 import { HeaderComponent } from './header/header.component';
+import { BannerComponent } from './banner/banner.component';
+import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
-  declarations: [AppComponent, NotificationBarComponent, TopbarComponent, HeaderComponent],
+  declarations: [AppComponent, NotificationBarComponent, TopbarComponent, HeaderComponent, BannerComponent, HomepageComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
