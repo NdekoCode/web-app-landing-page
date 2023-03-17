@@ -154,6 +154,10 @@ button.red-border {
 }
 
 .bigger-text {
-    font-size: var(--text-bigger);
-    margin   : rem(45) 0;
+    margin-block: $basic-space;
+
+    @media #{$md-screen} {
+
+        font-size: $text-bigger;
+    }
 }
