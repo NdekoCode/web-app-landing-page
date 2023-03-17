@@ -14,10 +14,6 @@
 
     // TRANSITION & ANIMATION
     --transition-1: 0.35s;
-
-
-
-
 }
 
 // TYPOGRAPHY
@@ -31,13 +27,17 @@ $title-3     : rem(30);
 $tile-4      : rem(22);
 $title-5     : rem(20);
 $title-6     : rem(18);
+
 // paragraphe
 $large-parag : rem(18);
 $medium-parag: rem(16);
 $default-size: 14px;
 
+// UTILITIES
+$border-input: 0.5px solid rgba(0, 0, 0, 0.05);
 
 // SPACES
+$min-space          : rem(20);
 $basic-space        : rem(25);
 $section-basic-space: rem(85);
 $section-space      : rem(140);

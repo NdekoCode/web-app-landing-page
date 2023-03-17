@@ -1,0 +1,35 @@
+.form-input {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : rem(10) rem(5);
+    box-shadow     : 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border         : $border-input;
+    border-radius  : rem(5);
+    min-height     : rem(65);
+
+    @media #{$md-screen} {
+
+        width: rem(770);
+
+    }
+
+
+    input {
+        height        : 100%;
+        padding-block : rem(14);
+        padding-inline: rem(15);
+        border-radius : rem(5);
+
+        &::placeholder {
+            color: var(--color-gray);
+
+        }
+    }
+
+    @media #{$x-sm-screen} {
+        .btn {
+            flex: none;
+        }
+    }
+}

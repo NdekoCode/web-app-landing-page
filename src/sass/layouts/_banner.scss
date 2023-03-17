@@ -1,4 +1,28 @@
 .banner {
     padding-block: $section-basic-space;
     text-align   : center;
+    max-width    : 1240px;
+    margin-inline: auto;
+
+
+    form {
+
+        max-width      : rem(770);
+        display        : flex;
+        justify-content: center;
+        margin-inline  : auto;
+
+    }
+
+
+    .banner__title {
+        @extend %mx-auto;
+        max-width: rem(980);
+    }
+
+    .banner__text {
+        max-width   : rem(680);
+        margin-block: $min-space;
+        @extend %mx-auto;
+    }
 }
