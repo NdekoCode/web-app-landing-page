@@ -1,5 +1,11 @@
 header {
+    position: relative;
+
     a {
         @extend %decorationNone;
+    }
+
+    @media #{$md-screen} {
+        max-height: rem(180);
     }
 }

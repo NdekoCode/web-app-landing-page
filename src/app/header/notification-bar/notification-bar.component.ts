@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './notification-bar.component.html',
   styleUrls: ['./notification-bar.component.scss'],
 })
-export class NotificationBarComponent {}
+export class NotificationBarComponent {
+  isClosed: boolean = false;
+  onClose() {
+    this.isClosed = !this.isClosed;
+    console.log(this.isClosed);
+  }
+}

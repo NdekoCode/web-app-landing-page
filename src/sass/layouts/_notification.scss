@@ -6,6 +6,12 @@
     padding-block   : rem(15);
     color           : var(--color-little-white);
     font-size       : rem(15);
+    position        : relative;
+    margin-bottom   : rem(25);
+
+    @media #{$md-screen} {
+        margin-bottom: 0;
+    }
 
     .container {
         gap      : rem(10);
@@ -51,6 +57,25 @@
         font-weight: 700;
         position   : relative;
         @include hoverLink(true);
+    }
+
+
+    .notification__close {
+        width    : rem(25);
+        height   : rem(25);
+        position : absolute;
+        right    : 15px;
+        top      : 15%;
+        transform: translateY(-50%);
+        color    : var(--color-white);
+
+        @media #{$sm-screen} {
+            top: 25%;
+        }
+
+        @media #{$lg-screen} {
+            top: 50%;
+        }
     }
 
 }

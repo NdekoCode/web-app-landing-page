@@ -21,3 +21,31 @@
         opacity: 1;
     }
 }
+
+@keyframes fadeLeft {
+    from {
+
+        opacity: 0;
+        left   : rem(-100);
+    }
+
+    to {
+
+        opacity: 1;
+        left   : 0;
+    }
+}
+
+@keyframes toggleHide {
+    0% {
+        opacity: 1;
+        height : 100%;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        height : 0;
+        display: none;
+    }
+}

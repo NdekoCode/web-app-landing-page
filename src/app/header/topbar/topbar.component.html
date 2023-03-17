@@ -1,43 +1,57 @@
-<div>
-    <!-- Site title -->
-    <a href="#" class="logo"><img src="/assets/images/icons/logo.svg" alt="Logo" /></a>
-    <!-- Humberger button -->
-    <button class="nav-toggle-btn" [ngClass]="{'active' : isClicked}" (click)="onChangeNavButton()"
-        aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-    </button>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul class="navbar__list navbar__links-list">
-            <li>
-                <a href="#" class="navbar__link">how it works</a>
-            </li>
+<div class="topbar" [ngStyle]="{position: !isClicked ? 'relative':'static'}">
+    <div class="container">
 
-            <li>
-                <a href="#" class="navbar__link">Feautures</a>
-            </li>
-            <li>
-                <a href="#" class="navbar__link">About us</a>
-            </li>
-            <li>
-                <a href="#" class="navbar__link">Contact</a>
-            </li>
-        </ul>
-        <ul class="navbar__list navbar__buttons-list">
-            <li>
-                <a href="#" class="navbar__link btn">Get started</a>
-            </li>
-            <li>
-                <a href="#" class="navbar__link btn">FR
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                        <title>Chevron Down</title>
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="48" d="M112 184l144 144 144-144" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <!-- Site title -->
+        <a href="#" class="logo"><img src="/assets/images/icons/logo.svg" alt="Logo" /></a>
+        <!-- Humberger button -->
+        <button class="nav-toggle-btn" [ngClass]="{'active' : isClicked}" (click)="onChangeNavButton()"
+            aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </button>
+        <!-- Navbar -->
+        <nav class="navbar" [ngClass]="{'active' : isClicked}">
+            <div class="actions-navbar">
+
+                <!-- Site title -->
+                <a href="#" (click)="onChangeNavButton()" class="logo"><img src="/assets/images/icons/logo-white.svg"
+                        alt="Logo" /></a>
+
+                <a href="#" (click)="onChangeNavButton()" class="navbar__link-btn btn x-rounded red-gradient">Get
+                    started</a>
+            </div>
+            <ul class="navbar__list navbar__links-list">
+                <li>
+                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">how it works</a>
+                </li>
+
+                <li>
+                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">Feautures</a>
+                </li>
+                <li>
+                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">About us</a>
+                </li>
+                <li>
+                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar__list navbar__buttons-list">
+                <li>
+                    <a href="#" class="navbar__link-btn btn red-gradient" (click)="onChangeNavButton()">Get started</a>
+                </li>
+                <li>
+                    <a href="#" (click)="onChangeNavButton()"
+                        class="navbar__link-btn btn-icon btn red-border"><span>FR</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Chevron Down</title>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="48" d="M112 184l144 144 144-144" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 </div>
