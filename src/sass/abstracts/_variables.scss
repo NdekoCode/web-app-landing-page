@@ -12,41 +12,45 @@
     --color-white           : #fff;
     --color-bg-nav          : #8F1F6C;
 
-    // TYPOGRAPHY
-
-    // TITLES
-    --text-bigger: rem(75);
-    --title-1    : rem(50);
-    --title-2    : rem(40);
-    --title-3    : rem(30);
-    --tile-4     : rem(22);
-    --title-5    : rem(20);
-    --title-6    : rem(18);
-
-    // paragraphe
-    --large-parag : rem(18);
-    --medium-parag: rem(16);
-    --default-size: 14px;
-
     // TRANSITION & ANIMATION
     --transition-1: 0.35s;
 
 
-    // SPACES
-    --basic-space        : rem(25);
-    --section-basic-space: rem(85);
-    --section-space      : rem(140);
+
+
 }
 
+// TYPOGRAPHY
+
+
+// TITLES
+$text-bigger : rem(75);
+$title-1     : rem(50);
+$title-2     : rem(40);
+$title-3     : rem(30);
+$tile-4      : rem(22);
+$title-5     : rem(20);
+$title-6     : rem(18);
+// paragraphe
+$large-parag : rem(18);
+$medium-parag: rem(16);
+$default-size: 14px;
+
+
+// SPACES
+$basic-space        : rem(25);
+$section-basic-space: rem(85);
+$section-space      : rem(140);
+
 // MEDIA QUERIES
-$xxs : 280px;
-$xs  : 320px;
-$x-sm: 480px;
-$sm  : 576px;
-$md  : 768px;
-$lg  : 992px;
-$xl  : 1281px;
-$xxl : 1400px;
+$xxs  : 280px;
+$xs   : 320px;
+$x-sm : 480px;
+$sm   : 576px;
+$md   : 768px;
+$lg   : 992px;
+$xl   : 1281px;
+$xxl  : 1400px;
 
 // SCREEN MEDIA
 $xxs-screen  : "only screen and (min-width:#{$xxs})";
