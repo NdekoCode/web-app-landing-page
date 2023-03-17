@@ -48,9 +48,11 @@ img {
 
 input,
 button {
-    background: none;
-    border    : none;
-    font      : inherit;
+    background   : none;
+    border       : none;
+    font         : inherit;
+    outline      : none;
+    border-radius: rem(5);
 }
 
 input {
@@ -70,6 +72,10 @@ input,
 button,
 a {
     color: inherit;
+}
+
+p {
+    line-height: 157.4%;
 }
 
 main {
@@ -113,6 +119,8 @@ main {
 
 .red-gradient {
     background-image: var(--primary-color-gradient);
+    color           : var(--color-white);
+    font-weight     : 500;
 }
 
 a.red-gradient {
@@ -154,10 +162,21 @@ button.red-border {
 }
 
 .bigger-text {
-    margin-block: $basic-space;
+    font-size   : $title-3+0.3rem;
+    margin-block: $min-space;
 
-    @media #{$md-screen} {
+    @media #{$x-sm-screen} {
+        font-size: $title-2;
+    }
 
-        font-size: $text-bigger;
+    @media #{$sm-screen} {
+
+        margin-block: $basic-space;
+    }
+
+    @media #{$lg-screen} {
+
+        margin-block: $basic-space - 0.7rem;
+        font-size   : $text-bigger - 1rem;
     }
 }

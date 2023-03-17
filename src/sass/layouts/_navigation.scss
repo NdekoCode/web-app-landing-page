@@ -10,7 +10,7 @@
         align-items    : center;
 
 
-        @media #{$md-screen} {
+        @media #{$lg-screen} {
             min-height: rem(80);
 
             .navbar {
@@ -45,7 +45,7 @@
             right: 5%;
         }
 
-        @media #{$md-screen } {
+        @media #{$lg-screen } {
             display: none;
 
         }
@@ -130,7 +130,7 @@
 .actions-navbar {
     display: none;
 
-    @media #{$md-screen } {
+    @media #{$lg-screen } {
         display: none !important;
     }
 }
