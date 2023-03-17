@@ -2,7 +2,6 @@
     position   : relative;
     padding-top: rem(25);
 
-
     .container {
 
         display        : flex;
@@ -15,6 +14,10 @@
 
             .navbar {
                 margin-left: rem(45);
+
+                .navbar__link {
+                    font-weight: 500;
+                }
             }
 
             .logo {
