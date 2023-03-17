@@ -1,12 +1,13 @@
 .form-input {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    padding        : rem(10) rem(5);
-    box-shadow     : 0px 5px 10px rgba(0, 0, 0, 0.05);
-    border         : $border-input;
-    border-radius  : rem(5);
-    min-height     : rem(65);
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    padding         : rem(10) rem(5);
+    box-shadow      : 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border          : $border-input;
+    border-radius   : rem(5);
+    min-height      : rem(65);
+    background-color: var(--color-white);
 
     @media #{$md-screen} {
 
