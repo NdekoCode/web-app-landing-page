@@ -13,6 +13,8 @@ html,
 body {
     scroll-behavior: smooth;
     font-size      : var(--default-size);
+    overflow-x     : hidden;
+    min-height     : 100vh;
 }
 
 body {
@@ -71,11 +73,67 @@ a {
 }
 
 .container {
-    max-width     : 1450px;
+    width        : 100%;
+    padding-right: .75rem;
+    padding-left : .75rem;
+    margin-right : auto;
+    margin-left  : auto;
+
+    @media #{$sm-screen} {
+        max-width: 540px;
+    }
+
+    @media #{$md-screen} {
+        max-width: 720px;
+    }
+
+    @media #{$lg-screen} {
+        max-width: 960px;
+    }
+
+    @media #{$xl-screen} {
+        max-width: 1140px;
+    }
+
     margin-inline : auto;
     padding-inline: rem(20);
 
     @media #{$md-screen} {
         padding-inline: 0;
     }
+}
+
+.red-gradient {
+    background-image: var(--primary-color-gradient);
+}
+
+a.red-gradient {
+    color          : var(--color-white);
+    text-decoration: none;
+
+    &::after,
+    &::before {
+        display: none !important;
+
+    }
+}
+
+.red-border {
+
+    border: 1px solid var(--primary-color);
+}
+
+a.red-border,
+button.red-border {
+    color          : var(--primary-color);
+    text-decoration: none;
+
+    &::after,
+    &::before {
+        display: none !important;
+    }
+}
+
+.x-rounded {
+    @extend %roundedXFull;
 }

@@ -1,5 +1,25 @@
 .btn {
     @extend %btn;
+
+    &.btn-icon {
+        @extend %flexRowYCenter;
+
+        min-width: rem(100);
+        max-width: max-content;
+
+        svg {
+            width : rem(15);
+            height: rem(15);
+            margin: 0 rem(10)
+        }
+
+        &.red-border {
+            &:hover {
+                background-image: var(--primary-color-gradient);
+                color           : var(--color-white);
+            }
+        }
+    }
 }
 
 .nav-toggle-btn {
@@ -7,7 +27,6 @@
     transform : rotate(-55deg);
     transition: var(--transition-1);
     z-index   : 2;
-
 
     span {
         width           : 20px;

@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class TopbarComponent {
   isClicked: boolean = false;
   onChangeNavButton() {
-    this.isClicked = !this.isClicked;
+    if (window.innerWidth < 768) {
+      this.isClicked = !this.isClicked;
+    }
   }
 }
