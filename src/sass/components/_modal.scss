@@ -1,0 +1,47 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    inset           : 0;
+    position        : fixed;
+    overflow        : hidden;
+    z-index         : 999999;
+    animation       : fadeIn var(--transition-1) forwards;
+    @extend %flexMiddle;
+
+
+    .btn.btn-close {
+        padding         : rem(15);
+        position        : absolute;
+        right           : 15px;
+        top             : 15px;
+        background-color: var(--primary-color);
+        color           : var(--color-white);
+
+        svg {
+            width: rem(25);
+        }
+
+        &:hover {
+            background-color: var(--color-white);
+            @extend .red-border;
+        }
+    }
+
+}
+
+.modal__container {
+    position  : relative;
+    min-width : rem(250);
+    max-height: rem(300);
+
+    @extend %flexMiddle;
+    /* 16              :9 */
+    // height          : 0;
+
+    iframe {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        height  : 100%;
+    }
+}

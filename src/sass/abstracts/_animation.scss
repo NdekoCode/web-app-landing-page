@@ -1,3 +1,16 @@
+.blob {
+    background   : rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    @extend %flexMiddle;
+    box-shadow  : 0 0 0 0 rgba(0, 0, 0, 0.7);
+    transform   : scale(1);
+    animation   : pulse 2s infinite;
+    width       : rem(80);
+    height      : rem(80);
+    aspect-ratio: 1/1;
+
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -5,6 +18,18 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity  : 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
     }
 }
 
@@ -47,5 +72,23 @@
         opacity: 0;
         height : 0;
         display: none;
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        transform : scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform : scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform : scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 }
