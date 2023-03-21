@@ -310,3 +310,12 @@
     }
 
 }
+
+%blockSpace {
+
+    padding-block: $basic-space;
+
+    @media #{$sm-screen} {
+        padding-block: $section-basic-space;
+    }
+}
