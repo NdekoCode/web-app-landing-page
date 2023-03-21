@@ -8,8 +8,9 @@ import { TopbarComponent } from './header/topbar/topbar.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { TwoColumnComponent } from './two-column/two-column.component';
 @NgModule({
-  declarations: [AppComponent, NotificationBarComponent, TopbarComponent, HeaderComponent, BannerComponent, HomepageComponent],
+  declarations: [AppComponent, NotificationBarComponent, TopbarComponent, HeaderComponent, BannerComponent, HomepageComponent, TwoColumnComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
