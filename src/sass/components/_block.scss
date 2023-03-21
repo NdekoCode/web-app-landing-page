@@ -76,6 +76,22 @@
             &.pseudo-element {
                 position: relative;
 
+                &.center::after {
+                    left     : 50%;
+                    top      : 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &.left::after {
+                    left: 0%;
+                    top : 0;
+                }
+
+                &.right::after {
+                    right: 0%;
+                    top  : 0;
+                }
+
                 &::after {
                     content   : '';
                     position  : absolute;
