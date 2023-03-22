@@ -319,3 +319,15 @@
         padding-block: $section-basic-space;
     }
 }
+
+%bgBlob {
+
+    background-image   : url('/assets/images/Blob.png');
+    background-size    : 450px;
+    background-repeat  : no-repeat;
+    background-position: top -75px right -175px;
+}
+
+.bgblob {
+    @extend %bgBlob;
+}
