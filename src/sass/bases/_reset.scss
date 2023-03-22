@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "../abstracts/variables";
 
 *,
 *::before,
@@ -199,3 +200,20 @@ button.red-border {
         font-size   : $text-bigger - 1rem;
     }
 }
+
+@include makeUtilitieSpacing();
+@include makeUtilitieSpacing('mx', $generatorUtilitiesLength, 'margin-inline');
+@include makeUtilitieSpacing('my', $generatorUtilitiesLength, 'margin-block');
+@include makeUtilitieSpacing('m-start', $generatorUtilitiesLength, 'margin-inline-start');
+@include makeUtilitieSpacing('m-end', $generatorUtilitiesLength, 'margin-inline-end');
+@include makeUtilitieSpacing('m-top', $generatorUtilitiesLength, 'margin-block-start');
+@include makeUtilitieSpacing('m-bottom', $generatorUtilitiesLength, 'margin-block-end');
+
+@include makeUtilitieSpacing('p', $generatorUtilitiesLength, 'padding');
+@include makeUtilitieSpacing('px', $generatorUtilitiesLength, 'padding-inline');
+@include makeUtilitieSpacing('py', $generatorUtilitiesLength, 'padding-block');
+@include makeUtilitieSpacing('p-left', $generatorUtilitiesLength, 'padding-inline-start');
+@include makeUtilitieSpacing('p-start', $generatorUtilitiesLength, 'padding-inline-start');
+@include makeUtilitieSpacing('p-end', $generatorUtilitiesLength, 'padding-inline-end');
+@include makeUtilitieSpacing('p-top', $generatorUtilitiesLength, 'padding-block-start');
+@include makeUtilitieSpacing('p-bottom', $generatorUtilitiesLength, 'padding-block-end');
