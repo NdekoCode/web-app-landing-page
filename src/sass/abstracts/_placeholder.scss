@@ -116,6 +116,15 @@
     align-items    : center;
 }
 
+%feautureBg {
+
+    background-color: #f9f9f9;
+
+    .feature__link {
+        color: var(--primary-color);
+    }
+}
+
 %pointer {
     cursor: pointer;
 }
@@ -152,21 +161,11 @@
 }
 
 %hoverLink {
+    @include linkEffect()
+}
 
-    &::after {
-        content   : '';
-        display   : block;
-        width     : 100%;
-        height    : 2px;
-        transform : scale(0);
-        transition: var(--transition-1);
-
-    }
-
-    &:hover::after {
-        transform       : scale(1);
-        background-color: currentColor;
-    }
+%hoverLinkVisible {
+    @include linkEffect(true);
 }
 
 %responsiveDesktopNavbar {
@@ -338,15 +337,8 @@
 
 %titleSpace {
 
-    margin-block: rem(10);
+    margin-block: rem(15);
 }
-
-$title-1 : rem(45);
-$title-2 : rem(35);
-$title-3 : rem(25);
-$title-4 : rem(22);
-$title-5 : rem(20);
-$title-6 : rem(18);
 
 %title-1 {
     @include makeSize($title-2, $title-1);

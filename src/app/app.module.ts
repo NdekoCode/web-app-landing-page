@@ -13,6 +13,7 @@ import { TwoColumnComponent } from './homepage/two-column/two-column.component';
 import { ModalVideoComponent } from './modal-video/modal-video.component';
 import { SafePipe } from './safe.pipe';
 import { FeaturesComponent } from './features/features.component';
+import { FeatureComponent } from './features/feature/feature.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { FeaturesComponent } from './features/features.component';
     ModalVideoComponent,
     SafePipe,
     FeaturesComponent,
+    FeatureComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

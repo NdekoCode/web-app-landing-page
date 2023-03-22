@@ -2,4 +2,101 @@
     @extend %blockSpace;
     @extend %textCenter;
     @extend %container;
+    @extend %flexColCenter;
+    row-gap: rem(45);
+
+
+
+
+}
+
+
+.features__infos {
+
+    row-gap  : rem(25);
+    max-width: rem(550);
+}
+
+.feature__link {
+    font-weight: 700;
+    @extend %hoverLinkVisible;
+}
+
+.feature__card {
+    border-radius: rem(40);
+    row-gap      : rem(15);
+    max-width    : 100%;
+    width        : 100%;
+    min-height   : rem(450);
+    width        : max-content;
+    height       : max-content;
+    padding      : rem(18);
+    transition   : background-color var(--transition-1);
+    @extend %flexColCenter;
+
+    @media #{$sm-screen} {
+
+        max-width: rem(370);
+    }
+
+    p {
+        max-width: rem(280);
+    }
+
+    img {
+        max-width   : rem(250);
+        width       : 100%;
+        aspect-ratio: 1/1;
+        object-fit  : contain;
+    }
+
+    &:hover,
+    &:not(:first-of-type):not(:last-of-type) {
+        background-color: #f9f9f9;
+
+        .feature__link {
+            color: var(--primary-color);
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        background-color: #f9f9f9;
+        max-width       : 100%;
+
+
+        p {
+            width: max-content;
+        }
+
+
+        &:hover {
+            .feature__link {
+
+                color: currentColor;
+            }
+        }
+
+        .feature__link:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+
+.features__list {
+    @extend %flexMiddle;
+    flex-wrap: wrap;
+    gap      : rem(15);
+}
+
+
+.feature__header {
+    max-width : rem(350);
+    max-height: max-content;
+    @extend %mx-auto;
+    @extend %flexColCenter;
+
+    img {
+        margin-bottom: rem(-25);
+    }
 }

@@ -1,4 +1,4 @@
-@import "./functions";
+@use "./functions";
 
 :root {
     // COLORS
@@ -26,7 +26,7 @@ $text-bigger : rem(75);
 $title-1     : rem(50);
 $title-2     : rem(40);
 $title-3     : rem(30);
-$tile-4      : rem(22);
+$title-4     : rem(22);
 $title-5     : rem(20);
 $title-6     : rem(18);
 
