@@ -62,7 +62,7 @@
         margin-bottom: rem(45);
     }
 
-    @media #{$sm-screen} {
+    @media #{$md-screen} {
         display   : flex;
         column-gap: rem(50);
 
@@ -149,11 +149,36 @@
 }
 
 .linear-block-right {
-    .block__right {
+
+    .block__right,
+    &.block__right {
 
         background   : linear-gradient(295.22deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 62.53%);
         border-radius: rem(45);
         padding      : rem(45);
         padding-top  : rem(15);
+    }
+}
+
+.linear-block-left {
+
+    .block__left,
+    &.block__left {
+
+        background: linear-gradient(-295.22deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 62.53%);
+
+        border-radius : rem(25);
+        padding-left  : rem(15);
+        padding-bottom: rem(45);
+        padding-top   : rem(15);
+
+        .block__img {
+            border-radius: rem(45);
+            overflow     : hidden;
+            filter       : drop-shadow(25px 25px 90px rgba(0, 0, 0, 0.2));
+
+
+        }
+
     }
 }
