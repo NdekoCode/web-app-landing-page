@@ -9,6 +9,28 @@
     box-sizing : border-box;
 }
 
+::-webkit-scrollbar {
+    width: rem(12);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-gray-smooth)
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-image: var(--primary-color-gradient);
+    box-shadow      : inset 2px 2px 5px 0 rgba(#fff, 0.7);
+    border-radius   : 100px;
+}
+
+
+html {
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+
+}
+
 html,
 body {
     scroll-behavior: smooth;
