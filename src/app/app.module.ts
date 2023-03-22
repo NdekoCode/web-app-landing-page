@@ -12,6 +12,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TwoColumnComponent } from './homepage/two-column/two-column.component';
 import { ModalVideoComponent } from './modal-video/modal-video.component';
 import { SafePipe } from './safe.pipe';
+import { FeaturesComponent } from './features/features.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { SafePipe } from './safe.pipe';
     BlockVideoComponent,
     ModalVideoComponent,
     SafePipe,
+    FeaturesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

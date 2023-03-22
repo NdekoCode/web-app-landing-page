@@ -109,11 +109,9 @@ main {
 }
 
 .container {
-    width        : 100%;
-    padding-right: .75rem;
-    padding-left : .75rem;
-    margin-right : auto;
-    margin-left  : auto;
+    width         : 100%;
+    margin-inline : auto;
+    padding-inline: rem(20);
 
     @media #{$sm-screen} {
         max-width: 540px;
@@ -131,8 +129,6 @@ main {
         max-width: 1140px;
     }
 
-    margin-inline : auto;
-    padding-inline: rem(20);
 
     @media #{$md-screen} {
         padding-inline: 0;

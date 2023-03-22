@@ -1,5 +1,6 @@
 // Grace à l'heritage, les mixins nous permet de ne pas repeter les block de code meme lors de la compilation
 @import "./variables";
+@import "./mixins";
 
 %wFull {
     width: 100%;
@@ -84,7 +85,6 @@
 
 // Pour center VERTICALEMENT un element en FLEX ligne 
 %flexRowYCenter {
-
     @extend %flex;
     align-items: center;
 }
@@ -330,4 +330,76 @@
 
 .bgblob {
     @extend %bgBlob;
+}
+
+%textCenter {
+    text-align: center;
+}
+
+%titleSpace {
+
+    margin-block: rem(10);
+}
+
+$title-1 : rem(45);
+$title-2 : rem(35);
+$title-3 : rem(25);
+$title-4 : rem(22);
+$title-5 : rem(20);
+$title-6 : rem(18);
+
+%title-1 {
+    @include makeSize($title-2, $title-1);
+}
+
+%title-2 {
+    @include makeSize($title-3, $title-2);
+}
+
+%title-3 {
+    @include makeSize($title-4, $title-3);
+}
+
+%title-4 {
+
+    @include makeSize($title-5, $title-6);
+}
+
+%title-5 {
+
+    @include makeSize($title-6, $title-5);
+}
+
+%title-6 {
+    @include makeSize($title-6, $title-6);
+}
+
+.title-1,
+h1 {
+    @extend %title-1;
+}
+
+.title-2,
+h2 {
+    @extend %title-2;
+}
+
+.title-3,
+h3 {
+    @extend %title-3;
+}
+
+.title-4,
+h4 {
+    @extend %title-4;
+}
+
+.title-5,
+h5 {
+    @extend %title-5;
+}
+
+.title-6,
+h6 {
+    @extend %title-6;
 }
