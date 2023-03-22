@@ -41,3 +41,12 @@
         }
     }
 }
+
+@mixin makeSize($sizeDefault, $sizeDesk) {
+    font-size: $sizeDefault;
+    @extend %titleSpace;
+
+    @media #{$sm-screen} {
+        font-size: $sizeDesk;
+    }
+}

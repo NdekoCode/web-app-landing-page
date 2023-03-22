@@ -1,6 +1,6 @@
 .banner {
     padding-block: $section-basic-space;
-    text-align   : center;
+    @extend %textCenter;
     max-width    : 1240px;
     margin-inline: auto;
     position     : relative;
