@@ -26,9 +26,8 @@
     border-radius: rem(40);
     row-gap      : rem(15);
     max-width    : 100%;
-    width        : 100%;
     min-height   : rem(450);
-    width        : max-content;
+    width        : 100%;
     height       : max-content;
     padding      : rem(18);
     transition   : background-color var(--transition-1);
@@ -37,6 +36,7 @@
     @media #{$sm-screen} {
 
         max-width: rem(370);
+        width    : max-content;
     }
 
     p {
@@ -61,12 +61,6 @@
 
     @media only screen and (max-width: 992px) {
         background-color: #f9f9f9;
-        max-width       : 100%;
-
-
-        p {
-            width: max-content;
-        }
 
 
         &:hover {
