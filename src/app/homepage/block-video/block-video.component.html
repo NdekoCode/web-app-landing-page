@@ -44,7 +44,6 @@
                         </defs>
                     </svg>
                 </button>
-                <app-modal-video *ngIf="isShown" (showModal)="onShow($event)"></app-modal-video>
 
             </div>
         </div>
@@ -61,3 +60,4 @@
         </div>
     </div>
 </div>
+<app-modal-video *ngIf="isShown" (showModal)="onShow($event)"></app-modal-video>
