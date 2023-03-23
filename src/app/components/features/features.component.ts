@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Feature } from '../utils/constants';
+import { Feature } from '../../utils/constants';
 
 @Component({
   selector: 'app-features',
