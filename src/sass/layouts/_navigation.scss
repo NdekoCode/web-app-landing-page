@@ -1,6 +1,7 @@
 .topbar {
-    position   : relative;
     padding-top: rem(25);
+
+    @extend %posRelative;
 
     .container {
 

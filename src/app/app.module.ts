@@ -10,6 +10,8 @@ import { FeaturesComponent } from './components/features/features.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ModalVideoComponent } from './components/modal-video/modal-video.component';
 import { NotificationBarComponent } from './components/notification-bar/notification-bar.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { TwoColumnComponent } from './components/two-column/two-column.component';
 import { ChangeLogComponent } from './pages/change-log/change-log.component';
@@ -36,6 +38,8 @@ import { SafePipe } from './safe.pipe';
     MoreAboutComponent,
     ChangeLogComponent,
     ContactComponent,
+    TestimonialsComponent,
+    TestimonialComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

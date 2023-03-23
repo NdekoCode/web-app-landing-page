@@ -14,6 +14,12 @@ export type RouterLink = {
   path: string;
   title?: string;
 };
+export type Testimonial = {
+  username: string;
+  testimonial: string;
+  userRole: string;
+  image: string;
+};
 
 export const routerLink: Route[] = [
   { path: '', title: 'Home', component: HomepageComponent },

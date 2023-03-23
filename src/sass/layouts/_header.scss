@@ -1,5 +1,6 @@
 header {
-    position: relative;
+
+    @extend %posRelative;
 
     a {
         @extend %decorationNone;

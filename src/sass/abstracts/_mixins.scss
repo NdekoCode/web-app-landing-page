@@ -15,8 +15,8 @@
 
 @mixin linkEffect($visible: false) {
 
-    text-decoration: none;
-    position       : relative;
+    @extend %decorationNone;
+    @extend %posRelative;
 
     &::after {
         content: '';
