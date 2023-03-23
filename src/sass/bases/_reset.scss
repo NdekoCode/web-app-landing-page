@@ -179,6 +179,19 @@ button.red-border {
     color         : var(--primary-color);
     text-transform: uppercase;
     font-size     : rem(16);
+
+    &.badge-line {
+        @extend %flexRowYCenter;
+        column-gap: rem(10);
+
+        &:before {
+            content         : '';
+            width           : rem(20);
+            height          : rem(2);
+            background-color: var(--primary-color);
+
+        }
+    }
 }
 
 .bigger-text {
@@ -199,6 +212,10 @@ button.red-border {
         margin-block: $basic-space - 0.7rem;
         font-size   : $text-bigger - 1rem;
     }
+}
+
+.section {
+    @extend %section;
 }
 
 @include makeUtilitieSpacing();

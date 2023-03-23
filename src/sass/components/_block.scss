@@ -70,11 +70,10 @@
         .block__left,
         .block__right {
             flex-basis: 50%;
-            position  : relative;
             z-index   : 1;
+            position  : relative;
 
             &.pseudo-element {
-                position: relative;
 
                 &.center::after {
                     left     : 50%;

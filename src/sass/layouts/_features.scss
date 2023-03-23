@@ -6,15 +6,16 @@
     row-gap: rem(45);
 
 
-
-
 }
 
 
-.features__infos {
-
-    row-gap  : rem(25);
+.center-block {
     max-width: rem(550);
+    @extend %textCenter;
+}
+
+.features__infos {
+    row-gap: rem(25);
 }
 
 .feature__link {

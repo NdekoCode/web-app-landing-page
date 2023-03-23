@@ -23,7 +23,7 @@
 }
 
 .nav-toggle-btn {
-    position  : relative;
+    @extend %posRelative;
     transform : rotate(-55deg);
     transition: var(--transition-1);
     z-index   : 2;

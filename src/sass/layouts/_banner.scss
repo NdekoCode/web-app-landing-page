@@ -1,10 +1,10 @@
 .banner {
     padding-block: $section-basic-space;
-    @extend %textCenter;
     max-width    : 1240px;
     margin-inline: auto;
-    position     : relative;
     z-index      : 1;
+    @extend %textCenter;
+    @extend %posRelative;
 
     form {
         max-width      : rem(680);
