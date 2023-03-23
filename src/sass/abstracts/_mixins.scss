@@ -16,6 +16,7 @@
 @mixin linkEffect($visible: false) {
 
     text-decoration: none;
+    position       : relative;
 
     &::after {
         content: '';
@@ -39,7 +40,8 @@
 
     @if($visible==false) {
 
-        &:hover::after {
+        &:hover::after,
+        &.active::after {
             transform       : scale(1);
             background-color: currentColor;
         }

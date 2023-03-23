@@ -22,19 +22,11 @@
                     started</a>
             </div>
             <ul class="navbar__list navbar__links-list">
-                <li>
-                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">how it works</a>
+                <li *ngFor="let link of topbarLinks">
+                    <a [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                        class="navbar__link" (click)="onChangeNavButton()">{{link.title}}</a>
                 </li>
 
-                <li>
-                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">Feautures</a>
-                </li>
-                <li>
-                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">About us</a>
-                </li>
-                <li>
-                    <a href="#" class="navbar__link" (click)="onChangeNavButton()">Contact</a>
-                </li>
             </ul>
             <ul class="navbar__list navbar__buttons-list">
                 <li>

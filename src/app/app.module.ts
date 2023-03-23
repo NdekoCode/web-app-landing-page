@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BannerComponent } from './banner/banner.component';
-import { HeaderComponent } from './header/header.component';
-import { NotificationBarComponent } from './header/notification-bar/notification-bar.component';
-import { TopbarComponent } from './header/topbar/topbar.component';
-import { BlockVideoComponent } from './homepage/block-video/block-video.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { TwoColumnComponent } from './homepage/two-column/two-column.component';
-import { ModalVideoComponent } from './modal-video/modal-video.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { BlockVideoComponent } from './components/block-video/block-video.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ModalVideoComponent } from './components/modal-video/modal-video.component';
+import { NotificationBarComponent } from './components/notification-bar/notification-bar.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { TwoColumnComponent } from './components/two-column/two-column.component';
+import { ChangeLogComponent } from './pages/change-log/change-log.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { MoreAboutComponent } from './pages/more-about/more-about.component';
+import { Page404Component } from './pages/page404/page404.component';
 import { SafePipe } from './safe.pipe';
-import { FeaturesComponent } from './features/features.component';
-import { FeatureComponent } from './features/feature/feature.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +32,10 @@ import { FeatureComponent } from './features/feature/feature.component';
     SafePipe,
     FeaturesComponent,
     FeatureComponent,
+    Page404Component,
+    MoreAboutComponent,
+    ChangeLogComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
