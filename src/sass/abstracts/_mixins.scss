@@ -91,7 +91,7 @@
 }
 
 @mixin makeUtilitieSpacing($prefix:'m', $number:10, $spacingName:'margin') {
-    @for $i from 1 through $number {
+    @for $i from 0 through $number {
         .#{$prefix}-#{$i} {
             #{$spacingName}: 0.25rem * $i !important;
         }
@@ -110,27 +110,6 @@
     }
 }
 
-@mixin utilitiesPosition($prefix:'mx', $position:'x', $number, $spacingName:'margin-inline') {
-    @if($position=='x') {
-        @for $i from 1 through $number {
-            .#{$prefix}-#{$i} {
-                #{$spacingName}: (0.25*$i);
-            }
-        }
-    }
-
-    @else if($position=='y') {
-        @for $i from 1 through $number {
-            .#{$prefix}-#{$i} {
-                #{$spacing}: (0.25rem*$i);
-            }
-        }
-    }
-
-    @else {
-        #{$spacingName}: (0.25rem*$i);
-    }
-}
 
 /** prefix:*/
 // mx-[number]
