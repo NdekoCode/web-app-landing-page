@@ -1,0 +1,56 @@
+.faq {
+
+    .faq__item {
+        background-color: var(--color-white);
+        padding-inline  : rem(15);
+        margin-block    : rem(20);
+        border-radius   : rem(20);
+
+        .faq__text {
+            color         : var(--color-gray);
+            max-width     : rem(700);
+            padding-bottom: rem(50);
+            transition    : height var(--transition-1);
+            display       : none;
+            @extend %mx-auto;
+        }
+    }
+
+    .faq__content {
+        max-width: rem(840);
+        @extend %mx-auto;
+    }
+
+    .faq__button {
+        width          : 100%;
+        padding-inline : rem(15);
+        padding-block  : rem(10);
+        color          : var(--color-dark-2);
+        justify-content: space-between;
+        align-items    : center;
+        @extend %flexRowXCenter;
+
+        &:focus,
+        &:focus-within,
+        &.active,
+        &:active {
+            ~.faq__text {
+                display  : block;
+                animation: fadeWidth var(--transition-1) forwards;
+            }
+
+            .arrow__button {
+                margin-top: 0;
+                transform : rotate(90deg);
+            }
+        }
+
+
+        .arrow__button {
+            margin-top: rem(30);
+
+        }
+    }
+
+
+}

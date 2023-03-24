@@ -41,7 +41,7 @@
         border          : 0.5px solid #EFF0F6;
         padding-inline  : rem(30);
         padding-block   : rem(20);
-        box-shadow      : 0px rem(5) rem(14) rgba(8, 15, 52, 0.04);
+        box-shadow      : $smart-shadow;
         border-radius   : rem(20);
         min-height      : rem(250);
         @extend %flexColYCenter;
@@ -71,15 +71,15 @@
         }
     }
 
-    .carousel__button {
-        width           : rem(50);
-        aspect-ratio    : 1/1;
-        border-radius   : 100%;
-        right           : rem(-45);
-        top             : 60%;
-        transform       : translateY(-50%);
-        background-image: var(--primary-color-gradient);
+    .arrow__button {
         @extend %posAbsolute;
-        @extend %flexMiddle;
+        width    : rem(50);
+        right    : rem(15);
+        top      : 60%;
+        transform: translateY(-50%);
+
+        &:hover svg {
+            transform: scale(1.1) translateX(rem(3));
+        }
     }
 }

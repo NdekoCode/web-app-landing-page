@@ -9,10 +9,6 @@
 }
 
 
-.center-block {
-    max-width: rem(550);
-    @extend %textCenter;
-}
 
 .features__infos {
     row-gap: rem(25);

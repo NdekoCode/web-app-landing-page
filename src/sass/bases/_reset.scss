@@ -218,13 +218,73 @@ button.red-border {
     @extend %section;
 }
 
+.center-block {
+    max-width: rem(550);
+    @extend %textCenter;
+    @extend %mx-auto;
+}
+
+.arrow__button {
+    width           : rem(35);
+    aspect-ratio    : 1/1;
+    border-radius   : 100%;
+    transform       : translateY(-50%);
+    background-image: var(--primary-color-gradient);
+    transition      : transform var(--transition-1);
+    @extend %flexMiddle;
+    @extend %shadow;
+
+    svg {
+        transition : transform var(--transition-1);
+        will-change: transform;
+    }
+
+    &.active {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+
+}
+
+.block-footer {
+    background-color: var(--color-bg-blue);
+    color           : var(--bg-smooth);
+    padding-block   : rem(30);
+
+
+    @media #{$md-screen} {
+        position: relative;
+        z-index : 1;
+
+        @include pseudoStartElement() {
+
+            width     : 400px;
+            height    : 400px;
+            background: url('../../assets/images/dark-start.svg') no-repeat center center /contain;
+        }
+
+        &::before {
+            left: rem(5);
+            top : rem(25);
+        }
+
+        &::after {
+
+            right : rem(50);
+            bottom: 20%;
+        }
+    }
+
+}
+
 @include makeUtilitieSpacing();
 @include makeUtilitieSpacing('mx', $generatorUtilitiesLength, 'margin-inline');
 @include makeUtilitieSpacing('my', $generatorUtilitiesLength, 'margin-block');
 @include makeUtilitieSpacing('m-start', $generatorUtilitiesLength, 'margin-inline-start');
 @include makeUtilitieSpacing('m-end', $generatorUtilitiesLength, 'margin-inline-end');
-@include makeUtilitieSpacing('m-top', $generatorUtilitiesLength, 'margin-block-start');
-@include makeUtilitieSpacing('m-bottom', $generatorUtilitiesLength, 'margin-block-end');
+@include makeUtilitieSpacing('mt', $generatorUtilitiesLength, 'margin-block-start');
+@include makeUtilitieSpacing('mb', $generatorUtilitiesLength, 'margin-block-end');
 
 @include makeUtilitieSpacing('p', $generatorUtilitiesLength, 'padding');
 @include makeUtilitieSpacing('px', $generatorUtilitiesLength, 'padding-inline');
@@ -232,5 +292,5 @@ button.red-border {
 @include makeUtilitieSpacing('p-left', $generatorUtilitiesLength, 'padding-inline-start');
 @include makeUtilitieSpacing('p-start', $generatorUtilitiesLength, 'padding-inline-start');
 @include makeUtilitieSpacing('p-end', $generatorUtilitiesLength, 'padding-inline-end');
-@include makeUtilitieSpacing('p-top', $generatorUtilitiesLength, 'padding-block-start');
-@include makeUtilitieSpacing('p-bottom', $generatorUtilitiesLength, 'padding-block-end');
+@include makeUtilitieSpacing('pt', $generatorUtilitiesLength, 'padding-block-start');
+@include makeUtilitieSpacing('pb', $generatorUtilitiesLength, 'padding-block-end');
