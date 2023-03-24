@@ -22,6 +22,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { SafePipe } from './safe.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { SafePipe } from './safe.pipe';
     TestimonialComponent,
     FaqComponent,
     BottomLabelComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

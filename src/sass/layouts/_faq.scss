@@ -49,6 +49,10 @@
 
         .arrow__button {
             margin-top: rem(30);
+
+            svg {
+                flex: none;
+            }
         }
     }
 
