@@ -117,7 +117,6 @@
 }
 
 %feautureBg {
-
     background-color: #f9f9f9;
 
     .feature__link {
@@ -130,7 +129,6 @@
 }
 
 %paddingSection {
-
     padding-block: var(--section-padding);
 }
 
@@ -142,6 +140,7 @@
     @extend %block;
     padding      : rem(12) rem(20);
     border-radius: rem(5);
+    max-width    : max-content;
 }
 
 %decorationNone {
@@ -174,7 +173,6 @@
     }
 
     .navbar__buttons-list {
-
         gap: rem(10) !important;
     }
 
@@ -312,7 +310,6 @@
 
 %blockSpace,
 %section {
-
     padding-block: $basic-space;
 
     @media #{$sm-screen} {
@@ -321,7 +318,6 @@
 }
 
 %bgBlob {
-
     background-image   : url('/assets/images/Blob.png');
     background-size    : 450px;
     background-repeat  : no-repeat;
@@ -340,12 +336,10 @@
     }
 
     &.bgblob-bottom-left {
-
         background-position: bottom 75px left -175px;
     }
 
     &.bgblob-bottom-right {
-
         background-position: bottom 75px right -175px;
     }
 }
@@ -356,7 +350,6 @@
 }
 
 %titleSpace {
-
     margin-block: rem(15);
 }
 
