@@ -248,9 +248,16 @@ button.red-border {
 }
 
 .block-footer {
-    background-color: var(--color-bg-blue);
-    color           : var(--bg-smooth);
-    padding-block   : rem(30);
+    background-color   : var(--color-bg-blue);
+    color              : var(--bg-smooth);
+    padding-block-start: rem(30);
+
+    .footer__nav {
+        a:hover {
+            color: var(--color-white);
+        }
+    }
+
 
 
     @media #{$md-screen} {
