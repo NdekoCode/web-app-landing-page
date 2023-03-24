@@ -44,17 +44,11 @@
         overflow: hidden;
 
         .container {
+            @include pseudoStartElement() {
 
-
-            &::before,
-            &::after {
-                content   : '';
-                position  : absolute;
-                z-index   : -1;
-                display   : block;
                 width     : 400px;
                 height    : 400px;
-                background: url('../../assets/images/start-gray.svg') no-repeat center center /contain;
+                background: url('../../assets/images/banner-start.svg') no-repeat center center /contain;
             }
 
             &::before {

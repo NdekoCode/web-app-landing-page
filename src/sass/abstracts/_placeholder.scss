@@ -373,8 +373,11 @@
 }
 
 %title-4 {
-
     @include makeSize($title-5, $title-6);
+}
+
+%bold {
+    font-weight: bold;
 }
 
 %title-5 {
@@ -386,32 +389,20 @@
     @include makeSize($title-6, $title-6);
 }
 
-.title-1,
-h1 {
-    @extend %title-1;
+%pseudoStartElement {
+
+    &::before,
+    &::after {
+        content: '';
+        @extend %posAbsolute;
+        z-index   : -1;
+        display   : block;
+        width     : 400px;
+        height    : 400px;
+        background: url('../../assets/images/start-gray.svg') no-repeat center center /contain;
+    }
 }
 
-.title-2,
-h2 {
-    @extend %title-2;
-}
-
-.title-3,
-h3 {
-    @extend %title-3;
-}
-
-.title-4,
-h4 {
-    @extend %title-4;
-}
-
-.title-5,
-h5 {
-    @extend %title-5;
-}
-
-.title-6,
-h6 {
-    @extend %title-6;
+%shadow {
+    box-shadow: $smart-shadow;
 }

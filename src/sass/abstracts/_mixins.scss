@@ -82,6 +82,7 @@
 
 @mixin makeSize($sizeDefault, $sizeDesk) {
     font-size: $sizeDefault;
+    @extend %bold;
     @extend %titleSpace;
 
     @media #{$sm-screen} {
@@ -92,8 +93,20 @@
 @mixin makeUtilitieSpacing($prefix:'m', $number:10, $spacingName:'margin') {
     @for $i from 1 through $number {
         .#{$prefix}-#{$i} {
-            #{$spacingName}: 0.25rem * $i;
+            #{$spacingName}: 0.25rem * $i !important;
         }
+    }
+}
+
+@mixin pseudoStartElement() {
+
+    &::before,
+    &::after {
+        content : '';
+        position: absolute;
+        z-index : -1;
+        display : block;
+        @content
     }
 }
 
