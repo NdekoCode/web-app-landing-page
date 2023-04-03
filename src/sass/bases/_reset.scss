@@ -216,6 +216,11 @@ button.red-border {
 
 .section {
     @extend %section;
+
+    &:not(:last-child),
+    &:not(:last-of-type) {
+        padding-top: 0;
+    }
 }
 
 .center-block {
