@@ -1,4 +1,5 @@
 // Grace à l'heritage, les mixins nous permet de ne pas repeter les block de code meme lors de la compilation
+@use "sass:math";
 @import "./variables";
 @import "./mixins";
 
@@ -312,9 +313,11 @@
 %section {
     padding-block: $basic-space;
 
+
     @media #{$sm-screen} {
         padding-block: $section-basic-space;
     }
+
 }
 
 %bgBlob {
