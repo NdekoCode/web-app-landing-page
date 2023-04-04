@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Feature } from 'src/app/utils/constants';
+import { Feature, FEATURES } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-features',
@@ -9,28 +9,6 @@ import { Feature } from 'src/app/utils/constants';
 export class FeaturesComponent implements OnInit {
   features!: Feature[];
   ngOnInit() {
-    this.features = [
-      {
-        title: 'Secured Platform',
-        description:
-          'Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.',
-        image: '/assets/images/feature-Icon-1.svg',
-        linkText: 'Learn More',
-      },
-      {
-        title: 'Advanced Analytics',
-        description:
-          'Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.',
-        image: '/assets/images/feature-Icon-2.svg',
-        linkText: 'Learn More',
-      },
-      {
-        title: 'Powerful Automation',
-        description:
-          'Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece.',
-        image: '/assets/images/feature-Icon-3.svg',
-        linkText: 'Learn More',
-      },
-    ];
+    this.features = FEATURES;
   }
 }
