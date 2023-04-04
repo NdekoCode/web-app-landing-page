@@ -1,4 +1,5 @@
-import { Component, NgIterable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { blockScreen, BLOCK_SCREEN_DATA } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-homepage',
@@ -6,11 +7,11 @@ import { Component, NgIterable, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent implements OnInit {
-  screenImages!: string | (string[] | NgIterable<string | object>);
-  ngOnInit() {
-    this.screenImages = [
-      '/assets/images/pieces/02.png',
-      '/assets/images/pieces/03.png',
-    ];
+  blockScreenData: blockScreen[] = BLOCK_SCREEN_DATA;
+  globalBlockData!: blockScreen;
+  blockChart!: blockScreen;
+  ngOnInit(): void {
+    this.globalBlockData = this.blockScreenData[0];
+    this.blockChart = this.blockScreenData[1];
   }
 }
