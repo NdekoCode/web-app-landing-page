@@ -11,7 +11,6 @@ export class HomepageComponent implements OnInit {
     this.screenImages = [
       '/assets/images/pieces/02.png',
       '/assets/images/pieces/03.png',
-      '/assets/images/pieces/07.png',
     ];
   }
 }
