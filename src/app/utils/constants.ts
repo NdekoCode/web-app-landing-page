@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
+import { HomepageComponent } from '../modules/home/homepage/homepage.component';
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { ContactComponent } from '../pages/contact/contact.component';
-import { HomepageComponent } from '../pages/homepage/homepage.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
 export type Feature = {

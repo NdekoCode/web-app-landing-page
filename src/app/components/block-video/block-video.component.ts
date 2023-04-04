@@ -10,7 +10,7 @@ export class BlockVideoComponent {
   onToggleShow() {
     this.isShown = !this.isShown;
   }
-  onShow(arg: any) {
+  onShow(arg: Event | boolean) {
     this.onToggleShow();
   }
 }
