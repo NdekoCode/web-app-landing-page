@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NotificationBarComponent } from './components/notification-bar/notification-bar.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { HomeModule } from './modules/home/home.module';
+import { ShareModule } from './modules/share-module/share-module.module';
 import { ChangeLogComponent } from './pages/change-log/change-log.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
@@ -24,7 +25,7 @@ import { SafePipe } from './safe.pipe';
     ChangeLogComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HomeModule],
+  imports: [BrowserModule, AppRoutingModule, HomeModule, ShareModule],
   providers: [],
   bootstrap: [AppComponent],
 })

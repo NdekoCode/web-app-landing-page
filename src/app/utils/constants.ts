@@ -46,11 +46,6 @@ export const routerLink: Route[] = [
   },
 
   {
-    path: '*',
-    component: Page404Component,
-    title: '404',
-  },
-  {
     path: 'contact',
     component: ContactComponent,
     title: 'Contact',
@@ -59,6 +54,11 @@ export const routerLink: Route[] = [
     path: 'changelog',
     component: ChangeLogComponent,
     title: 'Change Log',
+  },
+  {
+    path: '**',
+    component: Page404Component,
+    title: '404',
   },
 ];
 export const navLinks: RouterLink[] = [

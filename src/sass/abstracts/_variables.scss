@@ -39,12 +39,11 @@ $generatorUtilitiesLength: 10;
 // UTILITIES
 $border-input            : 0.5px solid rgba(0, 0, 0, 0.05);
 $smart-shadow            :0px 5px 14px rgba(8, 15, 52, 0.04);
-
 // SPACES
-$min-space          : rem(20);
-$basic-space        : rem(25);
-$section-basic-space: rem(50);
-$section-space      : rem(100);
+$min-space               : rem(25);
+$basic-space             : rem(45);
+$section-basic-space     : rem(65);
+$section-space           : rem(100);
 
 // MEDIA QUERIES
 $xxs  : 280px;
@@ -65,3 +64,10 @@ $md-screen   : "only screen and (min-width:#{$md})";
 $lg-screen   : "only screen and (min-width:#{$lg})";
 $xl-screen   : "only screen and (min-width:#{$xl})";
 $xxl-screen  : "only screen and (min-width:#{$xxl})";
+
+@media #{$md-screen} {
+
+    $min-space          : rem(20);
+    $basic-space        : rem(30);
+    $section-basic-space: rem(55);
+}
