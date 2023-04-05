@@ -105,6 +105,19 @@
     }
 }
 
+@keyframes Gradient {
+    0% {
+        background: transparent;
+
+    }
+
+    100% {
+        background-image: var(--primary-color-gradient);
+        color           : var(--color-white);
+    }
+
+}
+
 .fadeUp {
     animation: fadeUp var(--transition-1) forwards;
 }

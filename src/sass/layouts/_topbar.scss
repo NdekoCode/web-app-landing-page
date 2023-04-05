@@ -13,4 +13,14 @@
     z-index         : 100;
     box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.05);
     animation       : fadeUp 0.35s forwards;
+
+    .topbar {
+        padding-top: rem(5);
+
+        @media #{$lg-screen} {
+
+            padding-top: 0;
+        }
+    }
+
 }

@@ -9,6 +9,7 @@ import { ShareModule } from '../share-module/share-module.module';
 import { BannerComponent } from './components/banner/banner.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { HowItWorksBlockComponent } from './components/how-it-works-block/how-it-works-block.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -26,6 +27,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     ModalVideoComponent,
     FaqComponent,
     BottomLabelComponent,
+    HowItWorksBlockComponent,
   ],
   imports: [CommonModule, ShareModule],
 })

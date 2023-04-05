@@ -170,3 +170,11 @@ export const FAQ: faq[] = [
       ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
   },
 ];
+export const howItWorkTitles: string[] = [
+  'User profile creation',
+  'creation of services',
+  'Advanced Analytics',
+  'Activities',
+  'Secured Platform',
+];
+export const howItWorksData = [];

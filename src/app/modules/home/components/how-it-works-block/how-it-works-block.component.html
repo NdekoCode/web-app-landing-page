@@ -1,0 +1,49 @@
+<section class="section container">
+  <h2 class="title-2 text-center">How it works, you'll appreciate</h2>
+  <div class="buttons-container">
+    <button
+      *ngFor="let title of titles; index as key"
+      class="btn tab-button"
+      (click)="showTab(key)"
+      [ngClass]="{ active: key === index }"
+      data-block="user-profile"
+    >
+      {{ title }}
+    </button>
+  </div>
+  <section>
+    <article class="tab-content">
+      <div class="tab-content-description">
+        <div class="feature-detail">
+          <h4 class="title-3 mt-0">
+            User profile creation, Service provider search, from your CRM
+          </h4>
+          <p>
+            Create and receive services from your CRM. Never miss a proper
+            scheduling with your clients and get full context with our CRM
+            integrated provider creation feature.
+          </p>
+        </div>
+        <div class="user-testimonial">
+          <p class="testimonial-content">
+            We love ZabibuCRM. ZabibuCRM has allowed GoInnovation to improve its
+            service planning with unparalleled speed, which is an incredible
+            asset. Our company is very happy with ZabibuCRM and we are here to
+            stay!
+          </p>
+          <div class="user-profile">
+            <img src="/assets/images/testimonial-user.jpg" alt="Zara REEVES" />
+            <div class="user-description">
+              <strong>Zara REEVES</strong>
+              <p>Admin Assistant</p>
+              <p>MedProtect Global Supplies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="tab-content-img">
+        <img src="/assets/images/loginGIF.gif" alt="" />
+      </figure>
+    </article>
+  </section>
+</section>
