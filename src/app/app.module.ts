@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { SafePipe } from './safe.pipe';
+import { ScrollDirective } from './directives/scroll.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { SafePipe } from './safe.pipe';
     MoreAboutComponent,
     ChangeLogComponent,
     ContactComponent,
+    ScrollDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, HomeModule, ShareModule],
   providers: [],
