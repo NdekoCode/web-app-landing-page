@@ -36,6 +36,18 @@ export type faq = {
   question: string;
   answer: string;
 };
+export type howItWork = {
+  titleFeature: string;
+  description: string;
+  testimonials: {
+    name: string;
+    role: string;
+    picture: string;
+    testimonial: string;
+    enterprise: string;
+  };
+  mediaDescription: string;
+};
 export const routerLink: Route[] = [
   { path: '', title: 'Home', component: HomepageComponent },
 
@@ -177,4 +189,78 @@ export const howItWorkTitles: string[] = [
   'Activities',
   'Secured Platform',
 ];
-export const howItWorksData = [];
+export const HOW_IT_WORKS_DATA: howItWork[] = [
+  {
+    titleFeature:
+      'User profile creation, Service provider search, from your CRM',
+    description:
+      'Create and receive services from your CRM. Never miss a proper scheduling with your clients and get full context with our CRM integrated provider creation feature.',
+    testimonials: {
+      name: 'Zara REEVES',
+      testimonial:
+        'We love ZabibuCRM. ZabibuCRM has allowed GoInnovation to improve its service planning with unparalleled speed, which is an incredible asset. Our company is very happy with ZabibuCRM and we are here to stay!',
+      role: 'Admin Assistant',
+      enterprise: 'MedProtect Global Supplies',
+      picture: '/assets/images/testimonial-user.jpg',
+    },
+    mediaDescription: '/assets/images/loginGIF.gif',
+  },
+  {
+    titleFeature:
+      'Creation services, Deliver exceptional services with our service creation platform',
+    description:
+      'Enables users to create and deliver unique and innovative services, providing an exceptional customer experience.',
+    testimonials: {
+      name: 'Kim john',
+      testimonial:
+        'Since using this app, I have been managing my customer service more efficiently and professionally. I highly recommend it!',
+      role: 'Customer service manager',
+      enterprise: 'ABC Company',
+      picture: '/assets/images/testimonial-1.jpg',
+    },
+    mediaDescription: '/assets/images/creation-services.gif',
+  },
+  {
+    titleFeature:
+      'Analyze your performance to improve your business with our advanced analysis tool',
+    description:
+      "Provides users with accurate data on their company's performance, enabling them to identify areas for improvement for continued growth.",
+    testimonials: {
+      name: 'Zara REEVES',
+      testimonial:
+        'We love ZabibuCRM. ZabibuCRM has allowed GoInnovation to improve its service planning with unparalleled speed, which is an incredible asset. Our company is very happy with ZabibuCRM and we are here to stay!',
+      role: 'Admin Assistant',
+      enterprise: 'GoInnovation',
+      picture: '/assets/images/testiminial-3.jpg',
+    },
+    mediaDescription: '/assets/images/dashboard.gif',
+  },
+  {
+    titleFeature: 'Stay active and connected with our activity feature',
+    description:
+      'Offers users the ability to stay active and connected by participating in services, viewing their history, and taking a review organized by the platform, thus promoting engagement with its customers.',
+    testimonials: {
+      name: 'REEVES mich',
+      testimonial:
+        "This application has been a game changer for my business. I can now track all of my customers' requests in real time and offer them personalized service.",
+      role: 'Service agent',
+      enterprise: 'ItotAfriacan ',
+      picture: '/assets/images/testimonial-2.jpg',
+    },
+    mediaDescription: '/assets/images/dashboard.gif',
+  },
+  {
+    titleFeature: 'Be assured of maximum security with our secure platform',
+    description:
+      "This feature guarantees the maximum security of users' personal and financial data, giving them total peace of mind when using the application.",
+    testimonials: {
+      name: 'Jonh Bulakali',
+      testimonial:
+        'Thanks to this application, I was able to improve the quality of my customer service and retain my existing customers while attracting new ones',
+      role: 'Admin Assistant',
+      enterprise: 'MedProtect Global',
+      picture: '/assets/images/testimonial-3.jpg',
+    },
+    mediaDescription: '/assets/images/loginGIF.gif',
+  },
+];

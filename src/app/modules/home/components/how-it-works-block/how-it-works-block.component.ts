@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { howItWorkTitles } from './../../../../utils/constants';
+import {
+  howItWork,
+  howItWorkTitles,
+  HOW_IT_WORKS_DATA,
+} from './../../../../utils/constants';
 
 @Component({
   selector: 'app-how-it-works-block',
@@ -8,7 +12,8 @@ import { howItWorkTitles } from './../../../../utils/constants';
 })
 export class HowItWorksBlockComponent {
   titles: string[] = howItWorkTitles;
-  index: number = 1;
+  howItWorkData: howItWork[] = HOW_IT_WORKS_DATA;
+  index: number = 0;
   showTab(index: number) {
     this.index = index;
   }
