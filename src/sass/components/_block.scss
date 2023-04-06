@@ -201,3 +201,24 @@
 
     }
 }
+
+.changelog {
+    text-align: center;
+    @extend %flexColCenter;
+}
+
+.changelog-container {
+    @extend %flexMiddle;
+    gap             : rem(15);
+    flex-wrap       : wrap;
+    padding-top     : rem(25);
+    padding-inline  : rem(40);
+    padding-block   : rem(60);
+    border-radius   : rem(15);
+    background-color: #F9F9F9;
+
+    .version {
+        font-size: rem(30);
+    }
+
+}
