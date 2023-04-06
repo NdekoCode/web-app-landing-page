@@ -139,9 +139,13 @@
         padding         : rem(40) rem(20);
         position        : relative;
         background-color: #f0d9a5;
+        max-width       : 722px;
 
-        width : 722px;
-        height: 469px;
+        @media #{$md-screen} {
+
+            width : 722px;
+            height: 469px;
+        }
 
         @extend %flexMiddle;
 

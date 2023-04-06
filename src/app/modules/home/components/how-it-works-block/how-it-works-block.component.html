@@ -23,9 +23,12 @@
         </h4>
         <p>{{ howItWork.description }}</p>
       </div>
-      <div class="figure-img">
-        <div class="tab-content-img"></div>
-      </div>
+      <figure class="figure-img">
+        <img
+          [src]="howItWork.mediaDescription"
+          [alt]="howItWork.titleFeature"
+        />
+      </figure>
       <div class="user-testimonial">
         <p class="testimonial-content">
           {{ howItWork.testimonials.testimonial }}
@@ -35,10 +38,7 @@
             [src]="howItWork.testimonials.picture"
             [alt]="howItWork.testimonials.name"
           />
-          <div
-            class="user-description"
-            [style]="{ backgroundImage: howItWork.mediaDescription }"
-          >
+          <div class="user-description">
             <strong> {{ howItWork.testimonials.name }}</strong>
             <p>{{ howItWork.testimonials.role }}</p>
             <p>{{ howItWork.testimonials.enterprise }}</p>
