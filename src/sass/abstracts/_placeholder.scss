@@ -412,3 +412,17 @@
 %shadow {
     box-shadow: $smart-shadow;
 }
+
+// ANIMATION
+
+%fadeUp {
+    animation: fadeUp var(--transition-1) forwards;
+}
+
+%fadeRight {
+    animation: fadeRight var(--transition-1) forwards;
+}
+
+%fadeLeft {
+    animation: fadeRight var(--transition-1) forwards;
+}
