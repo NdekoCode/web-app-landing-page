@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Feature } from 'src/app/utils/constants';
+import { Feature } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-feature',

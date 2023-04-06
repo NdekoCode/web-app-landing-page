@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { navLinks, RouterLink } from 'src/app/utils/constants';
+import { navLinks } from 'src/app/utils/constants';
+import { RouterLink } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-topbar',

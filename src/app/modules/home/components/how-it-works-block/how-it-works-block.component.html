@@ -31,17 +31,17 @@
       </figure>
       <div class="user-testimonial">
         <p class="testimonial-content">
-          {{ howItWork.testimonials.testimonial }}
+          {{ howItWork.testimonial.testimonial }}
         </p>
         <div class="user-profile">
           <img
-            [src]="howItWork.testimonials.picture"
-            [alt]="howItWork.testimonials.name"
+            [src]="howItWork.testimonial.image"
+            [alt]="howItWork.testimonial.name"
           />
           <div class="user-description">
-            <strong> {{ howItWork.testimonials.name }}</strong>
-            <p>{{ howItWork.testimonials.role }}</p>
-            <p>{{ howItWork.testimonials.enterprise }}</p>
+            <strong> {{ howItWork.testimonial.name }}</strong>
+            <p>{{ howItWork.testimonial.userRole }}</p>
+            <p>{{ howItWork.testimonial.enterprise }}</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faq, FAQ } from 'src/app/utils/constants';
+import { FAQ } from 'src/app/utils/constants';
+import { faq } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-faq',

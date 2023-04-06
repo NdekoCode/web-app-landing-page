@@ -8,7 +8,7 @@
         </div>
         <div class="testimonials__container">
 
-            <app-testimonial *ngFor="let testimonial of testimonials;index as key" [testimonial]="testimonial"
+            <app-testimonial *ngFor="let testimonial of testimonials;index as key" [userTestimonial]="testimonial"
                 [key]="(key+1)" [class]="'testimonial-'+(key+1)" />
 
         </div>

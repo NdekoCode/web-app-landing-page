@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import {
-  howItWork,
   howItWorkTitles,
   HOW_IT_WORKS_DATA,
 } from './../../../../utils/constants';
-
+import { howItWork } from './../../../../utils/types';
 @Component({
   selector: 'app-how-it-works-block',
   templateUrl: './how-it-works-block.component.html',

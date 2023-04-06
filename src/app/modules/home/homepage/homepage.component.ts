@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { blockScreen, BLOCK_SCREEN_DATA } from 'src/app/utils/constants';
+import { BLOCK_SCREEN_DATA } from 'src/app/utils/constants';
+import { blockScreen } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-homepage',
