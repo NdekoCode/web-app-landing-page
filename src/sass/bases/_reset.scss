@@ -127,9 +127,10 @@ body {
 }
 
 body {
-    background-color: var(--white);
     color           : var(--color-dark-2);
     line-height     : 1.2;
+    background      : url('/assets/images/BG.svg') top center;
+    background-color: var(--white);
 }
 
 
