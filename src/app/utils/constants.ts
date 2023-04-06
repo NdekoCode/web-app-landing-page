@@ -1,41 +1,18 @@
-import { NgIterable } from '@angular/core';
 import { Route } from '@angular/router';
 import { HomepageComponent } from '../modules/home/homepage/homepage.component';
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
+import {
+  blockScreen,
+  faq,
+  Feature,
+  howItWork,
+  RouterLink,
+  Testimonial,
+} from './types';
 
-export type Feature = {
-  title: string;
-  description: string;
-  image: string;
-  linkText?: string;
-};
-
-export type RouterLink = {
-  path: string;
-  title?: string;
-};
-
-export type Testimonial = {
-  username: string;
-  testimonial: string;
-  userRole: string;
-  image: string;
-};
-
-export type blockScreen = {
-  title: string;
-  textDescription: string;
-  screenImages: string | (string[] | NgIterable<string | object>);
-  [key: string]: string | number | string[] | NgIterable<string | object>;
-};
-
-export type faq = {
-  question: string;
-  answer: string;
-};
 export const routerLink: Route[] = [
   { path: '', title: 'Home', component: HomepageComponent },
 
@@ -46,11 +23,6 @@ export const routerLink: Route[] = [
   },
 
   {
-    path: '*',
-    component: Page404Component,
-    title: '404',
-  },
-  {
     path: 'contact',
     component: ContactComponent,
     title: 'Contact',
@@ -59,6 +31,11 @@ export const routerLink: Route[] = [
     path: 'changelog',
     component: ChangeLogComponent,
     title: 'Change Log',
+  },
+  {
+    path: '**',
+    component: Page404Component,
+    title: '404',
   },
 ];
 export const navLinks: RouterLink[] = [
@@ -105,21 +82,21 @@ export const FEATURES: Feature[] = [
 ];
 export const TESTIMONIALS: Testimonial[] = [
   {
-    username: 'Mike Warren',
+    name: 'Mike Warren',
     testimonial:
       'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
     userRole: 'Product Manager at Zapier',
     image: '/assets/images/testimonial.jpg',
   },
   {
-    username: 'Mike Warren',
+    name: 'Mike Warren',
     testimonial:
       'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
     userRole: 'Product Manager at Zapier',
     image: '/assets/images/testimonial.jpg',
   },
   {
-    username: 'Mike Warren',
+    name: 'Mike Warren',
     testimonial:
       'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
     userRole: 'Product Manager at Zapier',
@@ -168,5 +145,87 @@ export const FAQ: faq[] = [
     question: 'Can I integrate my store with Facebook?',
     answer:
       ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+  },
+];
+export const howItWorkTitles: string[] = [
+  'User profile creation',
+  'creation of services',
+  'Advanced Analytics',
+  'Activities',
+  'Secured Platform',
+];
+export const HOW_IT_WORKS_DATA: howItWork[] = [
+  {
+    titleFeature:
+      'User profile creation, Service provider search, from your CRM',
+    description:
+      'Create and receive services from your CRM. Never miss a proper scheduling with your clients and get full context with our CRM integrated provider creation feature.',
+    testimonial: {
+      name: 'Zara REEVES',
+      testimonial:
+        'We love ZabibuCRM. ZabibuCRM has allowed GoInnovation to improve its service planning with unparalleled speed, which is an incredible asset. Our company is very happy with ZabibuCRM and we are here to stay!',
+      userRole: 'Admin Assistant',
+      enterprise: 'MedProtect Global Supplies',
+      image: '/assets/images/testimonial-user.jpg',
+    },
+    mediaDescription: '/assets/images/loginGIF.gif',
+  },
+  {
+    titleFeature:
+      'Creation services, Deliver exceptional services with our service creation platform',
+    description:
+      'Enables users to create and deliver unique and innovative services, providing an exceptional customer experience.',
+    testimonial: {
+      name: 'Kim john',
+      testimonial:
+        'Since using this app, I have been managing my customer service more efficiently and professionally. I highly recommend it!',
+      userRole: 'Customer service manager',
+      enterprise: 'ABC Company',
+      image: '/assets/images/testimonial-1.jpg',
+    },
+    mediaDescription: '/assets/images/creation-services.gif',
+  },
+  {
+    titleFeature:
+      'Analyze your performance to improve your business with our advanced analysis tool',
+    description:
+      "Provides users with accurate data on their company's performance, enabling them to identify areas for improvement for continued growth.",
+    testimonial: {
+      name: 'Zara REEVES',
+      testimonial:
+        'We love ZabibuCRM. ZabibuCRM has allowed GoInnovation to improve its service planning with unparalleled speed, which is an incredible asset. Our company is very happy with ZabibuCRM and we are here to stay!',
+      userRole: 'Admin Assistant',
+      enterprise: 'GoInnovation',
+      image: '/assets/images/testiminial-3.jpg',
+    },
+    mediaDescription: '/assets/images/dashboard.gif',
+  },
+  {
+    titleFeature: 'Stay active and connected with our activity feature',
+    description:
+      'Offers users the ability to stay active and connected by participating in services, viewing their history, and taking a review organized by the platform, thus promoting engagement with its customers.',
+    testimonial: {
+      name: 'REEVES mich',
+      testimonial:
+        "This application has been a game changer for my business. I can now track all of my customers' requests in real time and offer them personalized service.",
+      userRole: 'Service agent',
+      enterprise: 'ItotAfriacan ',
+      image: '/assets/images/testimonial-2.jpg',
+    },
+    mediaDescription: '/assets/images/dashboard.gif',
+  },
+  {
+    titleFeature: 'Be assured of maximum security with our secure platform',
+    description:
+      "This feature guarantees the maximum security of users' personal and financial data, giving them total peace of mind when using the application.",
+    testimonial: {
+      name: 'Jonh Bulakali',
+      testimonial:
+        'Thanks to this application, I was able to improve the quality of my customer service and retain my existing customers while attracting new ones',
+      userRole: 'Admin Assistant',
+      enterprise: 'MedProtect Global',
+      image: '/assets/images/testimonial-3.jpg',
+    },
+    mediaDescription: '/assets/images/loginGIF.gif',
   },
 ];

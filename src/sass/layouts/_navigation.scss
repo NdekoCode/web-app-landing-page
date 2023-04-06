@@ -1,7 +1,14 @@
 .topbar {
-    padding-top: rem(25);
+    padding-top   : rem(25);
+    padding-bottom: rem(25);
+    transition    : padding 0.35s;
 
     @extend %posRelative;
+
+    @media #{$md-screen} {
+
+        padding-bottom: initial;
+    }
 
 
     .logo {

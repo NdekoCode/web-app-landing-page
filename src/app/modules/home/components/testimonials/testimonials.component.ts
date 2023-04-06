@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Testimonial, TESTIMONIALS } from 'src/app/utils/constants';
+import { TESTIMONIALS } from 'src/app/utils/constants';
+import { Testimonial } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-testimonials',

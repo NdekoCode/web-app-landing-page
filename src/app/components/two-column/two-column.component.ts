@@ -12,6 +12,7 @@ export class TwoColumnComponent implements OnInit {
   @Input() linkText!: string;
   @Input() textDescription!: string;
   @Input() pseudoClass?: string;
+  @Input() blockClass?: string;
   isStringImage!: boolean;
   ngOnInit() {
     this.isStringImage = typeof this.imageUrl === 'string';

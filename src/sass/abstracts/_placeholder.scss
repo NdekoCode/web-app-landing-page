@@ -150,6 +150,11 @@
 
 %bgRedGradient {
     background-image: var(--primary-color-gradient);
+    color           : var(--color-white);
+}
+
+%animGradient {
+    animation: Gradient 0.35S forwards;
 }
 
 %roundedXFull {
@@ -316,6 +321,11 @@
 
     @media #{$sm-screen} {
         padding-block: $section-basic-space;
+
+        &:not(:last-child),
+        &:not(:last-of-type) {
+            padding-bottom: 0;
+        }
     }
 
 }
@@ -401,4 +411,18 @@
 
 %shadow {
     box-shadow: $smart-shadow;
+}
+
+// ANIMATION
+
+%fadeUp {
+    animation: fadeUp var(--transition-1) forwards;
+}
+
+%fadeRight {
+    animation: fadeRight var(--transition-1) forwards;
+}
+
+%fadeLeft {
+    animation: fadeRight var(--transition-1) forwards;
 }

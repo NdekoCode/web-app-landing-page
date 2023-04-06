@@ -4,10 +4,96 @@
 *,
 *::before,
 *::after {
-    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin     : 0;
-    padding    : 0;
-    box-sizing : border-box;
+    font-family           : Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin                : 0;
+    padding               : 0;
+    box-sizing            : border-box;
+    border                : 0;
+    vertical-align        : baseline;
+    font-variant-ligatures: none;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+sub,
+summary,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+select {
+
+    font: inherit;
 }
 
 ::-webkit-scrollbar {
@@ -293,16 +379,15 @@ button.red-border {
 @include makeUtilitieSpacing();
 @include makeUtilitieSpacing('mx', $generatorUtilitiesLength, 'margin-inline');
 @include makeUtilitieSpacing('my', $generatorUtilitiesLength, 'margin-block');
-@include makeUtilitieSpacing('m-start', $generatorUtilitiesLength, 'margin-inline-start');
-@include makeUtilitieSpacing('m-end', $generatorUtilitiesLength, 'margin-inline-end');
+@include makeUtilitieSpacing('ms', $generatorUtilitiesLength, 'margin-inline-start');
+@include makeUtilitieSpacing('me', $generatorUtilitiesLength, 'margin-inline-end');
 @include makeUtilitieSpacing('mt', $generatorUtilitiesLength, 'margin-block-start');
 @include makeUtilitieSpacing('mb', $generatorUtilitiesLength, 'margin-block-end');
 
 @include makeUtilitieSpacing('p', $generatorUtilitiesLength, 'padding');
 @include makeUtilitieSpacing('px', $generatorUtilitiesLength, 'padding-inline');
 @include makeUtilitieSpacing('py', $generatorUtilitiesLength, 'padding-block');
-@include makeUtilitieSpacing('p-left', $generatorUtilitiesLength, 'padding-inline-start');
-@include makeUtilitieSpacing('p-start', $generatorUtilitiesLength, 'padding-inline-start');
-@include makeUtilitieSpacing('p-end', $generatorUtilitiesLength, 'padding-inline-end');
+@include makeUtilitieSpacing('ps', $generatorUtilitiesLength, 'padding-inline-start');
+@include makeUtilitieSpacing('pe', $generatorUtilitiesLength, 'padding-inline-end');
 @include makeUtilitieSpacing('pt', $generatorUtilitiesLength, 'padding-block-start');
 @include makeUtilitieSpacing('pb', $generatorUtilitiesLength, 'padding-block-end');

@@ -24,8 +24,6 @@
 
     .faq__button {
         width          : 100%;
-        padding-inline : rem(15);
-        padding-block  : rem(10);
         color          : var(--color-dark-2);
         justify-content: space-between;
         align-items    : center;
@@ -48,7 +46,9 @@
 
 
         .arrow__button {
-            margin-top: rem(30);
+            margin-top : rem(30);
+            margin-left: rem(10);
+            flex       : none;
 
             svg {
                 flex: none;

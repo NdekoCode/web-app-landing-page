@@ -1,15 +1,17 @@
 <app-banner />
+<app-how-it-works-block/>
 <app-two-column class="linear-block-right" [imageRigth]="true" pseudoClass="right" [imageUrl]="globalBlockData.screenImages"
     [title]="globalBlockData.title"
     [textDescription]="globalBlockData.textDescription"
     linkText="Learn More" />
 <app-block-video />
-<app-features />
-
+<!-- <app-features /> -->
+<section class="bgblob bgblob-bottom-right">
 <app-two-column class="linear-block-left" [imageRigth]="false" pseudoClass="right"
     [imageUrl]="blockChart.screenImages" [title]="blockChart.title"
     [textDescription]="blockChart.textDescription"
     linkText="Learn More" />
+</section>
 <app-testimonials />
 <div class="block-footer">
     <app-faq />

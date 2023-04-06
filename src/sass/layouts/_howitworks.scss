@@ -1,0 +1,185 @@
+.buttons-container {
+
+    position     : sticky;
+    position     : -webkit-sticky;
+    top          : 50px;
+    background   : #fff;
+    z-index      : 2;
+    padding-block: rem(25);
+    margin-inline: rem(20);
+    padding-left : rem(200);
+    overflow-x   : scroll;
+    gap          : rem(10);
+
+    @extend %flexMiddle;
+
+    @media #{$md-screen} {
+        overflow-x    : initial;
+        padding-inline: 0;
+        padding-block : 0;
+        margin-inline : 0;
+    }
+
+}
+
+.tab-button {
+
+    border-radius: rem(99);
+    font-size    : rem(12);
+    flex         : none;
+    white-space  : nowrap;
+
+    @media #{$sm-screen} {
+        font-size: rem(14);
+    }
+
+    @media #{$lg-screen} {
+        font-size: initial;
+    }
+
+    &.active {
+
+        @extend %bgRedGradient;
+        @extend %animGradient;
+    }
+
+    &:hover {
+        @extend %animGradient;
+    }
+}
+
+.feature-detail {
+    grid-area: a;
+
+    .title-3 {
+        font-weight: 600;
+    }
+}
+
+.btn.tab-button {
+
+    padding: rem(5) rem(10);
+
+    @media #{$lg-screen} {
+
+        padding: rem(10) rem(18);
+
+    }
+}
+
+.user-profile {
+    @extend %flex;
+    gap: rem(10);
+
+    .user-description {
+        strong {
+            font-size: rem(20);
+        }
+
+        p {
+            margin       : 0;
+            font-size    : rem(12);
+            margin-bottom: rem(5);
+        }
+    }
+
+    img {
+        width        : rem(65);
+        height       : rem(65);
+        aspect-ratio : 1/1;
+        object-fit   : cover;
+        border-radius: 100%;
+    }
+}
+
+.tab-content {
+    display     : none;
+    margin-block: rem(50);
+
+    &.active {
+        animation            : fadeUp var(--transition-1) forwards;
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas  :
+            "a a a"
+            "b b b"
+            "c c c";
+
+        @media #{$md-screen} {
+
+            grid-template-areas:
+                "a b b"
+                "a b b"
+                "c c c";
+        }
+
+        @media #{$xl-screen} {
+            grid-template-areas:
+                "a b b"
+                "c b b";
+
+            .feature-detail {
+                animation: fadeLeft var(--transition-1) forwards;
+            }
+
+            .figure-img {
+
+                animation: fadeRight var(--transition-1) forwards;
+            }
+
+        }
+
+        gap: rem(35);
+
+    }
+
+
+    .figure-img {
+        grid-area       : b;
+        padding         : rem(40) rem(20);
+        position        : relative;
+        background-color: #f0d9a5;
+        max-width       : 722px;
+
+        @media #{$md-screen} {
+
+            width : 722px;
+            height: 469px;
+        }
+
+        @extend %flexMiddle;
+
+        .tab-content-img {
+
+            position: absolute;
+            width   : 95%;
+            height  : 100%;
+
+            top       : 40px;
+            object-fit: cover;
+            background: url('/assets/images/loginGIF.gif') no-repeat center center / contain;
+        }
+
+    }
+
+    p {
+
+        color       : var(--color-dark-2);
+        margin-block: rem(20);
+    }
+
+    .user-testimonial {
+        grid-area    : c;
+        margin-bottom: rem(40);
+        padding      : rem(40) rem(25);
+        background   : linear-gradient(204.49deg, rgba(224, 69, 122, 0.15) 26.31%, rgba(224, 69, 122, 0) 84.35%);
+        border-radius: rem(8);
+    }
+
+    .tab-content-description,
+    .tab-content-img {
+
+        flex-basis: 50%;
+        width     : 50%;
+    }
+}

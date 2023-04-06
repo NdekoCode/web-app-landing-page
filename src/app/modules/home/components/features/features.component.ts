@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Feature, FEATURES } from 'src/app/utils/constants';
+import { FEATURES } from 'src/app/utils/constants';
+import { Feature } from 'src/app/utils/types';
 
 @Component({
   selector: 'app-features',
