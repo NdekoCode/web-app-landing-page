@@ -1,0 +1,19 @@
+.language-form {
+    position: relative;
+
+    select {
+        position        : absolute;
+        background-color: transparent;
+        appearance      : none;
+        inset           : 0;
+        padding         : 10px 15px;
+        color           : transparent;
+        outline         : none;
+        border-radius   : rem(5);
+
+        option {
+            color           : var(--color-white);
+            background-color: var(--dark-color);
+        }
+    }
+}

@@ -57,27 +57,45 @@
           >
         </li>
         <li>
-          <a
-            href="#"
-            (click)="onChangeNavButton()"
-            class="navbar__link-btn btn-icon btn red-border"
-            ><span>FR</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="me-0"
-              viewBox="0 0 512 512"
+          <form
+            (ngSubmit)="onSubmit(form)"
+            #form="ngForm"
+            action=""
+            class="language-form"
+          >
+            <select
+              [ngClass]="{ visible: isSelected }"
+              (input)="changeLanguage($event)"
+              name="language"
+              id="language"
+              #language="ngModel"
+              [(ngModel)]="defaultLanguage"
             >
-              <title>Chevron Down</title>
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="48"
-                d="M112 184l144 144 144-144"
-              />
-            </svg>
-          </a>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+            <button
+              (click)="changeLanguage($event)"
+              class="navbar__link-btn btn-icon btn red-border"
+            >
+              <span>FR</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="me-0"
+                viewBox="0 0 512 512"
+              >
+                <title>Chevron Down</title>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="48"
+                  d="M112 184l144 144 144-144"
+                />
+              </svg>
+            </button>
+          </form>
         </li>
       </ul>
     </nav>
