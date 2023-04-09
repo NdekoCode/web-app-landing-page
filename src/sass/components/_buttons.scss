@@ -1,6 +1,11 @@
 .btn {
     @extend %btn;
 
+    &:disabled {
+        opacity: 0.55;
+        cursor : not-allowed;
+    }
+
     &.btn-icon {
         @extend %flexMiddle;
 
