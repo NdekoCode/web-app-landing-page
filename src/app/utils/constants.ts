@@ -40,12 +40,12 @@ export const routerLink: Route[] = [
 ];
 export const navLinks: RouterLink[] = [
   {
-    path: '#howitworks',
+    path: '/howitworks',
     title: 'how it works',
   },
   {
-    path: '#feautures',
-    title: 'Feautures',
+    path: '/features',
+    title: 'Features',
   },
   {
     path: '/more-about',
