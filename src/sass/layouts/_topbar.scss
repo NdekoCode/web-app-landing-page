@@ -25,3 +25,17 @@
     }
 
 }
+
+.scroll-hide {
+    display        : flex !important;
+    justify-content: center;
+    align-items    : center;
+    margin         : 1em;
+    transition     : all 0.25s ease-in-out;
+    @extend .fadeInRight;
+
+    &:hover {
+        opacity  : 1;
+        transform: scale(0.5);
+    }
+}

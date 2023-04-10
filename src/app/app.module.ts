@@ -18,6 +18,9 @@ import { ChangeLogComponent } from './pages/change-log/change-log.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { ScrollHideDirective } from './directives/scroll-hide.directive';
+import { LoaderComponent } from './components/loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,9 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
     ChangeLogComponent,
     ScrollDirective,
     TrimContentPipe,
+    ScrollTopComponent,
+    ScrollHideDirective,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
