@@ -39,3 +39,10 @@ export type howItWork = {
   testimonial: Testimonial;
   mediaDescription: string;
 };
+export type contactForm = {
+  fullname: string;
+  email: string;
+  company: string;
+  subject: string;
+  message: string;
+};
