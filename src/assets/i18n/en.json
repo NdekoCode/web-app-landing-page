@@ -14,9 +14,40 @@
     "linkLearnMore": "Learn More",
     "WelcomeText": "Boosts your marketing and sales with zabibuCRM.",
     "descriptionApp": "Dashboard platform that was created with the aim of making it easier for business people to manage sales data, sales statistics and sales reports.",
-    "AppDescribe": {
-      "globalTitle": "Having everything you need in one app",
+    "globalBlockData": {
+      "title": "Having everything you need in one app",
+      "textDescription": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+    },
+    "blockChart": {
+      "title": "Realtime update about your business",
+      "textDescription": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+    },
+    "blockVideo": {
+      "badge": "KNOW US MORE",
+      "title": "About us, create your account & start your work",
       "description": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "Hear what our clients say",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    }
+  },
+  "bottomLabel": {
+    "title": "Are you ready to manage your data 10x faster than before",
+    "description": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage .",
+    "buttonTutorial": "Watch video tutorial",
+    "buttonDemo": "Request a demo"
+  },
+  "footer": {
+    "copyright": {
+      "made": "Made with",
+      "separator": "by",
+      "author": "Zabibu.co",
+      "text": "Copyright and Al right reserved."
     }
   }
 }

@@ -1,6 +1,6 @@
 <div class="block" *ngIf="imageRigth; else elseBlock" [class]="blockClass">
   <div class="block__left pseudo-element py-10" [class]="pseudoClass">
-    <div class="badge">BENEFIT WILL YOU GET</div>
+    <div class="badge">{{ "Home.badge" | translate }}</div>
     <h2 class="block__title title-2">{{ title }}</h2>
     <p class="block__text">{{ textDescription }}</p>
     <a href="#" class="block__link"
@@ -56,7 +56,7 @@
     </div>
 
     <div class="block__right pseudo-element py-10" [class]="pseudoClass">
-      <div class="badge">BENEFIT WILL YOU GET</div>
+      <div class="badge">{{ "Home.badge" | translate }}</div>
       <h2 class="block__title title-2">{{ title }}</h2>
       <p class="block__text">{{ textDescription }}</p>
       <a href="#" class="block__link"

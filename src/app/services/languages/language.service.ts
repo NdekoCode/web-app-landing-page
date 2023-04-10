@@ -47,4 +47,7 @@ export class LanguageService {
   getAvailableLanguages() {
     return this.supportedLanguage;
   }
+  getTranslate(): TranslateService {
+    return this.translate;
+  }
 }

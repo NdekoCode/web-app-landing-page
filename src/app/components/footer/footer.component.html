@@ -33,10 +33,10 @@
         </a>
       </div>
       <nav class="footer__nav">
-        <a href="#">Features</a>
-        <a href="#">About Us</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Pricing</a>
+        <a href="#howitworks">Features</a>
+        <a href="https://www.zabibu.co/services">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#">Contact</a>
       </nav>
       <div class="footer__icons">
         <a href="#" class="btn">
@@ -72,9 +72,13 @@
     </div>
     <div class="footer__copyright">
       <p class="footer-heart">
-        &copy; Made with <span class="heart">♥</span> by
-        <a href="https://zabibu.co" target="_blank">Zabibu.co</a> Copyright and
-        Al right reserved.
+        &copy; {{ "footer.copyright.made" | translate }}
+        <span class="heart">♥</span>
+        {{ "footer.copyright.separator" | translate }}
+        <a href="https://zabibu.co" target="_blank">{{
+          "footer.copyright.author" | translate
+        }}</a>
+        {{ "footer.copyright.text" | translate }}
       </p>
     </div>
   </div>

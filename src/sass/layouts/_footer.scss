@@ -98,6 +98,7 @@
     flex-wrap: wrap;
 
     a {
+        cursor: pointer;
         @extend %decorationNone;
         @extend %hoverLink;
     }

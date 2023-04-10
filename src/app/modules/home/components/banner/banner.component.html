@@ -23,7 +23,7 @@
       <img src="/assets/images/crm-1.png" alt="CRM 1" />
     </div>
     <div class="banner__action">
-      <a href="#" class="btn-icon btn red-border">
+      <button class="btn-icon btn red-border" (click)="onToggleShow()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="ionicon"
@@ -43,7 +43,14 @@
           />
         </svg>
         <span>Watch video tutorial</span>
-      </a>
+      </button>
     </div>
   </div>
 </div>
+
+<app-modal-video
+  videoId="jHzIGGU-Ph0"
+  *ngIf="isShown"
+  [isShown]="isShown"
+  (showModal)="onShow($event)"
+></app-modal-video>

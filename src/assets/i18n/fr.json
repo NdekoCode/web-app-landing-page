@@ -14,9 +14,40 @@
     "linkLearnMore": "En savoir plus",
     "WelcomeText": "Boostez votre marketing et vos ventes avec zabibuCRM.",
     "descriptionApp": "Plateforme de tableaux de bord créée dans le but de faciliter la gestion des données de vente, des statistiques de vente et des rapports de vente par les professionnels.",
-    "AppDescribe": {
-      "globalTitle": "Tout ce dont vous avez besoin dans une seule application",
+    "globalBlockData": {
+      "title": "Tout ce dont vous avez besoin dans une seule application",
+      "textDescription": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+    },
+    "blockChart": {
+      "title": "Mise à jour en temps réel de votre entreprise",
+      "textDescription": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+    },
+    "blockVideo": {
+      "badge": "MIEUX NOUS CONNAÎTRE",
+      "title": "A propos de nous, créez votre compte et commencez votre travail",
       "description": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+    },
+    "testimonials": {
+      "badge": "Témoignages",
+      "title": "Écouter ce que disent nos clients",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    },
+    "faq": {
+      "title": "Questions fréquemment posées"
+    }
+  },
+  "bottomLabel": {
+    "title": "Êtes-vous prêt à gérer vos données 10 fois plus vite qu'auparavant ?",
+    "description": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ",
+    "buttonTutorial": "Voir le tutoriel vidéo",
+    "buttonDemo": "Demander une Démo"
+  },
+  "footer": {
+    "copyright": {
+      "made": "Fabriqué avec",
+      "separator": "par",
+      "author": "Zabibu.co",
+      "text": "Copyright et tous droits réservés."
     }
   }
 }

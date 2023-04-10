@@ -4,13 +4,13 @@
   *ngIf="!isClosed"
 >
   <div class="container">
-    <a href="#" class="btn notification__btn">{{
+    <a routerLink="/more-about" class="btn notification__btn">{{
       "notification.buttonTitle" | translate
     }}</a>
     <p class="notification__text">
       {{ "notification.notificationText" | translate }}
     </p>
-    <a href="#" class="notification__link">
+    <a routerLink="/more-about" class="notification__link">
       {{ "notification.notificationLink" | translate }}</a
     >
     <button type="button" class="notification__close" (click)="onClose()">

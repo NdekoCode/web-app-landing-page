@@ -19,14 +19,12 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
-import { SafePipe } from './safe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     NotificationBarComponent,
     TopbarComponent,
     HeaderComponent,
-    SafePipe,
     Page404Component,
     MoreAboutComponent,
     ChangeLogComponent,

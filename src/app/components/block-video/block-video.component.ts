@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class BlockVideoComponent {
   isShown: boolean = false;
+  videoId: string = '-PeWeorMDTo';
   onToggleShow() {
     this.isShown = !this.isShown;
   }
