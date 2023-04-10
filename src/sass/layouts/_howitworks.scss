@@ -48,6 +48,11 @@
     }
 }
 
+.tab-description {
+    max-width    : rem(650);
+    margin-inline: auto;
+}
+
 .feature-detail {
     grid-area: a;
 

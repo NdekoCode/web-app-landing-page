@@ -1,46 +1,46 @@
 {
-  "howitworks": "how it works",
+  "howitworks": "How it works",
   "featureText": "How it works, you'll appreciate",
-  "featureIntro": "Simple d’utilisation et intuitif, Zervant est l’outil clé-en-main qu’il vous faut !",
+  "featureIntro": "Say goodbye to Excel and Google Sheet files! ZabibuCRM is the efficient turnkey tool you need!",
   "testimonials": "Testimonials",
   "more-about": "About us",
   "contact": "Contact",
-  "getStarted": "Get started",
+  "getStarted": "Get Started",
   "notification": {
     "buttonTitle": "New update",
-    "notificationText": "Learn about our new feature in 2023 thats will made you easier to organize some Marketing & sales task",
-    "notificationLink": "Learn more"
+    "notificationText": "Discover our new feature in 2023 that will allow you to organize your services more easily and improve the quality of your work.",
+    "notificationLink": "Read more"
   },
   "Home": {
     "badge": "BENEFIT WILL YOU GET",
-    "linkLearnMore": "Learn More",
-    "WelcomeText": "Boosts your marketing and sales with zabibuCRM.",
-    "descriptionApp": "Dashboard platform that was created with the aim of making it easier for business people to manage sales data, sales statistics and sales reports.",
+    "linkLearnMore": "Read more",
+    "WelcomeText": "A service management software, zabibuCRM.",
+    "descriptionApp": "Stay organized, gain in productivity, manage easily and efficiently each of your services, follow the budget allocated to each service to improve the quality of the service offered and the work done to have a good quality of work done.",
     "globalBlockData": {
-      "title": "Having everything you need in one app",
-      "textDescription": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+      "title": "Everything you need in one application",
+      "textDescription": "Consolidating all your benefits in one place has never been easier with ZabibuCRM! ZabibuCRM allows you to avoid confusion, to stay focused with a centralized tool to manage your services. All the information related to the services you provide are grouped in one place, which greatly simplifies their daily management and follow-up."
     },
     "blockChart": {
-      "title": "Realtime update about your business",
-      "textDescription": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+      "title": "Follow your services in real time!",
+      "textDescription": "ZabibuCRM adapts to you and your business and grows with you. Our application allows you to monitor the status of your services in real time and to always be informed of your progress. As your business grows, you can evolve at any time!"
     },
     "blockVideo": {
       "badge": "KNOW US MORE",
-      "title": "About us, create your account & start your work",
-      "description": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+      "title": "Work with us, create your account and start your work",
+      "description": "The interface of ZabibuCRM is simple and intuitive improving your productivity and the management of your services, but we remain close to our users, if you have any questions or need help. Enjoy your ZabibuCRM account."
     },
     "testimonials": {
       "badge": "Testimonials",
       "title": "Hear what our clients say",
-      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+      "description": "Our users love our benefit management application, they testify to its efficiency and ease of use."
     },
     "faq": {
-      "title": "Frequently Asked Questions"
+      "title": "Frequently asked questions"
     }
   },
   "bottomLabel": {
     "title": "Are you ready to manage your data 10x faster than before",
-    "description": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage .",
+    "description": "Say goodbye to Excel and Google Sheet files! Save time and efficiency in your work, collaborate with your customers and providers in full transparency with our service management tool ZabibuCRM.",
     "buttonTutorial": "Watch video tutorial",
     "buttonDemo": "Request a demo"
   },

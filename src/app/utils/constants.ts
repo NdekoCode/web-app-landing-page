@@ -128,29 +128,39 @@ export const BLOCK_SCREEN_DATA: blockScreen[] = [
 ];
 export const FAQ: faq[] = [
   {
-    question: 'Où sont mes prestation de service ?',
+    question:
+      "Qu'est-ce que votre application de gestion de prestation de service peut m'offrir de plus que les outils Excel ou Google Sheet ?",
     answer:
-      ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+      "Notre application offre une solution centralisée pour suivre toutes vos prestations et celles de vos collègues. Vous pouvez facilement partager des informations avec des prestataires extérieurs et suivre l'état de vos projets en temps réel.",
   },
   {
-    question: "How can I edit a service that I've been awarded ?",
+    question:
+      'Est-ce que je peux utiliser cette application en tant que freelance pour gérer mes prestations ?',
     answer:
-      ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+      'Absolument ! Notre application est conçue pour les freelances et les entreprises qui cherchent à gérer efficacement les prestations de service. Vous pouvez facilement suivre les projets, les facturations et les paiements en un seul endroit.',
   },
   {
-    question: 'Can I cancel or change my order ?',
+    question:
+      "Est-ce que l'application est facile à utiliser pour les personnes qui ne sont pas très technophiles ?",
     answer:
-      ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+      'Nous avons conçu cette application pour être simple et intuitive à utiliser pour tous les utilisateurs, même les moins technophiles. Nous offrons une interface conviviale et des fonctionnalités faciles à comprendre pour une expérience utilisateur sans stress.',
   },
   {
-    question: 'I have a promotional or discount code ?',
+    question:
+      "Comment puis-je suivre l'état de mes prestations et savoir quand ils sont terminés ?",
     answer:
-      ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+      "Notre application vous permet de suivre facilement l'état de vos prestations en temps réel. Vous pouvez voir les prestations en cours, les prestations terminées et les prestations à venir. Vous pouvez également recevoir des notifications par e-mail pour vous tenir informé de l'état de vos prestations.",
   },
   {
-    question: 'Can I integrate my store with Facebook?',
+    question:
+      "Est-ce que l'application offre des fonctionnalités de facturation et de paiement ?",
     answer:
-      ' The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+      'Oui, notre application offre des fonctionnalités de facturation et de paiement pour vous aider à gérer vos finances en toute simplicité. Vous pouvez créer des factures, suivre les paiements et même automatiser les rappels de paiement pour éviter les retards de paiement.',
+  },
+  {
+    question: "Est-ce que l'application est gratuite?",
+    answer:
+      "Oui, c'est simple, c'est gratuit et c'est payant, notre application offre des fonctionnalités de gratuite et une gamme des fonctionnalité payante",
   },
 ];
 export const howItWorkTitles: string[] = [
