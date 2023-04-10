@@ -48,6 +48,37 @@
       "separator": "by",
       "author": "Zabibu.co",
       "text": "Copyright and Al right reserved."
+    },
+    "links": {
+      "features": "Features",
+      "aboutus": "About us",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    }
+  },
+  "contactPage": {
+    "title": "Get in touch today!",
+    "form": {
+      "fullname": {
+        "label": "Full name *",
+        "placeholder": "John Doe"
+      },
+      "company": {
+        "label": "Company *",
+        "placeholder": "your company name here"
+      },
+      "email": {
+        "label": "Your email *",
+        "placeholder": "example@youremail.com"
+      },
+      "subject": {
+        "label": "Subject *",
+        "placeholder": "How can we help you"
+      },
+      "message": {
+        "label": "Message *",
+        "placeholder": "Hello there,I would like to talk about how to..."
+      }
     }
   }
 }

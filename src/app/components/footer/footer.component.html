@@ -33,10 +33,14 @@
         </a>
       </div>
       <nav class="footer__nav">
-        <a href="#howitworks">Features</a>
-        <a href="https://www.zabibu.co/services">About Us</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#">Contact</a>
+        <a href="#howitworks">{{ "footer.links.features" | translate }}</a>
+        <a href="https://www.zabibu.co/services">{{
+          "footer.links.aboutus" | translate
+        }}</a>
+        <a href="#testimonials">{{
+          "footer.links.testimonials" | translate
+        }}</a>
+        <a routerLink="/contact">{{ "footer.links.contact" | translate }}</a>
       </nav>
       <div class="footer__icons">
         <a href="#" class="btn">

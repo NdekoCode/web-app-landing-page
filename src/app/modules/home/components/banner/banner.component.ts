@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class BannerComponent {
   isShown: boolean = false;
-  videoUrl: string = 'https://www.youtube.com/embed/jHzIGGU-Ph0';
   onToggleShow() {
     this.isShown = !this.isShown;
   }

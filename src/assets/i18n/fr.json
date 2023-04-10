@@ -48,6 +48,12 @@
       "separator": "par",
       "author": "Zabibu.co",
       "text": "Copyright et tous droits réservés."
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "aboutus": "À propos de nous",
+      "testimonials": "Témoignages",
+      "contact": "Contact"
     }
   }
 }

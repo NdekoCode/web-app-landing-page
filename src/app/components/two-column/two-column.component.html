@@ -3,7 +3,7 @@
     <div class="badge">{{ "Home.badge" | translate }}</div>
     <h2 class="block__title title-2">{{ title }}</h2>
     <p class="block__text">{{ textDescription }}</p>
-    <a href="#" class="block__link"
+    <a (click)="knowMore()" class="block__link"
       >{{ linkText }}
       <svg
         width="26"
@@ -59,7 +59,7 @@
       <div class="badge">{{ "Home.badge" | translate }}</div>
       <h2 class="block__title title-2">{{ title }}</h2>
       <p class="block__text">{{ textDescription }}</p>
-      <a href="#" class="block__link"
+      <a (click)="knowMore()" class="block__link"
         >{{ linkText }}
         <svg
           width="26"
