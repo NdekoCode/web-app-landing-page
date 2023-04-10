@@ -36,15 +36,15 @@
         >
       </div>
       <ul class="navbar__list navbar__links-list">
-        <li *ngFor="let link of topbarLinks">
+        <li *ngFor="let link of topbarLinks; index as key">
           <a
             [routerLink]="link.path"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             class="navbar__link"
             (click)="onChangeNavButton()"
-            >{{ link.title }}</a
-          >
+            >{{ link.flag! | translate }}
+          </a>
         </li>
       </ul>
       <ul class="navbar__list navbar__buttons-list">
@@ -53,7 +53,7 @@
             href="https://zabibu-crm.netlify.app/"
             class="navbar__link-btn btn red-gradient"
             (click)="onChangeNavButton()"
-            >Get started</a
+            >{{ "getStarted" | translate }}</a
           >
         </li>
         <li>
@@ -71,14 +71,15 @@
               #language="ngModel"
               [(ngModel)]="defaultLanguage"
             >
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
+              <option *ngFor="let lang of supportedLanguage" [value]="lang">
+                {{ lang | uppercase }}
+              </option>
             </select>
             <button
               (click)="changeLanguage($event)"
               class="navbar__link-btn btn-icon btn red-border"
             >
-              <span>FR</span>
+              <span>{{ defaultLanguage | uppercase }}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="me-0"

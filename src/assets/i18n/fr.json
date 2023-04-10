@@ -1,0 +1,22 @@
+{
+  "howitworks": "Comment ça fonctionne",
+  "features": "Fonctionnalités",
+  "more-about": "A propos",
+  "contact": "Contact",
+  "getStarted": "Démarrer",
+  "notification": {
+    "buttonTitle": "Nouvelle mise à jour",
+    "notificationText": "Découvrez notre nouvelle fonctionnalité en 2023 qui vous permettra d'organiser plus facilement certaines tâches de marketing et de vente.",
+    "notificationLink": "En savoir plus"
+  },
+  "Home": {
+    "badge": "AVANTAGES QUE VOUS OBTIENDREZ",
+    "linkLearnMore": "En savoir plus",
+    "WelcomeText": "Boostez votre marketing et vos ventes avec zabibuCRM.",
+    "descriptionApp": "Plateforme de tableaux de bord créée dans le but de faciliter la gestion des données de vente, des statistiques de vente et des rapports de vente par les professionnels.",
+    "AppDescribe": {
+      "globalTitle": "Tout ce dont vous avez besoin dans une seule application",
+      "description": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "howitworks": "how it works",
+  "features": "Features",
+  "more-about": "About us",
+  "contact": "Contact",
+  "getStarted": "Get started",
+  "notification": {
+    "buttonTitle": "New update",
+    "notificationText": "Learn about our new feature in 2023 thats will made you easier to organize some Marketing & sales task",
+    "notificationLink": "Learn more"
+  },
+  "Home": {
+    "badge": "BENEFIT WILL YOU GET",
+    "linkLearnMore": "Learn More",
+    "WelcomeText": "Boosts your marketing and sales with zabibuCRM.",
+    "descriptionApp": "Dashboard platform that was created with the aim of making it easier for business people to manage sales data, sales statistics and sales reports.",
+    "AppDescribe": {
+      "globalTitle": "Having everything you need in one app",
+      "description": "There are many variations of passages of Lorem Ipscted humour, or randomised words which don't look slightly believable. If you are going to use a passage ."
+    }
+  }
+}

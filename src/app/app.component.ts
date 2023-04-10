@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from './services/languages/language.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CRM-Site';
+  constructor(private _languageService: LanguageService) {}
 }

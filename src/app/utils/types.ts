@@ -10,6 +10,7 @@ export type Feature = {
 export type RouterLink = {
   path: string;
   title?: string;
+  flag?: string;
 };
 
 export type Testimonial = {

@@ -1,16 +1,34 @@
-<div class="notification" [ngClass]="{'is-closed':isClosed}" *ngIf="!isClosed">
-    <div class="container">
-        <a href="#" class="btn notification__btn">New update</a>
-        <p class="notification__text">
-            Learn about our new feature in 2023 thats will made you easier to organize
-            some Marketing & sales task
-        </p>
-        <a href="#" class="notification__link">Learn more</a>
-        <button type="button" class="notification__close" (click)="onClose()"><svg xmlns="http://www.w3.org/2000/svg"
-                class="ionicon" viewBox="0 0 512 512">
-                <title>Close</title>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"
-                    d="M368 368L144 144M368 144L144 368" />
-            </svg></button>
-    </div>
+<div
+  class="notification"
+  [ngClass]="{ 'is-closed': isClosed }"
+  *ngIf="!isClosed"
+>
+  <div class="container">
+    <a href="#" class="btn notification__btn">{{
+      "notification.buttonTitle" | translate
+    }}</a>
+    <p class="notification__text">
+      {{ "notification.notificationText" | translate }}
+    </p>
+    <a href="#" class="notification__link">
+      {{ "notification.notificationLink" | translate }}</a
+    >
+    <button type="button" class="notification__close" (click)="onClose()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="ionicon"
+        viewBox="0 0 512 512"
+      >
+        <title>Close</title>
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="20"
+          d="M368 368L144 144M368 144L144 368"
+        />
+      </svg>
+    </button>
+  </div>
 </div>

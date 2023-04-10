@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,8 +18,8 @@ import { ChangeLogComponent } from './pages/change-log/change-log.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
-import { SafePipe } from './safe.pipe';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
+import { SafePipe } from './safe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,14 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
     AppRoutingModule,
     HomeModule,
     ContactModule,
@@ -43,3 +54,6 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
