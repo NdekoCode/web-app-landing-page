@@ -1,31 +1,33 @@
 {
   "howitworks": "Comment ça fonctionne",
+  "featureText": "Vous apprécierez son fonctionnement",
+  "featureIntro": "Simple d’utilisation et intuitif, ZabibuCRM est l’outil efficace clé-en-main qu’il vous faut !",
   "testimonials": "Témoignages",
   "more-about": "A propos",
   "contact": "Contact",
   "getStarted": "Démarrer",
   "notification": {
     "buttonTitle": "Nouvelle mise à jour",
-    "notificationText": "Découvrez notre nouvelle fonctionnalité en 2023 qui vous permettra d'organiser plus facilement certaines tâches de marketing et de vente.",
+    "notificationText": "Découvrez notre nouvelle fonctionnalité en 2023 qui vous permettra d'organiser plus facilement vos prestations et améliorer la qualité de votre travail.",
     "notificationLink": "En savoir plus"
   },
   "Home": {
     "badge": "AVANTAGES QUE VOUS OBTIENDREZ",
     "linkLearnMore": "En savoir plus",
-    "WelcomeText": "Boostez votre marketing et vos ventes avec zabibuCRM.",
-    "descriptionApp": "Plateforme de tableaux de bord créée dans le but de faciliter la gestion des données de vente, des statistiques de vente et des rapports de vente par les professionnels.",
+    "WelcomeText": "Un logiciel de gestion de prestations, zabibuCRM.",
+    "descriptionApp": "Restez organisé, gagnez en productivité, gérer facilement et efficacement chacune de vos prestations, suivez le budget alloué à chaque prestation pour améliorer la qualité du service offert et le travail effectué à fin d’avoir une bonne qualité du travail effectué.",
     "globalBlockData": {
       "title": "Tout ce dont vous avez besoin dans une seule application",
-      "textDescription": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+      "textDescription": "Regroupées toutes vos prestations au même endroit n’a jamais été aussi simple avec ZabibuCRM! ZabibuCRM vous permet d'éviter la confusion, de rester concentré avec un outil centralisé pour gérer vos prestations. Toutes les informations relatives aux services que vous fournissez sont regroupés au même endroit, ce qui simplifie grandement leur gestion et leur suivi au quotidien."
     },
     "blockChart": {
-      "title": "Mise à jour en temps réel de votre entreprise",
-      "textDescription": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+      "title": "Suivez vos prestations en temps réel !",
+      "textDescription": "ZabibuCRM s’adapte à vous et à votre entreprise et grandit avec vous. Notre application vous permet de suivre en temps réel l'état de vos prestations et d'être toujours informé des progrès réalisés. Au fur et à mesure que votre entreprise se développe, vous pouvez évoluer à tout moment !"
     },
     "blockVideo": {
       "badge": "MIEUX NOUS CONNAÎTRE",
-      "title": "A propos de nous, créez votre compte et commencez votre travail",
-      "description": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ."
+      "title": "Travaillez avec nous, créez votre compte et commencez votre travail",
+      "description": "L’interface de ZabibuCRM est simple et intuitive améliorant ainsi votre productivité la gestion de vos prestations, Mais nous restons quand meme proche de nos utilisateurs, Si vous avez des questions ou besoin d’aide. Profiter pleinement de votre compte ZabibuCRM."
     },
     "testimonials": {
       "badge": "Témoignages",
@@ -81,6 +83,13 @@
         "label": "Message *",
         "placeholder": "Bonjour, je voudrais vous parler de la façon de..."
       }
+    },
+    "alerts": {
+      "fullname": "Le nom est requis et doit etre valide (Au minimu 5 caractère)",
+      "email": "Entrer un email valide",
+      "company": "Entrer une donnée valide (Au minimum 2 caractère)",
+      "subject": "Entrer une donnée valide (Au minimum 5 caractère)",
+      "message": "Entrer un message valide (Au minimum 9 caractère)"
     }
   }
 }
