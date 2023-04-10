@@ -58,6 +58,7 @@
   },
   "contactPage": {
     "title": "Get in touch today!",
+    "button": "Send Message",
     "form": {
       "fullname": {
         "label": "Full name *",
@@ -79,6 +80,13 @@
         "label": "Message *",
         "placeholder": "Hello there,I would like to talk about how to..."
       }
+    },
+    "alerts": {
+      "fullname": "The name is required and must be valid (At least 5 characters)",
+      "email": "Enter a valid email",
+      "company": "Enter a valid data (At least 2 characters)",
+      "subject": "Enter a valid data (At least 5 characters)",
+      "message": "Enter a valid message (At least 9 characters)"
     }
   }
 }

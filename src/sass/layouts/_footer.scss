@@ -19,6 +19,16 @@
     }
 }
 
+.block__footer {
+    .footer-heart {
+        a {
+
+            border-bottom: 1px solid var(--bg-gray-smooth);
+            color        : var(--bg-gray-smooth);
+        }
+    }
+}
+
 .bottom-label {
 
     .label-title {
@@ -113,8 +123,8 @@
     }
 
     a {
-        border-bottom  : 1px solid var(--bg-gray-smooth);
-        color          : var(--bg-gray-smooth);
+        border-bottom  : 1px solid var(--primary-color);
+        color          : var(--primary-color);
         padding-bottom : .25em;
         text-decoration: none;
     }

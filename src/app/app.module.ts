@@ -15,7 +15,6 @@ import { ContactModule } from './modules/contact/contact.module';
 import { HomeModule } from './modules/home/home.module';
 import { ShareModule } from './modules/share-module/share-module.module';
 import { ChangeLogComponent } from './pages/change-log/change-log.component';
-import { FeaturesComponent } from './pages/features/features.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
@@ -29,7 +28,6 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
     MoreAboutComponent,
     ChangeLogComponent,
     ScrollDirective,
-    FeaturesComponent,
     TrimContentPipe,
   ],
   imports: [

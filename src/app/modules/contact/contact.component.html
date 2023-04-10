@@ -1,62 +1,62 @@
 <main>
     <article class="body container mt-10">
         <section class="contact">
-            <h1 class="title-1 mb-10">Get in touch today!</h1>
+            <h1 class="title-1 mb-10">{{'contactPage.title' | translate}}</h1>
             <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="mb-3 fullname">
-                    <label for="fullname">Full name *</label>
-                    <input required class="input-field"  type="text" id="fullname" name="fullname" [(ngModel)]="name" #fullname="ngModel" placeholder="John David" required pattern="^[a-zA-Z]{2,25} [a-zA-Z]{1,25}$">
+                    <label for="fullname">{{'contactPage.form.fullname.label' | translate}}</label>
+                    <input required class="input-field"  type="text" id="fullname" name="fullname" [(ngModel)]="name" #fullname="ngModel" [placeholder]="'contactPage.form.fullname.placeholder' | translate" required pattern="^[a-zA-Z]{2,25} [a-zA-Z]{1,25}$">
                     <div *ngIf="fullname.invalid && (fullname.dirty || fullname.touched)">
                     <div class="alert-input" [hidden]="fullname.valid || fullname.pristine">
-                        Le nom est requis et doit etre valide (Au minimu 5 caractère)
+                        {{'contactPage.alerts.fullname' | translate}}
                     </div>
                 </div>
                 </div>
 
                 <div class="mb-3 email">
-                    <label for="email">Your email *</label>
-                    <input required class="input-field"  type="email" id="email" [pattern]="validEmail" placeholder="example@yourmail.com" [(ngModel)]="email" name="email" #userEmail="ngModel">
+                    <label for="email">{{'contactPage.form.email.label' | translate}}</label>
+                    <input required class="input-field"  type="email" id="email" [pattern]="validEmail" [placeholder]="'contactPage.form.email.placeholder' | translate" [(ngModel)]="email" name="email" #userEmail="ngModel">
                     <div *ngIf="userEmail.invalid && (userEmail.dirty || userEmail.touched)">
                         <div class="alert-input" [hidden]="userEmail.valid || userEmail.pristine">
-                            Entrer un email valide
+                            {{'contactPage.alerts.email' | translate}}
                         </div>
                         </div>
                 </div>
 
 
                 <div class="mb-3 company">
-                    <label for="company">Company *</label>
-                    <input required class="input-field"  type="text" id="company" placeholder="yourcompany name here" name="company" [(ngModel)]="company" #userCompany="ngModel" pattern="^[a-zA-Z0-9àéèç ]{2,25}$">
+                    <label for="company">{{'contactPage.form.company.label' | translate}}</label>
+                    <input required class="input-field"  type="text" id="company" [placeholder]="'contactPage.form.company.placeholder' | translate" name="company" [(ngModel)]="company" #userCompany="ngModel" pattern="^[a-zA-Z0-9àéèç ]{2,25}$">
 
                     <div *ngIf="userCompany.invalid && (userCompany.dirty || userCompany.touched)">
                         <div class="alert-input" [hidden]="userCompany.valid || userCompany.pristine">
-                            Entrer une donnée valide (Au minimum 2 caractère)
+                            {{'contactPage.alerts.company' | translate}}
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-3 subject">
-                    <label for="subject" >Subject *</label>
-                    <input required class="input-field"  type="text" id="subject" name="subject" [(ngModel)]="subject" placeholder="How can we Help"
+                    <label for="subject" >{{'contactPage.form.subject.label' | translate}}</label>
+                    <input required class="input-field"  type="text" id="subject" name="subject" [(ngModel)]="subject" [placeholder]="'contactPage.form.subject.placeholder' | translate"
                     pattern="^[a-zA-Z9àéèç ]{5,25}$" #userSubject="ngModel"/>
 
 
                     <div *ngIf="userSubject.invalid && (userSubject.dirty || userSubject.touched)">
                         <div class="alert-input" [hidden]="userSubject.valid || userSubject.pristine">
-                            Entrer une donnée valide (Au minimum 2 caractère)
+                            {{'contactPage.alerts.subject' | translate}}
                         </div>
                     </div>
                 </div>
                 <div class="mb-3 message">
-                    <label for="message">Message *</label>
-                    <textarea class="input-field"  name="message" id="message" cols="30" rows="10" placeholder="Hello there,I would like to talk about how to..." [(ngModel)]="message" #userMessage="ngModel" minlength="5"></textarea>
+                    <label for="message">{{'contactPage.form.message.label' | translate}}</label>
+                    <textarea class="input-field"  name="message" id="message" cols="30" rows="10" [placeholder]="'contactPage.form.message.placeholder' | translate" [(ngModel)]="message" #userMessage="ngModel" minlength="5"></textarea>
                     <div *ngIf="userMessage.invalid && (userMessage.dirty || userMessage.touched)">
                         <div class="alert-input" [hidden]="userMessage.valid || userMessage.pristine">
-                            Entrer un message valide (Au minimum 2 caractère)
+                            {{'contactPage.alerts.message' | translate}}
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn red-gradient btn-contact" [disabled]="!contactForm.valid">Send Message</button>
+                <button type="submit" class="btn red-gradient btn-contact" [disabled]="!contactForm.valid">{{'contactPage.button' | translate}}</button>
             </form>
         </section>
     </article>

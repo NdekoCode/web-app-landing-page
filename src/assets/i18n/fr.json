@@ -55,5 +55,32 @@
       "testimonials": "Témoignages",
       "contact": "Contact"
     }
+  },
+
+  "contactPage": {
+    "title": "Prenez contact avec nous dès aujourd'hui !",
+    "button": "Envoyer le message",
+    "form": {
+      "fullname": {
+        "label": "Nom complet *",
+        "placeholder": "John Doe"
+      },
+      "company": {
+        "label": "Entreprise *",
+        "placeholder": "Mettez le nom de votre entreprise ici"
+      },
+      "email": {
+        "label": "Votre email *",
+        "placeholder": "example@youremail.com"
+      },
+      "subject": {
+        "label": "Sujet *",
+        "placeholder": "How can we help you"
+      },
+      "message": {
+        "label": "Message *",
+        "placeholder": "Bonjour, je voudrais vous parler de la façon de..."
+      }
+    }
   }
 }
