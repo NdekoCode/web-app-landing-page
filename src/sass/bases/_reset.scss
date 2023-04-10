@@ -171,7 +171,8 @@ input {
     width: 100%;
 }
 
-button {
+button,
+#language {
     cursor: pointer;
 }
 
@@ -190,13 +191,14 @@ p {
     line-height: 150%;
 }
 
-main {
-
+main,
+.body {
     p {
-        color: var(--color-gray);
-    }
 
+        color: var(--color-gray-dark);
+    }
 }
+
 
 .container {
     width         : 100%;

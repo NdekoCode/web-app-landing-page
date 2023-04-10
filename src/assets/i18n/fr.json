@@ -1,7 +1,7 @@
 {
   "howitworks": "Comment ça fonctionne",
   "featureText": "Vous apprécierez son fonctionnement",
-  "featureIntro": "Simple d’utilisation et intuitif, ZabibuCRM est l’outil efficace clé-en-main qu’il vous faut !",
+  "featureIntro": "Simple d’utilisation et intuitif, ZabibuCRM est l’outil efficace clé-en-main qu’il vous faut !, ",
   "testimonials": "Témoignages",
   "more-about": "A propos",
   "contact": "Contact",
@@ -32,7 +32,7 @@
     "testimonials": {
       "badge": "Témoignages",
       "title": "Écouter ce que disent nos clients",
-      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+      "description": "Nos utilisateurs adorent notre application de gestion de prestations, ils  témoignent de son efficacité et de sa simplicité d'utilisation."
     },
     "faq": {
       "title": "Questions fréquemment posées"
@@ -40,7 +40,7 @@
   },
   "bottomLabel": {
     "title": "Êtes-vous prêt à gérer vos données 10 fois plus vite qu'auparavant ?",
-    "description": "Il existe de nombreuses variantes de passages d'humour Lorem Ipsted, ou de mots aléatoires qui n'ont pas l'air un tant soit peu crédibles. Si vous avez l'intention d'utiliser un passage ",
+    "description": "Dites adieu aux fichiers Excel et Google Sheet ! Gagnez du temps et de l'efficacité dans votre travail,Collaborez avec vos clients et prestataires en toute transparence grâce à notre outil de gestion de prestation de service ZabibuCRM.",
     "buttonTutorial": "Voir le tutoriel vidéo",
     "buttonDemo": "Demander une Démo"
   },

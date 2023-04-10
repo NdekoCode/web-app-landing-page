@@ -90,23 +90,23 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Mike Warren',
     testimonial:
-      'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
+      "Je suis tellement content d'avoir découvert cette application qui me permet de gérer facilement mes prestations et de travailler de manière plus productive.",
     userRole: 'Product Manager at Zapier',
     image: '/assets/images/testimonial.jpg',
   },
   {
-    name: 'Mike Warren',
+    name: 'Marcos Musafiri',
     testimonial:
-      'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
-    userRole: 'Product Manager at Zapier',
-    image: '/assets/images/testimonial.jpg',
+      'Cette application a totalement changé ma façon de travailler en freelance. Je peux maintenant suivre toutes mes prestations en temps réel, ce qui me permet de mieux organiser mon travail et de gagner en efficacité.',
+    userRole: 'Product Manager at GoInnovation',
+    image: '/assets/images/testimonial-1.jpg',
   },
   {
-    name: 'Mike Warren',
+    name: 'Christian Lisangola',
     testimonial:
-      'The sales management dashboard platform which i think is the best i’v ever tried. the information displayed is very valuable with a pleasant user interface to look at',
-    userRole: 'Product Manager at Zapier',
-    image: '/assets/images/testimonial.jpg',
+      "Cette application est un véritable game-changer pour moi. Je peux maintenant collaborer avec d'autres prestataires en toute sécurité, sans avoir à partager mes fichiers Excel ou Google Sheet. C'est vraiment top !",
+    userRole: 'CEO at Zabibu ETC',
+    image: '/assets/images/testimonial-3.jpg',
   },
 ];
 export const BLOCK_SCREEN_DATA: blockScreen[] = [

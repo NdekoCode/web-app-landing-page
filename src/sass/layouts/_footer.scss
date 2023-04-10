@@ -20,6 +20,13 @@
 }
 
 .block__footer {
+
+    p,
+    .footer__copyright {
+
+        color: var(--bg-gray-smooth);
+    }
+
     .footer-heart {
         a {
 
