@@ -4,7 +4,7 @@
 >
   <div class="container">
     <!-- Site title -->
-    <a href="#" class="logo"
+    <a routerLink="/" class="logo"
       ><img src="/assets/images/icons/logo.svg" alt="Logo"
     /></a>
     <!-- Humberger button -->
@@ -29,22 +29,31 @@
         /></a>
 
         <a
-          href="#"
+          href="https://zabibu-crm.netlify.app/"
           (click)="onChangeNavButton()"
           class="navbar__link-btn btn x-rounded red-gradient"
-          >Get started</a
+          >{{ "getStarted" | translate }}</a
         >
       </div>
       <ul class="navbar__list navbar__links-list">
         <li *ngFor="let link of topbarLinks; index as key">
           <a
-            [routerLink]="link.path"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            *ngIf="link.fragmentLink; else ngElse"
+            [href]="'#' + link.flag!"
             class="navbar__link"
-            (click)="onChangeNavButton()"
-            >{{ link.flag! | translate }}
-          </a>
+            (click)="navigateToSection(link.flag!)"
+            >{{ link.flag! | translate }}</a
+          >
+          <ng-template #ngElse>
+            <a
+              [routerLink]="link.path"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="navbar__link"
+              (click)="onChangeNavButton()"
+              >{{ link.flag! | translate }}
+            </a>
+          </ng-template>
         </li>
       </ul>
       <ul class="navbar__list navbar__buttons-list">

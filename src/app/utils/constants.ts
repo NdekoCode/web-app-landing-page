@@ -42,12 +42,14 @@ export const navLinks: RouterLink[] = [
   {
     path: '/howitworks',
     title: 'how it works',
+    fragmentLink: true,
     flag: 'howitworks',
   },
   {
     path: '/features',
-    title: 'Features',
-    flag: 'features',
+    title: 'Testimonials',
+    fragmentLink: true,
+    flag: 'testimonials',
   },
   {
     path: '/more-about',

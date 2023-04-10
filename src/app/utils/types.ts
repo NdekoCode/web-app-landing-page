@@ -9,6 +9,7 @@ export type Feature = {
 
 export type RouterLink = {
   path: string;
+  fragmentLink?: boolean;
   title?: string;
   flag?: string;
 };
