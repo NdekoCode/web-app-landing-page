@@ -5,7 +5,8 @@
 }
 
 .scroll-nav {
-    background-color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter : blur(rem(20));
     position        : fixed;
     top             : 0;
     left            : 0;

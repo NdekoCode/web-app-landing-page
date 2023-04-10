@@ -97,7 +97,7 @@
     margin-block: rem(50);
 
     &.active {
-        animation            : fadeUp var(--transition-1) forwards;
+        animation            : fadeDown var(--transition-1) forwards;
         display              : grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas  :
