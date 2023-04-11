@@ -90,7 +90,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Mike Warren',
     testimonial:
-      "Je suis tellement content d'avoir découvert cette application qui me permet de gérer facilement mes prestations et de travailler de manière plus productive.",
+      "Je recommande vivement cette application à tous les freelances qui cherchent un outil fiable et facile à utiliser pour gérer leurs prestations. Cela a vraiment simplifié ma vie professionnelle ! Grâce à cette application, j'ai enfin trouvé un moyen efficace de suivre toutes mes prestations en un seul endroit et de travailler de manière plus productive. !",
     userRole: 'Product Manager at Zapier',
     image: '/assets/images/testimonial.jpg',
   },
