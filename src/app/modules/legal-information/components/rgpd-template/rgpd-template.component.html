@@ -1,0 +1,79 @@
+<main class="body legal">
+  <aside class="legal__sidebar">
+    <ul class="legal__list">
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information"
+          >{{ "legal-information.tabs.legal-information" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/privacy-policy"
+          >{{ "legal-information.tabs.privacy-policy" | translate }}</a
+        >
+      </li>
+
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/rgpd"
+          >{{ "legal-information.tabs.rgpd" | translate }}</a
+        >
+      </li>
+
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/cookie-policy"
+          >{{ "legal-information.tabs.cookie-policy" | translate }}</a
+        >
+      </li>
+
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/subcontractors"
+          >{{ "legal-information.tabs.subcontractors" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          routerLink="/legal-information/legal-information"
+          >{{ "legal-information.tabs.legal-information" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/cookie-policy"
+          >{{ "legal-information.tabs.cookie-policy" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          routerLinkActive="active"
+          routerLink="/legal-information/subcontractors"
+          >{{ "legal-information.tabs.subcontractors" | translate }}</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <article>
+    <!-- <app-features /> -->
+    <section class="legal__content">
+      <ng-content></ng-content>
+    </section>
+  </article>
+</main>
+<app-footer />

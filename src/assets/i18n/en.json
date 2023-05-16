@@ -90,5 +90,15 @@
       "subject": "Enter a valid data (At least 5 characters)",
       "message": "Enter a valid message (At least 9 characters)"
     }
+  },
+  "legal-information": {
+    "tabs": {
+      "privacy-policy": "Privacy Policy",
+      "rgpd": "RGPD",
+      "cookie-policy": "Cookie Policy",
+      "subcontractors": "Subcontractors",
+      "legal-information": "Legal Information"
+    },
+    "privacy-policy": {}
   }
 }

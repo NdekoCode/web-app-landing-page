@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { ContactComponent } from '../modules/contact/contact.component';
 import { HomepageComponent } from '../modules/home/homepage/homepage.component';
+import { PrivacyPolicyComponent } from '../modules/legal-information/privacy-policy/privacy-policy.component';
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
@@ -31,6 +32,16 @@ export const routerLink: Route[] = [
     path: 'changelog',
     component: ChangeLogComponent,
     title: 'Change Log',
+  },
+  {
+    path: 'legal-information',
+    component: PrivacyPolicyComponent,
+    children: [
+      {
+        path: 'privacy-policy',
+        component: PrivacyPolicyComponent,
+      },
+    ],
   },
   {
     path: '**',

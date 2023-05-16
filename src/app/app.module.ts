@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LegalInformationModule } from './modules/legal-information/legal-information.module';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -8,8 +9,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoaderComponent } from './components/loader/loader.component';
 import { NotificationBarComponent } from './components/notification-bar/notification-bar.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { ScrollHideDirective } from './directives/scroll-hide.directive';
 import { ScrollDirective } from './directives/scroll.directive';
 import { ContactModule } from './modules/contact/contact.module';
 import { HomeModule } from './modules/home/home.module';
@@ -18,9 +22,6 @@ import { ChangeLogComponent } from './pages/change-log/change-log.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
-import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
-import { ScrollHideDirective } from './directives/scroll-hide.directive';
-import { LoaderComponent } from './components/loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,10 +48,11 @@ import { LoaderComponent } from './components/loader/loader.component';
       },
     }),
     AppRoutingModule,
+    FormsModule,
+    ShareModule,
     HomeModule,
     ContactModule,
-    ShareModule,
-    FormsModule,
+    LegalInformationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
