@@ -19,13 +19,12 @@
         flex-wrap: wrap;
         @extend %flexMiddle;
 
-        @media #{$x-sm-screen} {
+        @media #{$md-screen} {
             flex-wrap: nowrap;
+            gap      : rem(25);
         }
 
-        @media #{$sm-screen} {
-            gap: rem(25);
-        }
+        @media #{$sm-screen} {}
 
         @media #{$md-screen} {
             gap: rem(50);

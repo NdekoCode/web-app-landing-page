@@ -11,6 +11,13 @@
     border                : 0;
     vertical-align        : baseline;
     font-variant-ligatures: none;
+
+
+}
+
+::selection {
+    background-color: var(--color-dark-2);
+    color           : var(--bg-smooth);
 }
 
 a,
