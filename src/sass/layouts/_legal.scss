@@ -60,6 +60,8 @@
     @extend .container;
     @extend %contentColor;
     margin-top: rem(100);
+    position  : relative;
+    z-index   : 1;
 
     .sub-title {
         font-size   : rem(18);
@@ -69,6 +71,7 @@
 
     .legal__list {
         width: 100%;
+
     }
 
 
