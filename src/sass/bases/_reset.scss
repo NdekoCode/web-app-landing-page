@@ -425,6 +425,11 @@ button.red-border {
     margin-bottom: rem(35);
 }
 
+.element-important {
+    @extend %bold;
+    @extend %gradientText;
+}
+
 .fade {
     @extend %fade;
 }
