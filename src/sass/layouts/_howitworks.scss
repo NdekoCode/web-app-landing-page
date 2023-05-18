@@ -110,7 +110,7 @@
             "b b b"
             "c c c";
 
-        @media #{$md-screen} {
+        @media #{$lg-screen} {
 
             grid-template-areas:
                 "a b b"
