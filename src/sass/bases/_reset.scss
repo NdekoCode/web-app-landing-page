@@ -230,7 +230,17 @@ main,
 
 
     @media #{$md-screen} {
-        padding-inline: 0;
+        &:not(.fixed) {
+
+            padding-inline: 0;
+        }
+    }
+
+    @media #{$xl-screen} {
+        &.fixed {
+
+            padding-inline: 0;
+        }
     }
 }
 
@@ -385,6 +395,14 @@ button.red-border {
         }
     }
 
+}
+
+.block-button {
+    padding         : rem(12) rem(25);
+    color           : var(--color-white);
+    background-image: var(--primary-color-gradient);
+    width           : max-content;
+    border-radius   : rem(5);
 }
 
 @include makeUtilitieSpacing();

@@ -33,5 +33,7 @@ export class TopbarComponent implements OnInit {
     this._languageService.setLanguage(target.value);
     this.onSubmit(arg as NgForm);
   }
-  navigateToSection(section: string) {}
+  navigateToSection(e: Event) {
+    e.preventDefault();
+  }
 }

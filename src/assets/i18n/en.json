@@ -92,7 +92,9 @@
     }
   },
   "legal-information": {
+    "title": "Data privacy",
     "tabs": {
+      "terms": "Terms",
       "privacy-policy": "Privacy Policy",
       "rgpd": "RGPD",
       "cookie-policy": "Cookie Policy",

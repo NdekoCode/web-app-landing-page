@@ -2,7 +2,7 @@
   class="topbar"
   [ngStyle]="{ position: !isClicked ? 'relative' : 'static' }"
 >
-  <div class="container">
+  <div class="container fixed">
     <!-- Site title -->
     <a routerLink="/" class="logo"
       ><img src="/assets/images/icons/logo.svg" alt="Logo"
@@ -41,7 +41,7 @@
             *ngIf="link.fragmentLink; else ngElse"
             [href]="'#' + link.flag!"
             class="navbar__link"
-            (click)="navigateToSection(link.flag!)"
+            (click)="navigateToSection($event)"
             >{{ link.flag! | translate }}</a
           >
           <ng-template #ngElse>
@@ -67,12 +67,15 @@
         </li>
         <li>
           <form
+            id="form-language"
             (ngSubmit)="onSubmit(form)"
             #form="ngForm"
             action=""
             class="language-form"
+            tabindex="1"
           >
             <select
+              tabindex="2"
               [ngClass]="{ visible: isSelected }"
               (input)="changeLanguage($event)"
               name="language"
