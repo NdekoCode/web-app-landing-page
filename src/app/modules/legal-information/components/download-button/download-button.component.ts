@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class DownloadButtonComponent {
   @Input() typeElement: string = 'link';
+  @Input() filePath: string = '#';
 }
