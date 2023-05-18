@@ -419,10 +419,28 @@
     animation: fadeUp var(--transition-1) forwards;
 }
 
+%fade {
+    animation: fadeIn var(--transition-1) forwards;
+}
+
 %fadeRight {
     animation: fadeRight var(--transition-1) forwards;
 }
 
 %fadeLeft {
     animation: fadeRight var(--transition-1) forwards;
+}
+
+%gradientText {
+
+    color                  : transparent;
+    background-clip        : text;
+    -webkit-background-clip: text;
+    background-image       : var(--primary-color-gradient);
+    font-weight            : bold;
+}
+
+%contentColor {
+
+    color: var(--color-dark-2) !important;
 }

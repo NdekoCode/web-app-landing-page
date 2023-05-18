@@ -41,7 +41,6 @@
             *ngIf="link.fragmentLink; else ngElse"
             [href]="'#' + link.flag!"
             class="navbar__link"
-            (click)="navigateToSection($event)"
             >{{ link.flag! | translate }}</a
           >
           <ng-template #ngElse>

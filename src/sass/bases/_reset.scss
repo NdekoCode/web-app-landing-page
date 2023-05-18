@@ -137,7 +137,7 @@ body {
 body {
     color           : var(--color-dark-2);
     line-height     : 1.2;
-    background      : url('/assets/images/BG.svg') top center;
+    background      : url('/assets/images/BG.svg') top center no-repeat;
     background-color: var(--white);
 }
 
@@ -397,12 +397,40 @@ button.red-border {
 
 }
 
+.block-link,
+.order-point {
+    @extend .cover-link;
+}
+
+.order-point {
+    margin-right: rem(3);
+    font-size   : rem(16);
+}
+
 .block-button {
     padding         : rem(12) rem(25);
     color           : var(--color-white);
     background-image: var(--primary-color-gradient);
     width           : max-content;
     border-radius   : rem(5);
+}
+
+.text-content {
+    margin-block: rem(10);
+    @extend %contentColor;
+}
+
+.block-context {
+    margin-top   : rem(15);
+    margin-bottom: rem(35);
+}
+
+.fade {
+    @extend %fade;
+}
+
+.fade-opacity {
+    animation: fadeOpacity var(--transition-1) forwards;
 }
 
 @include makeUtilitieSpacing();

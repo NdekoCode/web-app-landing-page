@@ -68,12 +68,16 @@
         top      : 15%;
         transform: translateY(-50%);
         color    : var(--color-white);
-
+        /* 
         @media #{$sm-screen} {
+            top  : 25%;
+        } */
+
+        @media #{$lg-screen} {
             top: 25%;
         }
 
-        @media #{$lg-screen} {
+        @media #{$xl-screen} {
             top: 50%;
         }
     }

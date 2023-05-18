@@ -2,10 +2,11 @@
     padding-top   : rem(25);
     padding-bottom: rem(25);
     transition    : padding 0.35s;
+    min-width     : rem(75);
 
     @extend %posRelative;
 
-    @media #{$md-screen} {
+    @media #{$lg-screen} {
 
         padding-bottom: initial;
     }
@@ -15,7 +16,7 @@
         margin-right: auto;
 
         @media #{$lg-screen} {
-            min-width: rem(200);
+            min-width: rem(180);
 
             img {
                 width: 100%;
@@ -44,10 +45,10 @@
             }
         }
 
-        @media #{$lg-screen} {
+        @media #{$xl-screen} {
 
             .navbar {
-                margin-left: rem(120);
+                margin-left: rem(70);
             }
         }
     }
