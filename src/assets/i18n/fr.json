@@ -97,12 +97,26 @@
     "tabs": {
       "terms": "Conditions",
       "privacy-policy": "Politique de confidentialité",
-      "rgpd": "Règlement Général sur la Protection des Données à Caractère Personnel",
+      "rgpd": "RGPD",
       "cookie-policy": "Politique de Cookies",
-      "subcontractors": "Sous-traitants",
       "legal-information": "Mentions legal",
       "cgu": "Conditions Générales d'Utilisation"
     },
-    "privacy-policy": {}
+    "privacy-policy": {
+      "title": "Politique de confidentialité"
+    },
+    "rgpd": {
+      "title": "Règlement Général sur la Protection des Données à Caractère Personnel"
+    },
+    "cookie-policy": {
+      "title": "Politique de cookies"
+    },
+    "legal-information": { "title": "Mentions Légales" },
+
+    "cgu": { "title": "Condition Général d'Utilisation" },
+
+    "terms": {
+      "title": "Contitions"
+    }
   }
 }

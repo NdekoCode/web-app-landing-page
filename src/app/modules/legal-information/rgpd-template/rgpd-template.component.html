@@ -1,7 +1,7 @@
 <div class="lagal__banner">
   <h1>{{ "legal-information.title" | translate }}</h1>
 </div>
-<main class="body legal">
+<section class="body legal">
   <aside class="legal__sidebar">
     <ul class="legal__list">
       <li>
@@ -59,24 +59,12 @@
           >{{ "legal-information.tabs.rgpd" | translate }}</a
         >
       </li>
-
-      <li>
-        <a
-          class="legal__link"
-          [routerLinkActiveOptions]="{ exact: true }"
-          routerLinkActive="active"
-          routerLink="/terms/subcontractors"
-          >{{ "legal-information.tabs.subcontractors" | translate }}</a
-        >
-      </li>
     </ul>
   </aside>
 
-  <article>
-    <!-- <app-features /> -->
-    <main class="legal__content">
-      <ng-content></ng-content>
-    </main>
-  </article>
-</main>
+  <!-- <app-features /> -->
+  <main class="legal__content">
+    <ng-content></ng-content>
+  </main>
+</section>
 <app-footer />

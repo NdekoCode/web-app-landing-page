@@ -98,21 +98,17 @@
       "privacy-policy": "Privacy Policy",
       "rgpd": "GDPR",
       "cookie-policy": "Cookie Policy",
-      "subcontractors": "Subcontractors",
       "legal-information": "Legal Information",
       "cgu": "General Terms and Conditions of Use"
     },
     "privacy-policy": {
-      "title": "Politique de confidentialité"
+      "title": "Privacy Policy"
     },
     "rgpd": {
-      "title": "Règlement Général sur la Protection des Données à Caractère Personnel"
+      "title": "General Regulation on the Protection of Personal Data"
     },
     "cookie-policy": {
       "title": "Cookie Policy"
-    },
-    "subcontractors": {
-      "title": "Subcontractors"
     },
     "legal-information": { "title": "Legal Information" },
 

@@ -10,7 +10,6 @@ import { LegalInformationComponent } from './legal-information/legal-information
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { RgpdTemplateComponent } from './rgpd-template/rgpd-template.component';
 import { RgpdComponent } from './rgpd/rgpd.component';
-import { SubcontractorsComponent } from './subcontractors/subcontractors.component';
 import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { TermsComponent } from './terms/terms.component';
     DownloadButtonComponent,
     LegalDateComponent,
     LegalInformationComponent,
-    SubcontractorsComponent,
     CguComponent,
     TermsComponent,
   ],

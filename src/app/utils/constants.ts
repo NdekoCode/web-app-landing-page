@@ -6,7 +6,6 @@ import { CookiePolicyComponent } from '../modules/legal-information/cookie-polic
 import { LegalInformationComponent } from '../modules/legal-information/legal-information/legal-information.component';
 import { PrivacyPolicyComponent } from '../modules/legal-information/privacy-policy/privacy-policy.component';
 import { RgpdComponent } from '../modules/legal-information/rgpd/rgpd.component';
-import { SubcontractorsComponent } from '../modules/legal-information/subcontractors/subcontractors.component';
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
@@ -66,10 +65,6 @@ export const routerLink: Route[] = [
       {
         path: 'rgpd',
         component: RgpdComponent,
-      },
-      {
-        path: 'subcontractors',
-        component: SubcontractorsComponent,
       },
     ],
   },
