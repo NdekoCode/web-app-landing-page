@@ -1,5 +1,5 @@
 <div class="lagal__banner">
-  <h2>{{ "legal-information.privacy-policy.title" | translate }}</h2>
+  <h1>{{ "legal-information.title" | translate }}</h1>
 </div>
 <main class="body legal">
   <aside class="legal__sidebar">
@@ -7,8 +7,18 @@
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/privacy-policy"
+          routerLink="/terms"
+          >{{ "legal-information.tabs.terms" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/privacy-policy"
           >{{ "legal-information.tabs.privacy-policy" | translate }}</a
         >
       </li>
@@ -16,32 +26,36 @@
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/cookie-policy"
+          routerLink="/terms/cookie-policy"
           >{{ "legal-information.tabs.cookie-policy" | translate }}</a
         >
       </li>
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/cgu"
+          routerLink="/terms/cgu"
           >{{ "legal-information.tabs.cgu" | translate }}</a
         >
       </li>
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/legal-information"
+          routerLink="/terms/legal-information"
           >{{ "legal-information.tabs.legal-information" | translate }}</a
         >
       </li>
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/rgpd"
+          routerLink="/terms/rgpd"
           >{{ "legal-information.tabs.rgpd" | translate }}</a
         >
       </li>
@@ -49,8 +63,9 @@
       <li>
         <a
           class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active"
-          routerLink="/legal-information-rgpd/subcontractors"
+          routerLink="/terms/subcontractors"
           >{{ "legal-information.tabs.subcontractors" | translate }}</a
         >
       </li>

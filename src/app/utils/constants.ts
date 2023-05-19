@@ -10,6 +10,7 @@ import { SubcontractorsComponent } from '../modules/legal-information/subcontrac
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
+import { TermsComponent } from './../modules/legal-information/terms/terms.component';
 import {
   blockScreen,
   faq,
@@ -39,8 +40,13 @@ export const routerLink: Route[] = [
     title: 'Change Log',
   },
   {
-    path: 'legal-information-rgpd',
+    path: 'terms',
+
     children: [
+      {
+        path: '',
+        component: TermsComponent,
+      },
       {
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,

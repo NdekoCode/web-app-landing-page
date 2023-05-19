@@ -20,7 +20,6 @@ const routes: Routes = [
     return {
       path: route.path,
       component: route.component,
-      children: route.children,
     };
   }),
 ];

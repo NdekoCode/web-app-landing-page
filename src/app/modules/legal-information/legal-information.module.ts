@@ -5,7 +5,6 @@ import { ShareModule } from './../share-module/share-module.module';
 import { CguComponent } from './cgu/cgu.component';
 import { DownloadButtonComponent } from './components/download-button/download-button.component';
 import { LegalDateComponent } from './components/legal-date/legal-date.component';
-import { SidebarLinksComponent } from './components/sidebar-links/sidebar-links.component';
 import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
 import { LegalInformationComponent } from './legal-information/legal-information.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
@@ -21,7 +20,6 @@ import { TermsComponent } from './terms/terms.component';
     RgpdComponent,
     CookiePolicyComponent,
     DownloadButtonComponent,
-    SidebarLinksComponent,
     LegalDateComponent,
     LegalInformationComponent,
     SubcontractorsComponent,
