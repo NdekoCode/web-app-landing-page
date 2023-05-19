@@ -4,20 +4,20 @@
 *,
 *::before,
 *::after {
-    font-family           : Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin                : 0;
-    padding               : 0;
-    box-sizing            : border-box;
-    border                : 0;
-    vertical-align        : baseline;
-    font-variant-ligatures: none;
+  font-family           : Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin                : 0;
+  padding               : 0;
+  box-sizing            : border-box;
+  border                : 0;
+  vertical-align        : baseline;
+  font-variant-ligatures: none;
 
 
 }
 
 ::selection {
-    background-color: var(--color-dark-2);
-    color           : var(--bg-smooth);
+  background-color: var(--color-dark-2);
+  color           : var(--bg-smooth);
 }
 
 a,
@@ -100,50 +100,50 @@ var,
 video,
 select {
 
-    font: inherit;
+  font: inherit;
 }
 
 ::-webkit-scrollbar {
-    width: rem(12);
+  width: rem(12);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--bg-gray-smooth)
+  background-color: var(--bg-gray-smooth)
 }
 
 ::-webkit-scrollbar-thumb {
 
-    background-image  : var(--primary-color-gradient);
-    -webkit-box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.7);
-    box-shadow        : inset 2px 2px 5px 0 rgba(#fff, 0.7);
-    border-radius     : 100px;
+  background-image  : var(--primary-color-gradient);
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.7);
+  box-shadow        : inset 2px 2px 5px 0 rgba(#fff, 0.7);
+  border-radius     : 100px;
 }
 
 html {
-    scrollbar-color: #6969dd #e0e0e0;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 
 }
 
 html,
 body {
-    scroll-behavior: smooth;
-    font-size      : var(--default-size);
-    overflow-x     : hidden;
-    min-height     : 100vh;
+  scroll-behavior: smooth;
+  font-size      : var(--default-size);
+  overflow-x     : hidden;
+  min-height     : 100vh;
 }
 
 body {
-    color           : var(--color-dark-2);
-    line-height     : 1.2;
-    background      : url('/assets/images/BG.svg') top center no-repeat;
-    background-color: var(--white);
+  color           : var(--color-dark-2);
+  line-height     : 1.2;
+  background      : url('/assets/images/BG.svg') top center no-repeat;
+  background-color: var(--white);
 }
 
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a,
@@ -153,289 +153,297 @@ data,
 input,
 button,
 ion-icon {
-    @extend %block;
+  @extend %block;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    height   : auto;
+  max-width: 100%;
+  height   : auto;
 }
 
 input,
 button {
-    background   : none;
-    border       : none;
-    font         : inherit;
-    outline      : none;
-    border-radius: rem(5);
+  background   : none;
+  border       : none;
+  font         : inherit;
+  outline      : none;
+  border-radius: rem(5);
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 button,
 #language {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 input,
 button,
 a {
-    color: inherit;
+  color: inherit;
 }
 
 p {
-    line-height: 150%;
+  line-height: 150%;
+}
+
+main.body {
+  @extend .fade-opacity;
 }
 
 main,
 .body {
-    p {
+  p {
 
-        color: var(--color-gray-dark);
-    }
+    color: var(--color-gray-dark);
+  }
 }
 
 
 .container {
-    width         : 100%;
-    margin-inline : auto;
-    padding-inline: rem(20);
+  width         : 100%;
+  margin-inline : auto;
+  padding-inline: rem(20);
 
-    @media #{$sm-screen} {
-        max-width: 540px;
+  @media #{$sm-screen} {
+    max-width: 540px;
+  }
+
+  @media #{$md-screen} {
+    max-width: 720px;
+  }
+
+  @media #{$lg-screen} {
+    max-width: 960px;
+  }
+
+  @media #{$xl-screen} {
+    max-width: 1140px;
+  }
+
+
+  @media #{$md-screen} {
+    &:not(.fixed) {
+
+      padding-inline: 0;
     }
+  }
 
-    @media #{$md-screen} {
-        max-width: 720px;
+  @media #{$xl-screen} {
+    &.fixed {
+
+      padding-inline: 0;
     }
-
-    @media #{$lg-screen} {
-        max-width: 960px;
-    }
-
-    @media #{$xl-screen} {
-        max-width: 1140px;
-    }
-
-
-    @media #{$md-screen} {
-        &:not(.fixed) {
-
-            padding-inline: 0;
-        }
-    }
-
-    @media #{$xl-screen} {
-        &.fixed {
-
-            padding-inline: 0;
-        }
-    }
+  }
 }
 
 .red-gradient {
-    background-image: var(--primary-color-gradient);
-    color           : var(--color-white);
-    font-weight     : 500;
+  background-image: var(--primary-color-gradient);
+  color           : var(--color-white);
+  font-weight     : 500;
 }
 
 a.red-gradient {
-    color          : var(--color-white);
-    text-decoration: none;
+  color          : var(--color-white);
+  text-decoration: none;
 
-    &::after,
-    &::before {
-        display: none !important;
+  &::after,
+  &::before {
+    display: none !important;
 
-    }
+  }
 }
 
 .red-border {
 
-    border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 a.red-border,
 button.red-border {
-    color          : var(--primary-color);
-    text-decoration: none;
+  color          : var(--primary-color);
+  text-decoration: none;
 
-    &::after,
-    &::before {
-        display: none !important;
-    }
+  &::after,
+  &::before {
+    display: none !important;
+  }
 }
 
 .x-rounded {
-    @extend %roundedXFull;
+  @extend %roundedXFull;
 }
 
 .badge {
-    font-weight   : 500;
-    color         : var(--primary-color);
-    text-transform: uppercase;
-    font-size     : rem(16);
+  font-weight   : 500;
+  color         : var(--primary-color);
+  text-transform: uppercase;
+  font-size     : rem(16);
 
-    &.badge-line {
-        @extend %flexRowYCenter;
-        column-gap: rem(10);
+  &.badge-line {
+    @extend %flexRowYCenter;
+    column-gap: rem(10);
 
-        &:before {
-            content         : '';
-            width           : rem(20);
-            height          : rem(2);
-            background-color: var(--primary-color);
+    &:before {
+      content         : '';
+      width           : rem(20);
+      height          : rem(2);
+      background-color: var(--primary-color);
 
-        }
     }
+  }
 }
 
 .bigger-text {
-    font-size   : $title-3+0.3rem;
-    margin-block: $min-space;
+  font-size   : $title-3+0.3rem;
+  margin-block: $min-space;
 
-    @media #{$x-sm-screen} {
-        font-size: $title-2;
-    }
+  @media #{$x-sm-screen} {
+    font-size: $title-2;
+  }
 
-    @media #{$sm-screen} {
+  @media #{$sm-screen} {
 
-        margin-block: $basic-space;
-    }
+    margin-block: $basic-space;
+  }
 
-    @media #{$lg-screen} {
+  @media #{$lg-screen} {
 
-        margin-block: $basic-space - 0.7rem;
-        font-size   : $text-bigger - 1rem;
-    }
+    margin-block: $basic-space - 0.7rem;
+    font-size   : $text-bigger - 1rem;
+  }
 }
 
 .section {
-    @extend %section;
+  @extend %section;
 
-    &:not(:last-child),
-    &:not(:last-of-type) {
-        padding-top: 0;
-    }
+  &:not(:last-child),
+  &:not(:last-of-type) {
+    padding-top: 0;
+  }
 }
 
 .center-block {
-    max-width: rem(550);
-    @extend %textCenter;
-    @extend %mx-auto;
+  max-width: rem(550);
+  @extend %textCenter;
+  @extend %mx-auto;
 }
 
 .arrow__button {
-    width           : rem(35);
-    aspect-ratio    : 1/1;
-    border-radius   : 100%;
-    transform       : translateY(-50%);
-    background-image: var(--primary-color-gradient);
-    transition      : transform var(--transition-1);
-    @extend %flexMiddle;
-    @extend %shadow;
+  width           : rem(35);
+  aspect-ratio    : 1/1;
+  border-radius   : 100%;
+  transform       : translateY(-50%);
+  background-image: var(--primary-color-gradient);
+  transition      : transform var(--transition-1);
+  @extend %flexMiddle;
+  @extend %shadow;
 
+  svg {
+    transition : transform var(--transition-1);
+    will-change: transform;
+  }
+
+  &.active {
     svg {
-        transition : transform var(--transition-1);
-        will-change: transform;
+      transform: rotate(90deg);
     }
-
-    &.active {
-        svg {
-            transform: rotate(90deg);
-        }
-    }
+  }
 
 }
 
 .block-footer {
-    background-color   : var(--color-bg-blue);
-    color              : var(--bg-smooth);
-    padding-block-start: rem(30);
+  background-color   : var(--color-bg-blue);
+  color              : var(--bg-smooth);
+  padding-block-start: rem(30);
 
-    .footer__nav {
-        a:hover {
-            color: var(--color-white);
-        }
+  .footer__nav {
+    a:hover {
+      color: var(--color-white);
+    }
+  }
+
+
+
+  @media #{$md-screen} {
+    position: relative;
+    z-index : 1;
+
+    @include pseudoStartElement() {
+
+      width     : 400px;
+      height    : 400px;
+      background: url('../../assets/images/dark-start.svg') no-repeat center center /contain;
     }
 
-
-
-    @media #{$md-screen} {
-        position: relative;
-        z-index : 1;
-
-        @include pseudoStartElement() {
-
-            width     : 400px;
-            height    : 400px;
-            background: url('../../assets/images/dark-start.svg') no-repeat center center /contain;
-        }
-
-        &::before {
-            left: rem(5);
-            top : rem(25);
-        }
-
-        &::after {
-
-            right : rem(50);
-            bottom: 20%;
-        }
+    &::before {
+      left: rem(5);
+      top : rem(25);
     }
+
+    &::after {
+
+      right : rem(50);
+      bottom: 20%;
+    }
+  }
 
 }
 
 .block-link,
 .order-point {
-    @extend .cover-link;
+  @extend .cover-link;
 }
 
 .order-point {
-    margin-right: rem(3);
-    font-size   : rem(16);
+  margin-right: rem(3);
+  font-size   : rem(16);
 }
 
 .block-button {
-    padding         : rem(12) rem(25);
-    color           : var(--color-white);
-    background-image: var(--primary-color-gradient);
-    width           : max-content;
-    border-radius   : rem(5);
+  padding         : rem(12) rem(25);
+  color           : var(--color-white);
+  background-image: var(--primary-color-gradient);
+  width           : max-content;
+  border-radius   : rem(5);
 }
 
 .text-content {
-    margin-block: rem(10);
-    @extend %contentColor;
+  margin-block: rem(10);
+  @extend %contentColor;
 }
 
 .block-context {
-    margin-top   : rem(15);
-    margin-bottom: rem(35);
+  margin-top   : rem(15);
+  margin-bottom: rem(35);
 }
 
 .element-important {
-    @extend %bold;
-    @extend %gradientText;
+  @extend %bold;
+  @extend %gradientText;
 }
 
 .fade {
-    @extend %fade;
+  @extend %fade;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .fade-opacity {
-    animation: fadeOpacity var(--transition-1) forwards;
+  animation: fadeOpacity var(--transition-1) forwards;
 }
 
 @include makeUtilitieSpacing();

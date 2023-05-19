@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
 import { ContactComponent } from '../modules/contact/contact.component';
-import { HomepageComponent } from '../modules/home/homepage/homepage.component';
+import { HomepageComponent } from '../modules/home/homepage.component';
 import { CguComponent } from '../modules/legal-information/cgu/cgu.component';
 import { CookiePolicyComponent } from '../modules/legal-information/cookie-policy/cookie-policy.component';
 import { LegalInformationComponent } from '../modules/legal-information/legal-information/legal-information.component';

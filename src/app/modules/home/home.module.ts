@@ -13,7 +13,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { HowItWorksBlockComponent } from './components/how-it-works-block/how-it-works-block.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageComponent } from './homepage.component';
 
 @NgModule({
   declarations: [
