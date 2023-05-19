@@ -96,12 +96,30 @@
     "tabs": {
       "terms": "Terms",
       "privacy-policy": "Privacy Policy",
-      "rgpd": "RGPD",
+      "rgpd": "GDPR",
       "cookie-policy": "Cookie Policy",
       "subcontractors": "Subcontractors",
       "legal-information": "Legal Information",
       "cgu": "General Terms and Conditions of Use"
     },
-    "privacy-policy": {}
+    "privacy-policy": {
+      "title": "Politique de confidentialité"
+    },
+    "rgpd": {
+      "title": "Règlement Général sur la Protection des Données à Caractère Personnel"
+    },
+    "cookie-policy": {
+      "title": "Cookie Policy"
+    },
+    "subcontractors": {
+      "title": "Subcontractors"
+    },
+    "legal-information": { "title": "Legal Information" },
+
+    "cgu": { "title": "General Terms and Conditions of Use" },
+
+    "terms": {
+      "title": "Terms"
+    }
   }
 }
