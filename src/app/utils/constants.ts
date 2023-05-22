@@ -9,6 +9,7 @@ import { RgpdComponent } from '../modules/legal-information/rgpd/rgpd.component'
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
+import { RgpdTemplateComponent } from './../modules/legal-information/rgpd-template/rgpd-template.component';
 import { TermsComponent } from './../modules/legal-information/terms/terms.component';
 import {
   blockScreen,
@@ -40,7 +41,7 @@ export const routerLink: Route[] = [
   },
   {
     path: 'terms',
-
+    component: RgpdTemplateComponent,
     children: [
       {
         path: '',
