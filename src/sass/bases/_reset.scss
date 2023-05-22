@@ -430,6 +430,7 @@ button.red-border {
 }
 
 .element-important {
+  display: inline-block;
   @extend %bold;
   @extend %gradientText;
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { Entry } from 'contentful';
 import { ContentfulService } from './../../../services/contentful.service';
@@ -11,13 +10,11 @@ import { ContentfulService } from './../../../services/contentful.service';
 export class TermsComponent implements OnInit {
   constructor(
     public translate: TranslateService,
-    private contentFulService: ContentfulService,
-    private sanitizer: DomSanitizer
+    private contentFulService: ContentfulService
   ) {}
   data!: Entry;
   isLoading: boolean = true;
   ngOnInit(): void {
-    console.log(this.isLoading);
     this.contentFulService
       .getTranslationPage('Terms')
       .then((item) => {
