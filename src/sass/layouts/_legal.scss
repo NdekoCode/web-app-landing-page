@@ -6,6 +6,7 @@
 }
 
 .legal__sidebar {
+  width           : 100%;
   padding-block   : rem(3);
   background-color: #FFF6F9;
   border-radius   : rem(5);
@@ -174,9 +175,9 @@
     column-gap: rem(55);
 
     .legal__sidebar {
-      width    : 100%;
-      min-width: rem(375);
-      max-width: rem(400);
+      min-width: rem(350);
+      width    : rem(380);
+      max-width: max-content;
     }
   }
 }

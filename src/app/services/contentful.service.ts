@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Entry, createClient } from 'contentful';
 import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -25,6 +26,9 @@ export class ContentfulService {
       })
     );
     this.isLoading = false;
-    return res.items.filter((item) => item.fields['pageTitle'] === query)[0];
+    const data = res.items.filter(
+      (item) => item.fields['pageTitle'] === query
+    )[0];
+    return data;
   }
 }

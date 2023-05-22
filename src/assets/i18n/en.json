@@ -44,6 +44,7 @@
     "buttonTutorial": "Watch video tutorial",
     "buttonDemo": "Request a demo"
   },
+  "noData": "Data not found",
   "footer": {
     "copyright": {
       "made": "Made with",

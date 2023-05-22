@@ -1,7 +1,12 @@
 <main
+  *ngIf="data && !isLoading"
   [innerHTML]="
     translate.currentLang === 'fr'
       ? data.fields['contentFr']
       : data.fields['contentEn']
   "
 ></main>
+<div class="" *ngIf="!data && !isLoading">
+  <h2>{{ "noData" | translate }}</h2>
+</div>
+<app-spinner *ngIf="isLoading" />
