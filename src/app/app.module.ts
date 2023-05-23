@@ -15,10 +15,10 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { ScrollHideDirective } from './directives/scroll-hide.directive';
 import { ScrollDirective } from './directives/scroll.directive';
-import { ContactModule } from './modules/contact/contact.module';
 import { HomeModule } from './modules/home/home.module';
 import { ShareModule } from './modules/share-module/share-module.module';
 import { ChangeLogComponent } from './pages/change-log/change-log.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { MoreAboutComponent } from './pages/more-about/more-about.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { TrimContentPipe } from './pipes/trim-content.pipe';
@@ -36,6 +36,7 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
     ScrollTopComponent,
     ScrollHideDirective,
     LoaderComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,6 @@ import { TrimContentPipe } from './pipes/trim-content.pipe';
     FormsModule,
     ShareModule,
     HomeModule,
-    ContactModule,
     LegalInformationModule,
   ],
   providers: [],

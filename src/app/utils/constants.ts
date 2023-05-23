@@ -1,5 +1,4 @@
 import { Route } from '@angular/router';
-import { ContactComponent } from '../modules/contact/contact.component';
 import { HomepageComponent } from '../modules/home/homepage.component';
 import { CguComponent } from '../modules/legal-information/cgu/cgu.component';
 import { CookiePolicyComponent } from '../modules/legal-information/cookie-policy/cookie-policy.component';
@@ -7,6 +6,7 @@ import { LegalInformationComponent } from '../modules/legal-information/legal-in
 import { PrivacyPolicyComponent } from '../modules/legal-information/privacy-policy/privacy-policy.component';
 import { RgpdComponent } from '../modules/legal-information/rgpd/rgpd.component';
 import { ChangeLogComponent } from '../pages/change-log/change-log.component';
+import { ContactComponent } from '../pages/contact/contact.component';
 import { MoreAboutComponent } from '../pages/more-about/more-about.component';
 import { Page404Component } from '../pages/page404/page404.component';
 import { RgpdTemplateComponent } from './../modules/legal-information/rgpd-template/rgpd-template.component';
