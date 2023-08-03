@@ -1,0 +1,102 @@
+.testimonials {
+    @extend %container;
+    @extend %posRelative;
+    position: relative;
+    z-index : 1;
+
+    &::after {
+        content   : '';
+        display   : block;
+        position  : absolute;
+        width     : 241px;
+        height    : 175px;
+        right     : rem(-30);
+        top       : rem(55);
+        background: url('/assets/images/quote-reverse.svg') center center / contain;
+        z-index   : -1;
+
+    }
+
+    .testimonials__infos {
+        max-width: rem(440);
+    }
+
+    .testimonials__container {
+        margin-block: rem(25);
+        display     : grid;
+        gap         : rem(25);
+
+        @media #{$md-screen} {
+            margin-top           : 0;
+            padding-inline       : rem(120);
+            grid-template-rows   : repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas  :
+                "col0 col1"
+                "col2  col1"
+                "col2 col3"
+                "col4 col3";
+
+            .testimonial-1 {
+                grid-area: col2;
+            }
+
+            .testimonial-2 {
+                grid-area: col1;
+            }
+
+            .testimonial-3 {
+
+                grid-area: col3;
+
+            }
+        }
+    }
+
+    .testimonial__card {
+        background-color: var(--color-white);
+        border          : 0.5px solid #EFF0F6;
+        padding-inline  : rem(30);
+        padding-block   : rem(20);
+        box-shadow      : $smart-shadow;
+        border-radius   : rem(20);
+        min-height      : rem(250);
+        @extend %flexColYCenter;
+
+
+    }
+
+
+    .testimonial__content {
+        margin-bottom: rem(20);
+        color        : var(--color-dark);
+    }
+
+    .testimonial__footer {
+        @extend %flexRowYCenter;
+        gap: rem(15);
+
+        .testimonial__name {
+            margin-block: rem(10);
+        }
+
+        img {
+            width        : rem(50);
+            object-fit   : cover;
+            aspect-ratio : 1/1;
+            border-radius: 50%;
+        }
+    }
+
+    .arrow__button {
+        @extend %posAbsolute;
+        width    : rem(50);
+        right    : rem(15);
+        top      : 60%;
+        transform: translateY(-50%);
+
+        &:hover svg {
+            transform: scale(1.1) translateX(rem(3));
+        }
+    }
+}

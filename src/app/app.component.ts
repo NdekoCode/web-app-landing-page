@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { LanguageService } from './services/languages/language.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-full-default-project-pnpm';
+  title = 'CRM-Site';
+  constructor(private _languageService: LanguageService) {}
 }

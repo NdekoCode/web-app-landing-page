@@ -1,0 +1,115 @@
+<div
+  class="topbar"
+  [ngStyle]="{ position: !isClicked ? 'relative' : 'static' }"
+>
+  <div class="container fixed">
+    <!-- Site title -->
+    <a routerLink="/" class="logo"
+      ><img src="/assets/images/icons/logo.svg" alt="Logo"
+    /></a>
+    <!-- Humberger button -->
+    <button
+      class="nav-toggle-btn"
+      [ngClass]="{ active: isClicked }"
+      (click)="onChangeNavButton()"
+      aria-label="Toggle Menu"
+      title="Toggle Menu"
+      data-nav-toggle-btn
+    >
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </button>
+    <!-- Navbar -->
+    <nav class="navbar" [ngClass]="{ active: isClicked }">
+      <div class="actions-navbar">
+        <!-- Site title -->
+        <a routerLink="/" (click)="onChangeNavButton()" class="logo"
+          ><img src="/assets/images/icons/logo-white.svg" alt="Logo"
+        /></a>
+
+        <a
+          href="https://zabibu-crm.netlify.app/"
+          (click)="onChangeNavButton()"
+          class="navbar__link-btn btn x-rounded red-gradient"
+          >{{ "getStarted" | translate }}</a
+        >
+      </div>
+      <ul class="navbar__list navbar__links-list">
+        <li *ngFor="let link of topbarLinks; index as key">
+          <a
+            *ngIf="link.fragmentLink; else ngElse"
+            [href]="'#' + link.flag!"
+            class="navbar__link"
+            >{{ link.flag! | translate }}</a
+          >
+          <ng-template #ngElse>
+            <a
+              [routerLink]="link.path"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="navbar__link"
+              (click)="onChangeNavButton()"
+              >{{ link.flag! | translate }}
+            </a>
+          </ng-template>
+        </li>
+      </ul>
+      <ul class="navbar__list navbar__buttons-list">
+        <li>
+          <a
+            href="https://zabibu-crm.netlify.app/"
+            class="navbar__link-btn btn red-gradient"
+            (click)="onChangeNavButton()"
+            >{{ "getStarted" | translate }}</a
+          >
+        </li>
+        <li>
+          <form
+            id="form-language"
+            (ngSubmit)="onSubmit(form)"
+            #form="ngForm"
+            action=""
+            class="language-form"
+            tabindex="1"
+          >
+            <select
+              tabindex="2"
+              [ngClass]="{ visible: isSelected }"
+              (input)="changeLanguage($event)"
+              name="language"
+              id="language"
+              #language="ngModel"
+              [(ngModel)]="defaultLanguage"
+            >
+              <option *ngFor="let lang of supportedLanguage" [value]="lang">
+                {{ lang | uppercase }}
+              </option>
+            </select>
+            <button
+              (click)="changeLanguage($event)"
+              class="navbar__link-btn btn-icon btn red-border"
+            >
+              <span>{{ defaultLanguage | uppercase }}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="me-0"
+                viewBox="0 0 512 512"
+              >
+                <title>Chevron Down</title>
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="48"
+                  d="M112 184l144 144 144-144"
+                />
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

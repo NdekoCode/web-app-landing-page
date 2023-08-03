@@ -1,0 +1,70 @@
+<div class="lagal__banner">
+  <h1>{{ "legal-information.title" | translate }}</h1>
+</div>
+<section class="body legal">
+  <aside class="legal__sidebar">
+    <ul class="legal__list">
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms"
+          >{{ "legal-information.tabs.terms" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/privacy-policy"
+          >{{ "legal-information.tabs.privacy-policy" | translate }}</a
+        >
+      </li>
+
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/cookie-policy"
+          >{{ "legal-information.tabs.cookie-policy" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/cgu"
+          >{{ "legal-information.tabs.cgu" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/legal-information"
+          >{{ "legal-information.tabs.legal-information" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          class="legal__link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/terms/rgpd"
+          >{{ "legal-information.tabs.rgpd" | translate }}</a
+        >
+      </li>
+    </ul>
+  </aside>
+
+  <!-- <app-features /> -->
+  <main class="legal__content">
+    <router-outlet></router-outlet>
+  </main>
+</section>
+<app-footer />

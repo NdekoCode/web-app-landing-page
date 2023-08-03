@@ -1,0 +1,123 @@
+{
+  "howitworks": "Comment ça fonctionne",
+  "featureText": "Vous apprécierez son fonctionnement",
+  "featureIntro": "Dites adieu aux fichiers Excel et Google Sheet ! ZabibuCRM est l’outil efficace clé-en-main qu’il vous faut !, ",
+  "testimonials": "Témoignages",
+  "more-about": "A propos",
+  "contact": "Contact",
+  "getStarted": "Démarrer",
+  "notification": {
+    "buttonTitle": "Nouvelle mise à jour",
+    "notificationText": "Découvrez notre nouvelle fonctionnalité en 2023 qui vous permettra d'organiser plus facilement vos prestations et améliorer la qualité de votre travail.",
+    "notificationLink": "En savoir plus"
+  },
+  "Home": {
+    "badge": "AVANTAGES QUE VOUS OBTIENDREZ",
+    "linkLearnMore": "En savoir plus",
+    "WelcomeText": "Un logiciel de gestion de prestations, zabibuCRM.",
+    "descriptionApp": "Restez organisé, gagnez en productivité, gérer facilement et efficacement chacune de vos prestations, suivez le budget alloué à chaque prestation pour améliorer la qualité du service offert et le travail effectué à fin d’avoir une bonne qualité du travail effectué.",
+    "globalBlockData": {
+      "title": "Tout ce dont vous avez besoin dans une seule application",
+      "textDescription": "Regroupées toutes vos prestations au même endroit n’a jamais été aussi simple avec ZabibuCRM! ZabibuCRM vous permet d'éviter la confusion, de rester concentré avec un outil centralisé pour gérer vos prestations. Toutes les informations relatives aux services que vous fournissez sont regroupés au même endroit, ce qui simplifie grandement leur gestion et leur suivi au quotidien."
+    },
+    "blockChart": {
+      "title": "Suivez vos prestations en temps réel !",
+      "textDescription": "ZabibuCRM s’adapte à vous et à votre entreprise et grandit avec vous. Notre application vous permet de suivre en temps réel l'état de vos prestations et d'être toujours informé des progrès réalisés. Au fur et à mesure que votre entreprise se développe, vous pouvez évoluer à tout moment !"
+    },
+    "blockVideo": {
+      "badge": "MIEUX NOUS CONNAÎTRE",
+      "title": "Travaillez avec nous, créez votre compte et commencez votre travail",
+      "description": "L’interface de ZabibuCRM est simple et intuitive améliorant ainsi votre productivité la gestion de vos prestations, Mais nous restons quand meme proche de nos utilisateurs, Si vous avez des questions ou besoin d’aide. Profiter pleinement de votre compte ZabibuCRM."
+    },
+    "testimonials": {
+      "badge": "Témoignages",
+      "title": "Écouter ce que disent nos clients",
+      "description": "Nos utilisateurs adorent notre application de gestion de prestations, ils  témoignent de son efficacité et de sa simplicité d'utilisation."
+    },
+    "faq": {
+      "title": "Questions fréquemment posées"
+    }
+  },
+  "bottomLabel": {
+    "title": "Êtes-vous prêt à gérer vos données 10 fois plus vite qu'auparavant ?",
+    "description": "Dites adieu aux fichiers Excel et Google Sheet ! Gagnez du temps et de l'efficacité dans votre travail,Collaborez avec vos clients et prestataires en toute transparence grâce à notre outil de gestion de prestation de service ZabibuCRM.",
+    "buttonTutorial": "Voir le tutoriel vidéo",
+    "buttonDemo": "Demander une Démo"
+  },
+  "noData": "Contenus non trouver",
+  "footer": {
+    "copyright": {
+      "made": "Fabriqué avec",
+      "separator": "par",
+      "author": "Zabibu.co",
+      "text": "Copyright et tous droits réservés."
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "aboutus": "À propos de nous",
+      "testimonials": "Témoignages",
+      "contact": "Contact"
+    }
+  },
+
+  "contactPage": {
+    "title": "Prenez contact avec nous dès aujourd'hui !",
+    "button": "Envoyer le message",
+    "form": {
+      "fullname": {
+        "label": "Nom complet *",
+        "placeholder": "John Doe"
+      },
+      "company": {
+        "label": "Entreprise *",
+        "placeholder": "Mettez le nom de votre entreprise ici"
+      },
+      "email": {
+        "label": "Votre email *",
+        "placeholder": "example@youremail.com"
+      },
+      "subject": {
+        "label": "Sujet *",
+        "placeholder": "How can we help you"
+      },
+      "message": {
+        "label": "Message *",
+        "placeholder": "Bonjour, je voudrais vous parler de la façon de..."
+      }
+    },
+    "alerts": {
+      "fullname": "Le nom est requis et doit etre valide (Au minimu 5 caractère)",
+      "email": "Entrer un email valide",
+      "company": "Entrer une donnée valide (Au minimum 2 caractère)",
+      "subject": "Entrer une donnée valide (Au minimum 5 caractère)",
+      "message": "Entrer un message valide (Au minimum 9 caractère)"
+    }
+  },
+  "legal-information": {
+    "title": "Confidentialité des données",
+    "tabs": {
+      "terms": "Conditions",
+      "privacy-policy": "Politique de confidentialité",
+      "rgpd": "RGPD",
+      "cookie-policy": "Politique de Cookies",
+      "legal-information": "Mentions legal",
+      "cgu": "Conditions Générales d'Utilisation"
+    },
+    "privacy-policy": {
+      "title": "Politique de confidentialité"
+    },
+    "rgpd": {
+      "title": "Règlement Général sur la Protection des Données à Caractère Personnel"
+    },
+    "cookie-policy": {
+      "title": "Politique de cookies"
+    },
+    "legal-information": { "title": "Mentions Légales" },
+
+    "cgu": { "title": "Condition Général d'Utilisation" },
+
+    "terms": {
+      "title": "Contitions"
+    }
+  }
+}

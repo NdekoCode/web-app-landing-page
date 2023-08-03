@@ -1,0 +1,36 @@
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+
+
+@import './bases/reset';
+@import './abstracts/placeholder';
+@import './bases/typography';
+
+@import './layouts/notification';
+@import './layouts/topbar';
+@import './layouts/navigation';
+@import './layouts/banner';
+@import "./layouts/howitworks";
+@import './components/block';
+@import './components/modal';
+@import './layouts/features';
+@import './layouts/testimonials';
+@import './layouts/faq';
+@import './layouts/grid';
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/sidebar';
+@import './layouts/forms';
+
+@import './components/buttons';
+@import './components/inputs';
+@import './components/carousel';
+@import './components/slider';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/contact';
+@import './pages/404';
+@import './layouts/legal';
+@import './abstracts/animation';

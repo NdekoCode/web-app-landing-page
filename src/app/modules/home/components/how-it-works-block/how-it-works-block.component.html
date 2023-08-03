@@ -1,0 +1,53 @@
+<section class="section how-it-works" id="howitworks">
+  <h2 class="title-2 text-center">{{ "featureText" | translate }}</h2>
+  <p class="text-center mb-10 mt-3 mx-auto tab-description">
+    {{ "featureIntro" | translate }}
+  </p>
+  <div class="buttons-container">
+    <button
+      *ngFor="let title of titles; index as key"
+      class="btn tab-button"
+      (click)="showTab(key)"
+      [ngClass]="{ active: key === index }"
+      data-block="user-profile"
+    >
+      {{ title }}
+    </button>
+  </div>
+  <div class="container">
+    <article
+      *ngFor="let howItWork of howItWorkData; index as nbr"
+      [class]="'tab-content ' + 'tab-content-' + nbr"
+      [ngClass]="{ active: nbr === index }"
+    >
+      <div class="feature-detail">
+        <h4 class="title-3 mt-0">
+          {{ howItWork.titleFeature }}
+        </h4>
+        <p>{{ howItWork.description }}</p>
+      </div>
+      <figure class="figure-img">
+        <img
+          [src]="howItWork.mediaDescription"
+          [alt]="howItWork.titleFeature"
+        />
+      </figure>
+      <div class="user-testimonial">
+        <p class="testimonial-content">
+          {{ howItWork.testimonial.testimonial }}
+        </p>
+        <div class="user-profile">
+          <img
+            [src]="howItWork.testimonial.image"
+            [alt]="howItWork.testimonial.name"
+          />
+          <div class="user-description">
+            <strong> {{ howItWork.testimonial.name }}</strong>
+            <p>{{ howItWork.testimonial.userRole }}</p>
+            <p>{{ howItWork.testimonial.enterprise }}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

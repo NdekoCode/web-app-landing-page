@@ -1,0 +1,123 @@
+<section class="bgblob" id="block-video">
+  <div class="block block-video">
+    <div class="block__left video">
+      <div class="block__img">
+        <button type="button" class="blob" (click)="onToggleShow()">
+          <svg
+            width="171"
+            height="171"
+            viewBox="0 0 171 171"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_850_3501)">
+              <ellipse
+                cx="85.3173"
+                cy="81.369"
+                rx="65.3173"
+                ry="65.369"
+                fill="white"
+              />
+            </g>
+            <g filter="url(#filter1_d_850_3501)">
+              <path
+                d="M103.103 77.3393C105.768 78.8792 105.768 82.7263 103.103 84.2662L76.2522 99.7806C73.5855 101.321 70.251 99.397 70.251 96.3171L70.251 65.2884C70.251 62.2086 73.5855 60.2841 76.2522 61.825L103.103 77.3393Z"
+                fill="#E0457A"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_850_3501"
+                x="0"
+                y="0"
+                width="170.635"
+                height="170.738"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.0135363 0 0 0 0 0 0 0 0 0 0.166667 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_850_3501"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_850_3501"
+                  result="shape"
+                />
+              </filter>
+              <filter
+                id="filter1_d_850_3501"
+                x="60.251"
+                y="55.1987"
+                width="54.8503"
+                height="59.0405"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="3.91622" />
+                <feGaussianBlur stdDeviation="5" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.0732813 0 0 0 0 0.212557 0 0 0 0 0.485052 0 0 0 0.08 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_850_3501"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_850_3501"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="block__right">
+      <div class="badge badge-line">
+        {{ "Home.blockVideo.badge" | translate }}
+      </div>
+      <h2 class="block__title title-2">
+        {{ "Home.blockVideo.title" | translate }}
+      </h2>
+      <p class="block__text">
+        {{ "Home.blockVideo.description" | translate }}
+      </p>
+      <a href="https://zabibu-crm.netlify.app/" class="btn red-gradient"
+        >{{ "getStarted" | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+<app-modal-video
+  *ngIf="isShown"
+  (showModal)="onShow($event)"
+  [videoId]="videoId"
+></app-modal-video>

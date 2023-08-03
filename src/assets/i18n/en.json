@@ -1,0 +1,122 @@
+{
+  "howitworks": "How it works",
+  "featureText": "How it works, you'll appreciate",
+  "featureIntro": "Say goodbye to Excel and Google Sheet files! ZabibuCRM is the efficient turnkey tool you need!",
+  "testimonials": "Testimonials",
+  "more-about": "About us",
+  "contact": "Contact",
+  "getStarted": "Get Started",
+  "notification": {
+    "buttonTitle": "New update",
+    "notificationText": "Discover our new feature in 2023 that will allow you to organize your services more easily and improve the quality of your work.",
+    "notificationLink": "Read more"
+  },
+  "Home": {
+    "badge": "BENEFIT WILL YOU GET",
+    "linkLearnMore": "Read more",
+    "WelcomeText": "A service management software, zabibuCRM.",
+    "descriptionApp": "Stay organized, gain in productivity, manage easily and efficiently each of your services, follow the budget allocated to each service to improve the quality of the service offered and the work done to have a good quality of work done.",
+    "globalBlockData": {
+      "title": "Everything you need in one application",
+      "textDescription": "Consolidating all your benefits in one place has never been easier with ZabibuCRM! ZabibuCRM allows you to avoid confusion, to stay focused with a centralized tool to manage your services. All the information related to the services you provide are grouped in one place, which greatly simplifies their daily management and follow-up."
+    },
+    "blockChart": {
+      "title": "Follow your services in real time!",
+      "textDescription": "ZabibuCRM adapts to you and your business and grows with you. Our application allows you to monitor the status of your services in real time and to always be informed of your progress. As your business grows, you can evolve at any time!"
+    },
+    "blockVideo": {
+      "badge": "KNOW US MORE",
+      "title": "Work with us, create your account and start your work",
+      "description": "The interface of ZabibuCRM is simple and intuitive improving your productivity and the management of your services, but we remain close to our users, if you have any questions or need help. Enjoy your ZabibuCRM account."
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "Hear what our clients say",
+      "description": "Our users love our benefit management application, they testify to its efficiency and ease of use."
+    },
+    "faq": {
+      "title": "Frequently asked questions"
+    }
+  },
+  "bottomLabel": {
+    "title": "Are you ready to manage your data 10x faster than before",
+    "description": "Say goodbye to Excel and Google Sheet files! Save time and efficiency in your work, collaborate with your customers and providers in full transparency with our service management tool ZabibuCRM.",
+    "buttonTutorial": "Watch video tutorial",
+    "buttonDemo": "Request a demo"
+  },
+  "noData": "Data not found",
+  "footer": {
+    "copyright": {
+      "made": "Made with",
+      "separator": "by",
+      "author": "Zabibu.co",
+      "text": "Copyright and Al right reserved."
+    },
+    "links": {
+      "features": "Features",
+      "aboutus": "About us",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    }
+  },
+  "contactPage": {
+    "title": "Get in touch today!",
+    "button": "Send Message",
+    "form": {
+      "fullname": {
+        "label": "Full name *",
+        "placeholder": "John Doe"
+      },
+      "company": {
+        "label": "Company *",
+        "placeholder": "your company name here"
+      },
+      "email": {
+        "label": "Your email *",
+        "placeholder": "example@youremail.com"
+      },
+      "subject": {
+        "label": "Subject *",
+        "placeholder": "How can we help you"
+      },
+      "message": {
+        "label": "Message *",
+        "placeholder": "Hello there,I would like to talk about how to..."
+      }
+    },
+    "alerts": {
+      "fullname": "The name is required and must be valid (At least 5 characters)",
+      "email": "Enter a valid email",
+      "company": "Enter a valid data (At least 2 characters)",
+      "subject": "Enter a valid data (At least 5 characters)",
+      "message": "Enter a valid message (At least 9 characters)"
+    }
+  },
+  "legal-information": {
+    "title": "Data privacy",
+    "tabs": {
+      "terms": "Terms",
+      "privacy-policy": "Privacy Policy",
+      "rgpd": "GDPR",
+      "cookie-policy": "Cookie Policy",
+      "legal-information": "Legal Information",
+      "cgu": "General Terms and Conditions of Use"
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy"
+    },
+    "rgpd": {
+      "title": "General Regulation on the Protection of Personal Data"
+    },
+    "cookie-policy": {
+      "title": "Cookie Policy"
+    },
+    "legal-information": { "title": "Legal Information" },
+
+    "cgu": { "title": "General Terms and Conditions of Use" },
+
+    "terms": {
+      "title": "Terms"
+    }
+  }
+}

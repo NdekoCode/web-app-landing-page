@@ -1,0 +1,88 @@
+.btn {
+    @extend %btn;
+
+    &:disabled {
+        opacity: 0.55;
+        cursor : not-allowed;
+    }
+
+    &.btn-icon {
+        @extend %flexMiddle;
+
+        min-width: rem(100);
+        max-width: max-content;
+
+        svg {
+            width : rem(15);
+            height: rem(15);
+            margin: 0 rem(10)
+        }
+
+        &.red-border {
+            &:hover {
+                background-image: var(--primary-color-gradient);
+                color           : var(--color-white);
+            }
+        }
+    }
+}
+
+.nav-toggle-btn {
+    @extend %posRelative;
+    transform : rotate(-55deg);
+    transition: var(--transition-1);
+    z-index   : 2;
+
+    span {
+        width           : 20px;
+        height          : 2px;
+        background-color: var(--primary-color);
+        margin          : 5px;
+        transition      : var(--transition-1);
+    }
+
+    :is(.one, .three) {
+        width: 10px;
+    }
+
+    .one {
+        margin-left     : auto;
+        transform-origin: left;
+    }
+
+    .three {
+        transform-origin: right;
+    }
+
+    &.active {
+        transform: rotate(-45deg);
+
+        .one {
+            transform: rotate(90deg) translate(-3px);
+        }
+
+        .three {
+            transform: rotate(90deg) translate(3px);
+        }
+    }
+}
+
+.btn-circle {
+    display      : none;
+    position     : fixed;
+    right        : 1%;
+    bottom       : 0;
+    min-width    : max-content;
+    min-height   : max-content;
+    aspect-ratio : 1/1;
+    border-radius: 100%;
+    padding      : 1em;
+    cursor       : pointer;
+    z-index      : 100;
+
+    svg {
+        width       : rem(16);
+        aspect-ratio: 1/1;
+    }
+
+}

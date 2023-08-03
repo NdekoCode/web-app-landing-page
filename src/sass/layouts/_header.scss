@@ -1,0 +1,12 @@
+header {
+
+    @extend %posRelative;
+
+    a {
+        @extend %decorationNone;
+    }
+
+    @media #{$md-screen} {
+        max-height: rem(180);
+    }
+}

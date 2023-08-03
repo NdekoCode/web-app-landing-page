@@ -1,0 +1,25 @@
+<main class="body">
+    <article>
+
+        <app-banner />
+        <app-how-it-works-block />
+        <app-two-column class="linear-block-right" [imageRigth]="true" pseudoClass="right"
+            [imageUrl]="globalBlockData.screenImages" [title]="'Home.globalBlockData.title' |translate"
+            [textDescription]="'Home.globalBlockData.textDescription' | translate"
+            [linkText]="'Home.linkLearnMore' | translate" />
+        <app-block-video />
+        <!-- <app-features /> -->
+        <section class="bgblob bgblob-bottom-right">
+            <app-two-column class="linear-block-left" [imageRigth]="false" pseudoClass="right"
+                [imageUrl]="blockChart.screenImages" [title]="'Home.blockChart.title' |translate"
+                [textDescription]="'Home.blockChart.textDescription' | translate"
+                [linkText]="'Home.linkLearnMore' | translate" />
+        </section>
+        <app-testimonials />
+    </article>
+</main>
+<div class="block-footer">
+    <app-faq />
+    <app-bottom-label />
+    <app-footer />
+</div>

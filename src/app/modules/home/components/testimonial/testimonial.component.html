@@ -1,0 +1,12 @@
+<article class="testimonial__card">
+  <p class="testimonial__content">
+    {{ userTestimonial.testimonial }}
+  </p>
+  <footer class="testimonial__footer">
+    <img [src]="userTestimonial.image" [alt]="userTestimonial.name" />
+    <div>
+      <strong class="testimonial__name">{{ userTestimonial.name }}</strong>
+      <p>{{ userTestimonial.userRole }} {{ key }}</p>
+    </div>
+  </footer>
+</article>

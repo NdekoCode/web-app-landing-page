@@ -1,0 +1,26 @@
+<section class="section bgblob bgblob-bottom-left" id="testimonials">
+    <div class="testimonials">
+        <div class="testimonials__infos">
+
+            <span class="badge badge-line">{{'Home.testimonials.badge' | translate}}</span>
+            <h2 class="title-2">{{'Home.testimonials.title' | translate}}</h2>
+            <p>{{'Home.testimonials.description' | translate}}</p>
+        </div>
+        <div class="testimonials__container">
+
+            <app-testimonial *ngFor="let testimonial of testimonials;index as key" [userTestimonial]="testimonial"
+                [key]="(key+1)" [class]="'testimonial-'+(key+1)" />
+
+        </div>
+        <button class="arrow__button" (click)="goTo(1)"><svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.89213 1.89404L10.3291 10.331L1.89212 18.768" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="dots">
+            <button *ngFor="let item of slideSequence()" class="dot__button" (click)="goTo(item-1)"
+                [ngClass]="{ active: (item-1)===index}"></button>
+        </div>
+    </div>
+</section>

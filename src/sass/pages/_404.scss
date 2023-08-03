@@ -1,0 +1,56 @@
+.page404-content {
+    max-width    : rem(750);
+    margin-inline: auto;
+    text-align   : center;
+    @extend %container;
+    @extend %flexColCenter;
+
+    .title-big {
+
+        color            : transparent;
+        background-clip  : text;
+        background-origin: text-content;
+        background-image : var(--primary-color-gradient);
+        line-height      : 1.1;
+        font-size        : rem(100);
+        font-weight      : 900;
+
+        @media #{$x-sm-screen} {
+
+            font-size: rem(150);
+
+        }
+
+        @media #{$sm-screen} {
+
+            font-size: rem(300);
+        }
+    }
+
+    .title-1 {
+        font-size: rem(40);
+
+        @media #{$sm-screen} {
+
+            font-size: rem(45);
+        }
+
+        @media #{$md-screen} {
+
+            font-size: rem(60);
+        }
+    }
+
+    .btn {
+        margin-top   : rem(25);
+        width        : 100%;
+        max-width    : rem(380);
+        padding-block: rem(10);
+
+        @media #{$md-screen} {
+            padding-block: rem(20);
+
+        }
+    }
+
+}

@@ -1,0 +1,102 @@
+.form-input {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    padding         : rem(10) rem(5);
+    box-shadow      : 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border          : $border-input;
+    border-radius   : rem(5);
+    min-height      : rem(65);
+    background-color: var(--color-white);
+
+    @media #{$md-screen} {
+
+        width: rem(770);
+
+    }
+
+
+    input {
+        height        : 100%;
+        padding-block : rem(14);
+        padding-inline: rem(15);
+        border-radius : rem(5);
+
+        &::placeholder {
+            color: var(--color-gray);
+
+        }
+    }
+}
+
+
+.contact-form {
+    label {
+        display      : inline-block;
+        margin-bottom: rem(10);
+        font-size    : rem(18);
+        font-weight  : 500;
+        color        : var(--color-bg-blue);
+    }
+
+    input,
+    textarea {
+        width         : 100%;
+        padding-block : rem(15);
+        padding-inline: rem(15);
+        border-radius : rem(5);
+        border        : 1px solid #D3D3D3;
+        outline       : none;
+
+        &::placeholder {
+            font-size: rem(16);
+            color    : #797979
+        }
+    }
+
+    textarea {
+        resize    : none;
+        min-height: rem(150);
+    }
+
+    @media #{$md-screen} {
+        width                : 100%;
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas  :
+            "a b"
+            "c d"
+            "e e"
+            "f f";
+        gap           : rem(30);
+        padding-inline: rem(100);
+    }
+
+    .fullname {
+        grid-area: a;
+    }
+
+    .email {
+        grid-area: b;
+    }
+
+    .company {
+        grid-area: c;
+    }
+
+    .subject {
+        grid-area: d;
+    }
+
+    .message {
+        grid-area: e;
+    }
+
+    .btn-contact {
+        grid-area         : f;
+        min-height        : rem(55);
+        padding-inline    : rem(40);
+        // align-self     : center;
+        justify-self      : center;
+    }
+}

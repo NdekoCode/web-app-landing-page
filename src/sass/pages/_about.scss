@@ -1,0 +1,119 @@
+.more-about {
+    padding-top: rem(120);
+}
+
+.block-center {
+    text-align: center;
+    @extend %flexColCenter;
+
+    .block__img {
+        margin-bottom: rem(25);
+    }
+
+    p {
+        max-width    : rem(650);
+        margin-inline: auto;
+    }
+}
+
+.block-description {
+    margin-block    : rem(50);
+    padding-block   : rem(15);
+    padding-inline  : rem(30);
+    background-color: var(--color-little-white);
+    border-radius   : rem(10);
+
+    ul {
+        li {
+            @extend %flex;
+            align-items: center;
+        }
+
+        li::before {
+            content         : "";
+            /* Add content  : \2022 is the CSS Code/unicode for a bullet */
+            color           : var(--color-dark-2);
+            /* Change the color */
+            font-weight     : bold;
+            /* If you want it to be bold */
+            display         : inline-block;
+            /* Needed to add space between the bullet and the text */
+            width           : 0.5em;
+            aspect-ratio    : 1/1;
+            background-color: var(--color-dark-2);
+            border-radius   : 100%;
+            /* Also needed for space (tweak if needed) */
+            margin-right    : 0.5em;
+            /* Also needed for space (tweak if needed) */
+        }
+    }
+
+    li {
+        margin-bottom  : rem(8);
+        list-style-type: none;
+    }
+
+    ol {
+        list-style: none;
+
+        li {
+            counter-increment: li;
+
+            &::before {
+                content    : counter(li);
+                color      : var(--color-dark-2);
+                display    : inline-block;
+                width      : 1em;
+                margin-left: -1em
+            }
+        }
+
+    }
+
+    p,
+    ul,
+    ol {
+        color       : #797979;
+        margin-block: rem(25);
+    }
+
+    .block__img {
+        @extend %flexMiddle;
+    }
+
+    @media #{$lg-screen} {
+
+        padding-block : rem(70);
+        padding-inline: rem(120);
+    }
+}
+
+.quote {
+    display     : flex;
+    margin-block: rem(50);
+
+    column-gap: rem(20);
+
+    cite {
+        padding-block: rem(40);
+        max-width    : rem(520);
+
+    }
+
+    .quote-img {
+        max-width                : rem(25);
+        min-width                : max-content;
+        min-height               : rem(150);
+        padding-inline           : rem(25);
+        padding-block            : rem(50);
+        border-top-left-radius   : rem(15);
+        border-bottom-left-radius: rem(15);
+
+        img {
+            width: rem(35);
+        }
+
+        @extend .red-gradient;
+        @extend %flexMiddle;
+    }
+}

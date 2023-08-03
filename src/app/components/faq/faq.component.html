@@ -1,0 +1,35 @@
+<section class="faq" id="faq">
+  <div class="faq__infos center-block">
+    <h3 class="title-3 mb-5">{{ "Home.faq.title" | translate }}</h3>
+  </div>
+  <div class="container">
+    <div class="faq__content">
+      <ul class="faq__list">
+        <li class="faq__item" *ngFor="let faq of FAQ; index as key">
+          <button type="button" class="faq__button">
+            <span class="title-4"> {{ key + 1 }}. {{ faq.question }} </span>
+            <span class="arrow__button">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.89213 1.89404L10.3291 10.331L1.89212 18.768"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></span>
+          </button>
+          <p class="faq__text">
+            {{ faq.answer }}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
