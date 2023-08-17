@@ -7,6 +7,6 @@ import { LanguageService } from './services/languages/language.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'tutorat-landing-page';
+  title = 'app-web-landing-page';
   constructor(private _languageService: LanguageService) {}
 }

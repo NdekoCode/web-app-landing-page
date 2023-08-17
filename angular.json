@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "tutorat-landing-page": {
+    "app-web-landing-page": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tutorat-landing-page",
+            "outputPath": "dist/app-web-landing-page",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "tutorat-landing-page:build:production"
+              "browserTarget": "app-web-landing-page:build:production"
             },
             "development": {
-              "browserTarget": "tutorat-landing-page:build:development"
+              "browserTarget": "app-web-landing-page:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tutorat-landing-page:build"
+            "browserTarget": "app-web-landing-page:build"
           }
         },
         "test": {

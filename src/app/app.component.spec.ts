@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tutorat-landing-page'`, () => {
+  it(`should have as title 'app-web-landing-page'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tutorat-landing-page');
+    expect(app.title).toEqual('app-web-landing-page');
   });
 
   it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'tutorat-landing-page app is running!'
+      'app-web-landing-page app is running!'
     );
   });
 });
